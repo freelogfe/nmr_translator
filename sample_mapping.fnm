@@ -1,0 +1,2 @@
+new_pstn:np1 -> #:bucket1/mock1
+$:u1/r2 -> #:bucket2/mock2
