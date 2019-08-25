@@ -5,6 +5,10 @@ fragment ALPHABET : [a-zA-Z];
 fragment HEX_ALPHABET : [a-fA-F];
 fragment SHA_DIGIT : (DIGIT|HEX_ALPHABET);
 
+SCOPE
+  : 'scope'
+  ;
+
 INT:  DIGIT+;
 
 ID
@@ -27,8 +31,8 @@ mock_id
   : '#:' bucket_name '/' mock_name
   ;
 
-presentation_id
-  : '&:' release_id
+presentation_name
+  : ID
   ;
 
 release_name

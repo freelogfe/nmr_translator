@@ -8,27 +8,41 @@ mapping_rules
 
 mapping_rule
   : mock_presentation_rule
+  | hide_existing_presentation_rule
   | remapping_rule
   ;
 
-mock_presentation_rule
-  : mock_presentation_decl '->' replacer
+hide_existing_presentation_rule
+  : '-' presentation_name
   ;
 
-mock_presentation_decl
-  : 'new_pstn' ':' ID
+mock_presentation_rule
+  : '+' presentation_name '->' source_entity
   ;
 
 remapping_rule
-  : replaced '->' replacer
+  : '*' replaced '->' source_entity scope_specification?
   ;
 
 replaced
   : release_id
   ;
 
-replacer
+source_entity
   : release_id
   | mock_id
   | resource_id
+  ;
+
+scope_specification
+  : SCOPE '=' scope_set
+  ;
+
+scope_set
+  : scope_set_element
+  | '[' (scope_set_element ',')* scope_set_element ']'
+  ;
+
+scope_set_element
+  : presentation_name ('->' (source_entity '->')* source_entity)?
   ;
