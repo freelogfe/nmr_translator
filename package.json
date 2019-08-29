@@ -1,16 +1,13 @@
 {
   "name": "@freelog/nmr_translator",
   "dependencies": {
-    "antlr4": "4.7.1",
-    "antlr4ts": "^0.5.0-alpha.3"
+    "antlr4": "4.7.1"
   },
   "scripts": {
     "publish": "npm publish --access=public",
     "build": "java -Xmx500M -cp build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor mapping.g4 -o gen",
-    "test": "node ./test/highlight.test.js",
-    "antlr4ts": "antlr4ts -visitor mapping.g4 -o gen_ts"
+    "test": "node ./test/highlight.test.js"
   },
   "devDependencies": {
-    "antlr4ts-cli": "^0.5.0-alpha.3"
   }
 }
