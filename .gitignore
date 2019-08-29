@@ -2,3 +2,5 @@
 *.java
 *.tokens
 *.interp
+.idea
+node_modules/

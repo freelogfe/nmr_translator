@@ -1,0 +1,11 @@
+{
+  "name": "@freelog/nmr_translator",
+  "dependencies": {
+    "antlr4": "4.7.1"
+  },
+  "scripts": {
+    "publish": "npm publish --access=public",
+    "build": "java -Xmx500M -cp build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor mapping.g4 -o gen",
+    "test": "node ./test/highlight.test.js"
+  }
+}
