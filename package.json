@@ -8,9 +8,10 @@
     "publish": "npm publish --access=public",
     "build": "java -Xmx500M -cp build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor mapping.g4 -o gen",
     "build2": "java -Xmx500M -cp build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor semver.g4 -o gen",
-    "test": "node ./test/index.test.js",
+    "test": "nodemon inspect ./test/index.test.js",
     "test2": "nodemon inspect ./test/semver.test.js"
   },
   "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
