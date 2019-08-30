@@ -7,7 +7,7 @@ var semverVisitor = require('./semverVisitor').semverVisitor;
 var grammarFileName = "semver.g4";
 
 var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0003\b\u0092\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
+    "\u0003C\u0092\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
     "\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007\u0004",
     "\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f\u0004",
     "\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010\t\u0010\u0004",
@@ -29,63 +29,64 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0003\u0012\u0005\u0012\u0088\n\u0012\u0003\u0013\u0003\u0013\u0005",
     "\u0013\u008c\n\u0013\u0003\u0014\u0003\u0014\u0003\u0015\u0003\u0015",
     "\u0003\u0015\u0002\u0002\u0016\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012",
-    "\u0014\u0016\u0018\u001a\u001c\u001e \"$&(\u0002\u0002\u0002\u008e\u0002",
-    "9\u0003\u0002\u0002\u0002\u0004;\u0003\u0002\u0002\u0002\u0006A\u0003",
-    "\u0002\u0002\u0002\bC\u0003\u0002\u0002\u0002\nE\u0003\u0002\u0002\u0002",
-    "\fG\u0003\u0002\u0002\u0002\u000eN\u0003\u0002\u0002\u0002\u0010P\u0003",
-    "\u0002\u0002\u0002\u0012W\u0003\u0002\u0002\u0002\u0014[\u0003\u0002",
-    "\u0002\u0002\u0016_\u0003\u0002\u0002\u0002\u0018l\u0003\u0002\u0002",
-    "\u0002\u001as\u0003\u0002\u0002\u0002\u001cy\u0003\u0002\u0002\u0002",
-    "\u001e}\u0003\u0002\u0002\u0002 \u0081\u0003\u0002\u0002\u0002\"\u0087",
-    "\u0003\u0002\u0002\u0002$\u008b\u0003\u0002\u0002\u0002&\u008d\u0003",
-    "\u0002\u0002\u0002(\u008f\u0003\u0002\u0002\u0002*:\u0005\u0004\u0003",
-    "\u0002+,\u0005\u0004\u0003\u0002,-\u0007\u0003\u0002\u0002-.\u0005\f",
-    "\u0007\u0002.:\u0003\u0002\u0002\u0002/0\u0005\u0004\u0003\u000201\u0007",
-    "\u0004\u0002\u000212\u0005\u0010\t\u00022:\u0003\u0002\u0002\u00023",
-    "4\u0005\u0004\u0003\u000245\u0007\u0003\u0002\u000256\u0005\f\u0007",
-    "\u000267\u0007\u0004\u0002\u000278\u0005\u0010\t\u00028:\u0003\u0002",
-    "\u0002\u00029*\u0003\u0002\u0002\u00029+\u0003\u0002\u0002\u00029/\u0003",
-    "\u0002\u0002\u000293\u0003\u0002\u0002\u0002:\u0003\u0003\u0002\u0002",
-    "\u0002;<\u0005\u0006\u0004\u0002<=\u0007\u0005\u0002\u0002=>\u0005\b",
-    "\u0005\u0002>?\u0007\u0005\u0002\u0002?@\u0005\n\u0006\u0002@\u0005",
-    "\u0003\u0002\u0002\u0002AB\u0005\u001a\u000e\u0002B\u0007\u0003\u0002",
-    "\u0002\u0002CD\u0005\u001a\u000e\u0002D\t\u0003\u0002\u0002\u0002EF",
-    "\u0005\u001a\u000e\u0002F\u000b\u0003\u0002\u0002\u0002GH\u0005\u000e",
-    "\b\u0002H\r\u0003\u0002\u0002\u0002IO\u0005\u0014\u000b\u0002JK\u0005",
-    "\u0014\u000b\u0002KL\u0007\u0005\u0002\u0002LM\u0005\u000e\b\u0002M",
-    "O\u0003\u0002\u0002\u0002NI\u0003\u0002\u0002\u0002NJ\u0003\u0002\u0002",
-    "\u0002O\u000f\u0003\u0002\u0002\u0002PQ\u0005\u0012\n\u0002Q\u0011\u0003",
-    "\u0002\u0002\u0002RX\u0005\u0016\f\u0002ST\u0005\u0016\f\u0002TU\u0007",
-    "\u0005\u0002\u0002UV\u0005\u0012\n\u0002VX\u0003\u0002\u0002\u0002W",
-    "R\u0003\u0002\u0002\u0002WS\u0003\u0002\u0002\u0002X\u0013\u0003\u0002",
-    "\u0002\u0002Y\\\u0005\u0018\r\u0002Z\\\u0005\u001a\u000e\u0002[Y\u0003",
-    "\u0002\u0002\u0002[Z\u0003\u0002\u0002\u0002\\\u0015\u0003\u0002\u0002",
-    "\u0002]`\u0005\u0018\r\u0002^`\u0005\"\u0012\u0002_]\u0003\u0002\u0002",
-    "\u0002_^\u0003\u0002\u0002\u0002`\u0017\u0003\u0002\u0002\u0002am\u0005",
-    " \u0011\u0002bc\u0005 \u0011\u0002cd\u0005\u001c\u000f\u0002dm\u0003",
-    "\u0002\u0002\u0002ef\u0005\u001c\u000f\u0002fg\u0005 \u0011\u0002gm",
-    "\u0003\u0002\u0002\u0002hi\u0005\u001c\u000f\u0002ij\u0005 \u0011\u0002",
-    "jk\u0005\u001c\u000f\u0002km\u0003\u0002\u0002\u0002la\u0003\u0002\u0002",
-    "\u0002lb\u0003\u0002\u0002\u0002le\u0003\u0002\u0002\u0002lh\u0003\u0002",
-    "\u0002\u0002m\u0019\u0003\u0002\u0002\u0002nt\u0007\u0006\u0002\u0002",
-    "ot\u0005&\u0014\u0002pq\u0005&\u0014\u0002qr\u0005\"\u0012\u0002rt\u0003",
-    "\u0002\u0002\u0002sn\u0003\u0002\u0002\u0002so\u0003\u0002\u0002\u0002",
-    "sp\u0003\u0002\u0002\u0002t\u001b\u0003\u0002\u0002\u0002uz\u0005\u001e",
-    "\u0010\u0002vw\u0005\u001e\u0010\u0002wx\u0005\u001c\u000f\u0002xz\u0003",
-    "\u0002\u0002\u0002yu\u0003\u0002\u0002\u0002yv\u0003\u0002\u0002\u0002",
-    "z\u001d\u0003\u0002\u0002\u0002{~\u0005$\u0013\u0002|~\u0005 \u0011",
-    "\u0002}{\u0003\u0002\u0002\u0002}|\u0003\u0002\u0002\u0002~\u001f\u0003",
-    "\u0002\u0002\u0002\u007f\u0082\u0005(\u0015\u0002\u0080\u0082\u0007",
-    "\u0003\u0002\u0002\u0081\u007f\u0003\u0002\u0002\u0002\u0081\u0080\u0003",
-    "\u0002\u0002\u0002\u0082!\u0003\u0002\u0002\u0002\u0083\u0088\u0005",
-    "$\u0013\u0002\u0084\u0085\u0005$\u0013\u0002\u0085\u0086\u0005\"\u0012",
-    "\u0002\u0086\u0088\u0003\u0002\u0002\u0002\u0087\u0083\u0003\u0002\u0002",
-    "\u0002\u0087\u0084\u0003\u0002\u0002\u0002\u0088#\u0003\u0002\u0002",
-    "\u0002\u0089\u008c\u0007\u0006\u0002\u0002\u008a\u008c\u0005&\u0014",
-    "\u0002\u008b\u0089\u0003\u0002\u0002\u0002\u008b\u008a\u0003\u0002\u0002",
-    "\u0002\u008c%\u0003\u0002\u0002\u0002\u008d\u008e\u0007\u0007\u0002",
-    "\u0002\u008e\'\u0003\u0002\u0002\u0002\u008f\u0090\u0007\b\u0002\u0002",
-    "\u0090)\u0003\u0002\u0002\u0002\u000e9NW[_lsy}\u0081\u0087\u008b"].join("");
+    "\u0014\u0016\u0018\u001a\u001c\u001e \"$&(\u0002\u0004\u0003\u0002\u0007",
+    "\u000f\u0003\u0002\u0010C\u0002\u008e\u00029\u0003\u0002\u0002\u0002",
+    "\u0004;\u0003\u0002\u0002\u0002\u0006A\u0003\u0002\u0002\u0002\bC\u0003",
+    "\u0002\u0002\u0002\nE\u0003\u0002\u0002\u0002\fG\u0003\u0002\u0002\u0002",
+    "\u000eN\u0003\u0002\u0002\u0002\u0010P\u0003\u0002\u0002\u0002\u0012",
+    "W\u0003\u0002\u0002\u0002\u0014[\u0003\u0002\u0002\u0002\u0016_\u0003",
+    "\u0002\u0002\u0002\u0018l\u0003\u0002\u0002\u0002\u001as\u0003\u0002",
+    "\u0002\u0002\u001cy\u0003\u0002\u0002\u0002\u001e}\u0003\u0002\u0002",
+    "\u0002 \u0081\u0003\u0002\u0002\u0002\"\u0087\u0003\u0002\u0002\u0002",
+    "$\u008b\u0003\u0002\u0002\u0002&\u008d\u0003\u0002\u0002\u0002(\u008f",
+    "\u0003\u0002\u0002\u0002*:\u0005\u0004\u0003\u0002+,\u0005\u0004\u0003",
+    "\u0002,-\u0007\u0003\u0002\u0002-.\u0005\f\u0007\u0002.:\u0003\u0002",
+    "\u0002\u0002/0\u0005\u0004\u0003\u000201\u0007\u0004\u0002\u000212\u0005",
+    "\u0010\t\u00022:\u0003\u0002\u0002\u000234\u0005\u0004\u0003\u00024",
+    "5\u0007\u0003\u0002\u000256\u0005\f\u0007\u000267\u0007\u0004\u0002",
+    "\u000278\u0005\u0010\t\u00028:\u0003\u0002\u0002\u00029*\u0003\u0002",
+    "\u0002\u00029+\u0003\u0002\u0002\u00029/\u0003\u0002\u0002\u000293\u0003",
+    "\u0002\u0002\u0002:\u0003\u0003\u0002\u0002\u0002;<\u0005\u0006\u0004",
+    "\u0002<=\u0007\u0005\u0002\u0002=>\u0005\b\u0005\u0002>?\u0007\u0005",
+    "\u0002\u0002?@\u0005\n\u0006\u0002@\u0005\u0003\u0002\u0002\u0002AB",
+    "\u0005\u001a\u000e\u0002B\u0007\u0003\u0002\u0002\u0002CD\u0005\u001a",
+    "\u000e\u0002D\t\u0003\u0002\u0002\u0002EF\u0005\u001a\u000e\u0002F\u000b",
+    "\u0003\u0002\u0002\u0002GH\u0005\u000e\b\u0002H\r\u0003\u0002\u0002",
+    "\u0002IO\u0005\u0014\u000b\u0002JK\u0005\u0014\u000b\u0002KL\u0007\u0005",
+    "\u0002\u0002LM\u0005\u000e\b\u0002MO\u0003\u0002\u0002\u0002NI\u0003",
+    "\u0002\u0002\u0002NJ\u0003\u0002\u0002\u0002O\u000f\u0003\u0002\u0002",
+    "\u0002PQ\u0005\u0012\n\u0002Q\u0011\u0003\u0002\u0002\u0002RX\u0005",
+    "\u0016\f\u0002ST\u0005\u0016\f\u0002TU\u0007\u0005\u0002\u0002UV\u0005",
+    "\u0012\n\u0002VX\u0003\u0002\u0002\u0002WR\u0003\u0002\u0002\u0002W",
+    "S\u0003\u0002\u0002\u0002X\u0013\u0003\u0002\u0002\u0002Y\\\u0005\u0018",
+    "\r\u0002Z\\\u0005\u001a\u000e\u0002[Y\u0003\u0002\u0002\u0002[Z\u0003",
+    "\u0002\u0002\u0002\\\u0015\u0003\u0002\u0002\u0002]`\u0005\u0018\r\u0002",
+    "^`\u0005\"\u0012\u0002_]\u0003\u0002\u0002\u0002_^\u0003\u0002\u0002",
+    "\u0002`\u0017\u0003\u0002\u0002\u0002am\u0005 \u0011\u0002bc\u0005 ",
+    "\u0011\u0002cd\u0005\u001c\u000f\u0002dm\u0003\u0002\u0002\u0002ef\u0005",
+    "\u001c\u000f\u0002fg\u0005 \u0011\u0002gm\u0003\u0002\u0002\u0002hi",
+    "\u0005\u001c\u000f\u0002ij\u0005 \u0011\u0002jk\u0005\u001c\u000f\u0002",
+    "km\u0003\u0002\u0002\u0002la\u0003\u0002\u0002\u0002lb\u0003\u0002\u0002",
+    "\u0002le\u0003\u0002\u0002\u0002lh\u0003\u0002\u0002\u0002m\u0019\u0003",
+    "\u0002\u0002\u0002nt\u0007\u0006\u0002\u0002ot\u0005&\u0014\u0002pq",
+    "\u0005&\u0014\u0002qr\u0005\"\u0012\u0002rt\u0003\u0002\u0002\u0002",
+    "sn\u0003\u0002\u0002\u0002so\u0003\u0002\u0002\u0002sp\u0003\u0002\u0002",
+    "\u0002t\u001b\u0003\u0002\u0002\u0002uz\u0005\u001e\u0010\u0002vw\u0005",
+    "\u001e\u0010\u0002wx\u0005\u001c\u000f\u0002xz\u0003\u0002\u0002\u0002",
+    "yu\u0003\u0002\u0002\u0002yv\u0003\u0002\u0002\u0002z\u001d\u0003\u0002",
+    "\u0002\u0002{~\u0005$\u0013\u0002|~\u0005 \u0011\u0002}{\u0003\u0002",
+    "\u0002\u0002}|\u0003\u0002\u0002\u0002~\u001f\u0003\u0002\u0002\u0002",
+    "\u007f\u0082\u0005(\u0015\u0002\u0080\u0082\u0007\u0003\u0002\u0002",
+    "\u0081\u007f\u0003\u0002\u0002\u0002\u0081\u0080\u0003\u0002\u0002\u0002",
+    "\u0082!\u0003\u0002\u0002\u0002\u0083\u0088\u0005$\u0013\u0002\u0084",
+    "\u0085\u0005$\u0013\u0002\u0085\u0086\u0005\"\u0012\u0002\u0086\u0088",
+    "\u0003\u0002\u0002\u0002\u0087\u0083\u0003\u0002\u0002\u0002\u0087\u0084",
+    "\u0003\u0002\u0002\u0002\u0088#\u0003\u0002\u0002\u0002\u0089\u008c",
+    "\u0007\u0006\u0002\u0002\u008a\u008c\u0005&\u0014\u0002\u008b\u0089",
+    "\u0003\u0002\u0002\u0002\u008b\u008a\u0003\u0002\u0002\u0002\u008c%",
+    "\u0003\u0002\u0002\u0002\u008d\u008e\t\u0002\u0002\u0002\u008e\'\u0003",
+    "\u0002\u0002\u0002\u008f\u0090\t\u0003\u0002\u0002\u0090)\u0003\u0002",
+    "\u0002\u0002\u000e9NW[_lsy}\u0081\u0087\u008b"].join("");
 
 
 var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -94,9 +95,17 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 
 var sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ null, "'-'", "'+'", "'.'", "'0'" ];
+var literalNames = [ null, "'-'", "'+'", "'.'", "'0'", "'1'", "'2'", "'3'", 
+                     "'4'", "'5'", "'6'", "'7'", "'8'", "'9'", "'A'", "'B'", 
+                     "'C'", "'D'", "'E'", "'F'", "'G'", "'H'", "'I'", "'J'", 
+                     "'K'", "'L'", "'M'", "'N'", "'O'", "'P'", "'Q'", "'R'", 
+                     "'S'", "'T'", "'U'", "'V'", "'W'", "'X'", "'Y'", "'Z'", 
+                     "'a'", "'b'", "'c'", "'d'", "'e'", "'f'", "'g'", "'h'", 
+                     "'i'", "'j'", "'k'", "'l'", "'m'", "'n'", "'o'", "'p'", 
+                     "'q'", "'r'", "'s'", "'t'", "'u'", "'v'", "'w'", "'x'", 
+                     "'y'", "'z'" ];
 
-var symbolicNames = [ null, null, null, null, null, "ONE2NINE", "ALPHABET" ];
+var symbolicNames = [  ];
 
 var ruleNames =  [ "valid_semver", "version_core", "major", "minor", "patch", 
                    "preRelease", "dotSeparated_preRelease_identifiers", 
@@ -128,8 +137,67 @@ semverParser.T__0 = 1;
 semverParser.T__1 = 2;
 semverParser.T__2 = 3;
 semverParser.T__3 = 4;
-semverParser.ONE2NINE = 5;
-semverParser.ALPHABET = 6;
+semverParser.T__4 = 5;
+semverParser.T__5 = 6;
+semverParser.T__6 = 7;
+semverParser.T__7 = 8;
+semverParser.T__8 = 9;
+semverParser.T__9 = 10;
+semverParser.T__10 = 11;
+semverParser.T__11 = 12;
+semverParser.T__12 = 13;
+semverParser.T__13 = 14;
+semverParser.T__14 = 15;
+semverParser.T__15 = 16;
+semverParser.T__16 = 17;
+semverParser.T__17 = 18;
+semverParser.T__18 = 19;
+semverParser.T__19 = 20;
+semverParser.T__20 = 21;
+semverParser.T__21 = 22;
+semverParser.T__22 = 23;
+semverParser.T__23 = 24;
+semverParser.T__24 = 25;
+semverParser.T__25 = 26;
+semverParser.T__26 = 27;
+semverParser.T__27 = 28;
+semverParser.T__28 = 29;
+semverParser.T__29 = 30;
+semverParser.T__30 = 31;
+semverParser.T__31 = 32;
+semverParser.T__32 = 33;
+semverParser.T__33 = 34;
+semverParser.T__34 = 35;
+semverParser.T__35 = 36;
+semverParser.T__36 = 37;
+semverParser.T__37 = 38;
+semverParser.T__38 = 39;
+semverParser.T__39 = 40;
+semverParser.T__40 = 41;
+semverParser.T__41 = 42;
+semverParser.T__42 = 43;
+semverParser.T__43 = 44;
+semverParser.T__44 = 45;
+semverParser.T__45 = 46;
+semverParser.T__46 = 47;
+semverParser.T__47 = 48;
+semverParser.T__48 = 49;
+semverParser.T__49 = 50;
+semverParser.T__50 = 51;
+semverParser.T__51 = 52;
+semverParser.T__52 = 53;
+semverParser.T__53 = 54;
+semverParser.T__54 = 55;
+semverParser.T__55 = 56;
+semverParser.T__56 = 57;
+semverParser.T__57 = 58;
+semverParser.T__58 = 59;
+semverParser.T__59 = 60;
+semverParser.T__60 = 61;
+semverParser.T__61 = 62;
+semverParser.T__62 = 63;
+semverParser.T__63 = 64;
+semverParser.T__64 = 65;
 
 semverParser.RULE_valid_semver = 0;
 semverParser.RULE_version_core = 1;
@@ -1385,13 +1453,72 @@ semverParser.prototype.identifier_character = function() {
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
         case semverParser.T__3:
-        case semverParser.ONE2NINE:
+        case semverParser.T__4:
+        case semverParser.T__5:
+        case semverParser.T__6:
+        case semverParser.T__7:
+        case semverParser.T__8:
+        case semverParser.T__9:
+        case semverParser.T__10:
+        case semverParser.T__11:
+        case semverParser.T__12:
             this.enterOuterAlt(localctx, 1);
             this.state = 121;
             this.digit();
             break;
         case semverParser.T__0:
-        case semverParser.ALPHABET:
+        case semverParser.T__13:
+        case semverParser.T__14:
+        case semverParser.T__15:
+        case semverParser.T__16:
+        case semverParser.T__17:
+        case semverParser.T__18:
+        case semverParser.T__19:
+        case semverParser.T__20:
+        case semverParser.T__21:
+        case semverParser.T__22:
+        case semverParser.T__23:
+        case semverParser.T__24:
+        case semverParser.T__25:
+        case semverParser.T__26:
+        case semverParser.T__27:
+        case semverParser.T__28:
+        case semverParser.T__29:
+        case semverParser.T__30:
+        case semverParser.T__31:
+        case semverParser.T__32:
+        case semverParser.T__33:
+        case semverParser.T__34:
+        case semverParser.T__35:
+        case semverParser.T__36:
+        case semverParser.T__37:
+        case semverParser.T__38:
+        case semverParser.T__39:
+        case semverParser.T__40:
+        case semverParser.T__41:
+        case semverParser.T__42:
+        case semverParser.T__43:
+        case semverParser.T__44:
+        case semverParser.T__45:
+        case semverParser.T__46:
+        case semverParser.T__47:
+        case semverParser.T__48:
+        case semverParser.T__49:
+        case semverParser.T__50:
+        case semverParser.T__51:
+        case semverParser.T__52:
+        case semverParser.T__53:
+        case semverParser.T__54:
+        case semverParser.T__55:
+        case semverParser.T__56:
+        case semverParser.T__57:
+        case semverParser.T__58:
+        case semverParser.T__59:
+        case semverParser.T__60:
+        case semverParser.T__61:
+        case semverParser.T__62:
+        case semverParser.T__63:
+        case semverParser.T__64:
             this.enterOuterAlt(localctx, 2);
             this.state = 122;
             this.nonDigit();
@@ -1466,7 +1593,58 @@ semverParser.prototype.nonDigit = function() {
         this.state = 127;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
-        case semverParser.ALPHABET:
+        case semverParser.T__13:
+        case semverParser.T__14:
+        case semverParser.T__15:
+        case semverParser.T__16:
+        case semverParser.T__17:
+        case semverParser.T__18:
+        case semverParser.T__19:
+        case semverParser.T__20:
+        case semverParser.T__21:
+        case semverParser.T__22:
+        case semverParser.T__23:
+        case semverParser.T__24:
+        case semverParser.T__25:
+        case semverParser.T__26:
+        case semverParser.T__27:
+        case semverParser.T__28:
+        case semverParser.T__29:
+        case semverParser.T__30:
+        case semverParser.T__31:
+        case semverParser.T__32:
+        case semverParser.T__33:
+        case semverParser.T__34:
+        case semverParser.T__35:
+        case semverParser.T__36:
+        case semverParser.T__37:
+        case semverParser.T__38:
+        case semverParser.T__39:
+        case semverParser.T__40:
+        case semverParser.T__41:
+        case semverParser.T__42:
+        case semverParser.T__43:
+        case semverParser.T__44:
+        case semverParser.T__45:
+        case semverParser.T__46:
+        case semverParser.T__47:
+        case semverParser.T__48:
+        case semverParser.T__49:
+        case semverParser.T__50:
+        case semverParser.T__51:
+        case semverParser.T__52:
+        case semverParser.T__53:
+        case semverParser.T__54:
+        case semverParser.T__55:
+        case semverParser.T__56:
+        case semverParser.T__57:
+        case semverParser.T__58:
+        case semverParser.T__59:
+        case semverParser.T__60:
+        case semverParser.T__61:
+        case semverParser.T__62:
+        case semverParser.T__63:
+        case semverParser.T__64:
             this.enterOuterAlt(localctx, 1);
             this.state = 125;
             this.letter();
@@ -1638,7 +1816,15 @@ semverParser.prototype.digit = function() {
             this.state = 135;
             this.match(semverParser.T__3);
             break;
-        case semverParser.ONE2NINE:
+        case semverParser.T__4:
+        case semverParser.T__5:
+        case semverParser.T__6:
+        case semverParser.T__7:
+        case semverParser.T__8:
+        case semverParser.T__9:
+        case semverParser.T__10:
+        case semverParser.T__11:
+        case semverParser.T__12:
             this.enterOuterAlt(localctx, 2);
             this.state = 136;
             this.positive_digit();
@@ -1676,9 +1862,6 @@ function Positive_digitContext(parser, parent, invokingState) {
 Positive_digitContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 Positive_digitContext.prototype.constructor = Positive_digitContext;
 
-Positive_digitContext.prototype.ONE2NINE = function() {
-    return this.getToken(semverParser.ONE2NINE, 0);
-};
 
 Positive_digitContext.prototype.enterRule = function(listener) {
     if(listener instanceof semverListener ) {
@@ -1709,10 +1892,18 @@ semverParser.prototype.positive_digit = function() {
 
     var localctx = new Positive_digitContext(this, this._ctx, this.state);
     this.enterRule(localctx, 36, semverParser.RULE_positive_digit);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 139;
-        this.match(semverParser.ONE2NINE);
+        _la = this._input.LA(1);
+        if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << semverParser.T__4) | (1 << semverParser.T__5) | (1 << semverParser.T__6) | (1 << semverParser.T__7) | (1 << semverParser.T__8) | (1 << semverParser.T__9) | (1 << semverParser.T__10) | (1 << semverParser.T__11) | (1 << semverParser.T__12))) !== 0))) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1743,9 +1934,6 @@ function LetterContext(parser, parent, invokingState) {
 LetterContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 LetterContext.prototype.constructor = LetterContext;
 
-LetterContext.prototype.ALPHABET = function() {
-    return this.getToken(semverParser.ALPHABET, 0);
-};
 
 LetterContext.prototype.enterRule = function(listener) {
     if(listener instanceof semverListener ) {
@@ -1776,10 +1964,18 @@ semverParser.prototype.letter = function() {
 
     var localctx = new LetterContext(this, this._ctx, this.state);
     this.enterRule(localctx, 38, semverParser.RULE_letter);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 141;
-        this.match(semverParser.ALPHABET);
+        _la = this._input.LA(1);
+        if(!(((((_la - 14)) & ~0x1f) == 0 && ((1 << (_la - 14)) & ((1 << (semverParser.T__13 - 14)) | (1 << (semverParser.T__14 - 14)) | (1 << (semverParser.T__15 - 14)) | (1 << (semverParser.T__16 - 14)) | (1 << (semverParser.T__17 - 14)) | (1 << (semverParser.T__18 - 14)) | (1 << (semverParser.T__19 - 14)) | (1 << (semverParser.T__20 - 14)) | (1 << (semverParser.T__21 - 14)) | (1 << (semverParser.T__22 - 14)) | (1 << (semverParser.T__23 - 14)) | (1 << (semverParser.T__24 - 14)) | (1 << (semverParser.T__25 - 14)) | (1 << (semverParser.T__26 - 14)) | (1 << (semverParser.T__27 - 14)) | (1 << (semverParser.T__28 - 14)) | (1 << (semverParser.T__29 - 14)) | (1 << (semverParser.T__30 - 14)) | (1 << (semverParser.T__31 - 14)) | (1 << (semverParser.T__32 - 14)) | (1 << (semverParser.T__33 - 14)) | (1 << (semverParser.T__34 - 14)) | (1 << (semverParser.T__35 - 14)) | (1 << (semverParser.T__36 - 14)) | (1 << (semverParser.T__37 - 14)) | (1 << (semverParser.T__38 - 14)) | (1 << (semverParser.T__39 - 14)) | (1 << (semverParser.T__40 - 14)) | (1 << (semverParser.T__41 - 14)) | (1 << (semverParser.T__42 - 14)) | (1 << (semverParser.T__43 - 14)) | (1 << (semverParser.T__44 - 14)))) !== 0) || ((((_la - 46)) & ~0x1f) == 0 && ((1 << (_la - 46)) & ((1 << (semverParser.T__45 - 46)) | (1 << (semverParser.T__46 - 46)) | (1 << (semverParser.T__47 - 46)) | (1 << (semverParser.T__48 - 46)) | (1 << (semverParser.T__49 - 46)) | (1 << (semverParser.T__50 - 46)) | (1 << (semverParser.T__51 - 46)) | (1 << (semverParser.T__52 - 46)) | (1 << (semverParser.T__53 - 46)) | (1 << (semverParser.T__54 - 46)) | (1 << (semverParser.T__55 - 46)) | (1 << (semverParser.T__56 - 46)) | (1 << (semverParser.T__57 - 46)) | (1 << (semverParser.T__58 - 46)) | (1 << (semverParser.T__59 - 46)) | (1 << (semverParser.T__60 - 46)) | (1 << (semverParser.T__61 - 46)) | (1 << (semverParser.T__62 - 46)) | (1 << (semverParser.T__63 - 46)) | (1 << (semverParser.T__64 - 46)))) !== 0))) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;

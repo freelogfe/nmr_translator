@@ -1,6 +1,6 @@
 grammar mapping;
 
-import freelogEntities;
+import freelogEntities, semver;
 
 mapping_rules
   : mapping_rule+
