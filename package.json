@@ -1,5 +1,6 @@
 {
   "name": "@freelog/nmr_translator",
+  "main": "lib/index.js",
   "dependencies": {
     "antlr4": "4.7.1"
   },
