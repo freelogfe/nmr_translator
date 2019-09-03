@@ -7,7 +7,7 @@ var mappingVisitor = require('./mappingVisitor').mappingVisitor;
 var grammarFileName = "mapping.g4";
 
 var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0003U\u012c\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
+    "\u0003U\u0135\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
     "\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007\u0004",
     "\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f\u0004",
     "\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010\t\u0010\u0004",
@@ -16,174 +16,178 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0018\t\u0018\u0004\u0019\t\u0019\u0004\u001a\t\u001a\u0004\u001b\t",
     "\u001b\u0004\u001c\t\u001c\u0004\u001d\t\u001d\u0004\u001e\t\u001e\u0004",
     "\u001f\t\u001f\u0004 \t \u0004!\t!\u0004\"\t\"\u0004#\t#\u0004$\t$\u0004",
-    "%\t%\u0004&\t&\u0004\'\t\'\u0004(\t(\u0004)\t)\u0004*\t*\u0003\u0002",
-    "\u0006\u0002V\n\u0002\r\u0002\u000e\u0002W\u0003\u0003\u0003\u0003\u0003",
-    "\u0003\u0003\u0003\u0003\u0003\u0005\u0003_\n\u0003\u0003\u0004\u0003",
-    "\u0004\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0005\u0003",
-    "\u0005\u0003\u0005\u0003\u0005\u0003\u0005\u0005\u0005l\n\u0005\u0003",
-    "\u0006\u0003\u0006\u0003\u0006\u0003\u0007\u0003\u0007\u0003\u0007\u0003",
-    "\b\u0003\b\u0003\b\u0003\b\u0003\t\u0003\t\u0003\t\u0003\t\u0007\t|",
-    "\n\t\f\t\u000e\t\u007f\u000b\t\u0003\t\u0005\t\u0082\n\t\u0003\t\u0003",
-    "\t\u0003\n\u0003\n\u0003\u000b\u0003\u000b\u0005\u000b\u008a\n\u000b",
-    "\u0003\f\u0003\f\u0003\r\u0003\r\u0003\r\u0003\r\u0003\u000e\u0003\u000e",
-    "\u0003\u000e\u0003\u000e\u0003\u000e\u0007\u000e\u0097\n\u000e\f\u000e",
-    "\u000e\u000e\u009a\u000b\u000e\u0003\u000e\u0003\u000e\u0003\u000e\u0005",
-    "\u000e\u009f\n\u000e\u0003\u000f\u0003\u000f\u0003\u000f\u0003\u000f",
-    "\u0003\u000f\u0007\u000f\u00a6\n\u000f\f\u000f\u000e\u000f\u00a9\u000b",
-    "\u000f\u0003\u000f\u0005\u000f\u00ac\n\u000f\u0003\u0010\u0003\u0010",
-    "\u0003\u0010\u0003\u0010\u0003\u0010\u0003\u0010\u0005\u0010\u00b4\n",
-    "\u0010\u0003\u0011\u0003\u0011\u0003\u0011\u0003\u0011\u0003\u0011\u0003",
-    "\u0012\u0003\u0012\u0003\u0013\u0003\u0013\u0003\u0014\u0003\u0014\u0003",
-    "\u0015\u0003\u0015\u0003\u0016\u0003\u0016\u0003\u0017\u0003\u0017\u0003",
-    "\u0017\u0003\u0017\u0003\u0017\u0003\u0017\u0003\u0017\u0003\u0017\u0003",
-    "\u0017\u0003\u0017\u0003\u0017\u0003\u0017\u0003\u0017\u0003\u0017\u0003",
-    "\u0017\u0005\u0017\u00d4\n\u0017\u0003\u0018\u0003\u0018\u0003\u0018",
-    "\u0003\u0018\u0003\u0018\u0003\u0018\u0003\u0019\u0003\u0019\u0003\u001a",
-    "\u0003\u001a\u0003\u001b\u0003\u001b\u0003\u001c\u0003\u001c\u0003\u001d",
-    "\u0003\u001d\u0003\u001d\u0003\u001d\u0003\u001d\u0005\u001d\u00e9\n",
-    "\u001d\u0003\u001e\u0003\u001e\u0003\u001f\u0003\u001f\u0003\u001f\u0003",
-    "\u001f\u0003\u001f\u0005\u001f\u00f2\n\u001f\u0003 \u0003 \u0005 \u00f6",
-    "\n \u0003!\u0003!\u0005!\u00fa\n!\u0003\"\u0003\"\u0003\"\u0003\"\u0003",
-    "\"\u0003\"\u0003\"\u0003\"\u0003\"\u0003\"\u0003\"\u0005\"\u0107\n\"",
-    "\u0003#\u0003#\u0003#\u0003#\u0003#\u0005#\u010e\n#\u0003$\u0003$\u0003",
-    "$\u0003$\u0005$\u0114\n$\u0003%\u0003%\u0005%\u0118\n%\u0003&\u0003",
-    "&\u0005&\u011c\n&\u0003\'\u0003\'\u0003\'\u0003\'\u0005\'\u0122\n\'",
-    "\u0003(\u0003(\u0005(\u0126\n(\u0003)\u0003)\u0003*\u0003*\u0003*\u0002",
-    "\u0002+\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0016\u0018",
-    "\u001a\u001c\u001e \"$&(*,.02468:<>@BDFHJLNPR\u0002\u0004\u0003\u0002",
-    "\u0015\u001d\u0003\u0002\u001eQ\u0002\u0121\u0002U\u0003\u0002\u0002",
-    "\u0002\u0004^\u0003\u0002\u0002\u0002\u0006`\u0003\u0002\u0002\u0002",
-    "\bf\u0003\u0002\u0002\u0002\nm\u0003\u0002\u0002\u0002\fp\u0003\u0002",
-    "\u0002\u0002\u000es\u0003\u0002\u0002\u0002\u0010w\u0003\u0002\u0002",
-    "\u0002\u0012\u0085\u0003\u0002\u0002\u0002\u0014\u0089\u0003\u0002\u0002",
-    "\u0002\u0016\u008b\u0003\u0002\u0002\u0002\u0018\u008d\u0003\u0002\u0002",
-    "\u0002\u001a\u009e\u0003\u0002\u0002\u0002\u001c\u00a0\u0003\u0002\u0002",
-    "\u0002\u001e\u00ad\u0003\u0002\u0002\u0002 \u00b5\u0003\u0002\u0002",
-    "\u0002\"\u00ba\u0003\u0002\u0002\u0002$\u00bc\u0003\u0002\u0002\u0002",
-    "&\u00be\u0003\u0002\u0002\u0002(\u00c0\u0003\u0002\u0002\u0002*\u00c2",
-    "\u0003\u0002\u0002\u0002,\u00d3\u0003\u0002\u0002\u0002.\u00d5\u0003",
-    "\u0002\u0002\u00020\u00db\u0003\u0002\u0002\u00022\u00dd\u0003\u0002",
-    "\u0002\u00024\u00df\u0003\u0002\u0002\u00026\u00e1\u0003\u0002\u0002",
-    "\u00028\u00e8\u0003\u0002\u0002\u0002:\u00ea\u0003\u0002\u0002\u0002",
-    "<\u00f1\u0003\u0002\u0002\u0002>\u00f5\u0003\u0002\u0002\u0002@\u00f9",
-    "\u0003\u0002\u0002\u0002B\u0106\u0003\u0002\u0002\u0002D\u010d\u0003",
-    "\u0002\u0002\u0002F\u0113\u0003\u0002\u0002\u0002H\u0117\u0003\u0002",
-    "\u0002\u0002J\u011b\u0003\u0002\u0002\u0002L\u0121\u0003\u0002\u0002",
-    "\u0002N\u0125\u0003\u0002\u0002\u0002P\u0127\u0003\u0002\u0002\u0002",
-    "R\u0129\u0003\u0002\u0002\u0002TV\u0005\u0004\u0003\u0002UT\u0003\u0002",
-    "\u0002\u0002VW\u0003\u0002\u0002\u0002WU\u0003\u0002\u0002\u0002WX\u0003",
-    "\u0002\u0002\u0002X\u0003\u0003\u0002\u0002\u0002Y_\u0005\u0006\u0004",
-    "\u0002Z_\u0005\b\u0005\u0002[_\u0005\n\u0006\u0002\\_\u0005\f\u0007",
-    "\u0002]_\u0005\u000e\b\u0002^Y\u0003\u0002\u0002\u0002^Z\u0003\u0002",
-    "\u0002\u0002^[\u0003\u0002\u0002\u0002^\\\u0003\u0002\u0002\u0002^]",
-    "\u0003\u0002\u0002\u0002_\u0005\u0003\u0002\u0002\u0002`a\u0007\u0003",
-    "\u0002\u0002ab\u0005\"\u0012\u0002bc\u0007\u0004\u0002\u0002cd\u0005",
-    "\u0014\u000b\u0002de\u0005\u0010\t\u0002e\u0007\u0003\u0002\u0002\u0002",
-    "fg\u0007\u0005\u0002\u0002gh\u0005\u0016\f\u0002hi\u0007\u0004\u0002",
-    "\u0002ik\u0005\u0014\u000b\u0002jl\u0005\u0018\r\u0002kj\u0003\u0002",
-    "\u0002\u0002kl\u0003\u0002\u0002\u0002l\t\u0003\u0002\u0002\u0002mn",
-    "\u0007\u0006\u0002\u0002no\u0005\"\u0012\u0002o\u000b\u0003\u0002\u0002",
-    "\u0002pq\u0007\u0007\u0002\u0002qr\u0005\"\u0012\u0002r\r\u0003\u0002",
-    "\u0002\u0002st\u0007\b\u0002\u0002tu\u0005\"\u0012\u0002uv\u0005\u0010",
-    "\t\u0002v\u000f\u0003\u0002\u0002\u0002w\u0081\u0007\t\u0002\u0002x",
-    "y\u0005\u0012\n\u0002yz\u0007\n\u0002\u0002z|\u0003\u0002\u0002\u0002",
-    "{x\u0003\u0002\u0002\u0002|\u007f\u0003\u0002\u0002\u0002}{\u0003\u0002",
-    "\u0002\u0002}~\u0003\u0002\u0002\u0002~\u0080\u0003\u0002\u0002\u0002",
-    "\u007f}\u0003\u0002\u0002\u0002\u0080\u0082\u0005\u0012\n\u0002\u0081",
-    "}\u0003\u0002\u0002\u0002\u0081\u0082\u0003\u0002\u0002\u0002\u0082",
-    "\u0083\u0003\u0002\u0002\u0002\u0083\u0084\u0007\u000b\u0002\u0002\u0084",
-    "\u0011\u0003\u0002\u0002\u0002\u0085\u0086\u0007T\u0002\u0002\u0086",
-    "\u0013\u0003\u0002\u0002\u0002\u0087\u008a\u0005\u001e\u0010\u0002\u0088",
-    "\u008a\u0005 \u0011\u0002\u0089\u0087\u0003\u0002\u0002\u0002\u0089",
-    "\u0088\u0003\u0002\u0002\u0002\u008a\u0015\u0003\u0002\u0002\u0002\u008b",
-    "\u008c\u0005\u001e\u0010\u0002\u008c\u0017\u0003\u0002\u0002\u0002\u008d",
-    "\u008e\u0007R\u0002\u0002\u008e\u008f\u0007\f\u0002\u0002\u008f\u0090",
-    "\u0005\u001a\u000e\u0002\u0090\u0019\u0003\u0002\u0002\u0002\u0091\u009f",
-    "\u0005\u001c\u000f\u0002\u0092\u0098\u0007\r\u0002\u0002\u0093\u0094",
-    "\u0005\u001c\u000f\u0002\u0094\u0095\u0007\n\u0002\u0002\u0095\u0097",
-    "\u0003\u0002\u0002\u0002\u0096\u0093\u0003\u0002\u0002\u0002\u0097\u009a",
-    "\u0003\u0002\u0002\u0002\u0098\u0096\u0003\u0002\u0002\u0002\u0098\u0099",
-    "\u0003\u0002\u0002\u0002\u0099\u009b\u0003\u0002\u0002\u0002\u009a\u0098",
-    "\u0003\u0002\u0002\u0002\u009b\u009c\u0005\u001c\u000f\u0002\u009c\u009d",
-    "\u0007\u000b\u0002\u0002\u009d\u009f\u0003\u0002\u0002\u0002\u009e\u0091",
-    "\u0003\u0002\u0002\u0002\u009e\u0092\u0003\u0002\u0002\u0002\u009f\u001b",
-    "\u0003\u0002\u0002\u0002\u00a0\u00ab\u0005\"\u0012\u0002\u00a1\u00a7",
-    "\u0007\u000e\u0002\u0002\u00a2\u00a3\u0005\u0014\u000b\u0002\u00a3\u00a4",
-    "\u0007\u000e\u0002\u0002\u00a4\u00a6\u0003\u0002\u0002\u0002\u00a5\u00a2",
-    "\u0003\u0002\u0002\u0002\u00a6\u00a9\u0003\u0002\u0002\u0002\u00a7\u00a5",
-    "\u0003\u0002\u0002\u0002\u00a7\u00a8\u0003\u0002\u0002\u0002\u00a8\u00aa",
-    "\u0003\u0002\u0002\u0002\u00a9\u00a7\u0003\u0002\u0002\u0002\u00aa\u00ac",
-    "\u0005\u0014\u000b\u0002\u00ab\u00a1\u0003\u0002\u0002\u0002\u00ab\u00ac",
-    "\u0003\u0002\u0002\u0002\u00ac\u001d\u0003\u0002\u0002\u0002\u00ad\u00ae",
-    "\u0007\u000f\u0002\u0002\u00ae\u00af\u0005*\u0016\u0002\u00af\u00b0",
-    "\u0007\u0010\u0002\u0002\u00b0\u00b3\u0005$\u0013\u0002\u00b1\u00b2",
-    "\u0007\u0011\u0002\u0002\u00b2\u00b4\u0005,\u0017\u0002\u00b3\u00b1",
-    "\u0003\u0002\u0002\u0002\u00b3\u00b4\u0003\u0002\u0002\u0002\u00b4\u001f",
-    "\u0003\u0002\u0002\u0002\u00b5\u00b6\u0007\u0012\u0002\u0002\u00b6\u00b7",
-    "\u0005(\u0015\u0002\u00b7\u00b8\u0007\u0010\u0002\u0002\u00b8\u00b9",
-    "\u0005&\u0014\u0002\u00b9!\u0003\u0002\u0002\u0002\u00ba\u00bb\u0007",
-    "T\u0002\u0002\u00bb#\u0003\u0002\u0002\u0002\u00bc\u00bd\u0007T\u0002",
-    "\u0002\u00bd%\u0003\u0002\u0002\u0002\u00be\u00bf\u0007T\u0002\u0002",
-    "\u00bf\'\u0003\u0002\u0002\u0002\u00c0\u00c1\u0007T\u0002\u0002\u00c1",
-    ")\u0003\u0002\u0002\u0002\u00c2\u00c3\u0007T\u0002\u0002\u00c3+\u0003",
-    "\u0002\u0002\u0002\u00c4\u00d4\u0005.\u0018\u0002\u00c5\u00c6\u0005",
-    ".\u0018\u0002\u00c6\u00c7\u0007\u0006\u0002\u0002\u00c7\u00c8\u0005",
-    "6\u001c\u0002\u00c8\u00d4\u0003\u0002\u0002\u0002\u00c9\u00ca\u0005",
-    ".\u0018\u0002\u00ca\u00cb\u0007\u0003\u0002\u0002\u00cb\u00cc\u0005",
-    ":\u001e\u0002\u00cc\u00d4\u0003\u0002\u0002\u0002\u00cd\u00ce\u0005",
-    ".\u0018\u0002\u00ce\u00cf\u0007\u0006\u0002\u0002\u00cf\u00d0\u0005",
-    "6\u001c\u0002\u00d0\u00d1\u0007\u0003\u0002\u0002\u00d1\u00d2\u0005",
-    ":\u001e\u0002\u00d2\u00d4\u0003\u0002\u0002\u0002\u00d3\u00c4\u0003",
-    "\u0002\u0002\u0002\u00d3\u00c5\u0003\u0002\u0002\u0002\u00d3\u00c9\u0003",
-    "\u0002\u0002\u0002\u00d3\u00cd\u0003\u0002\u0002\u0002\u00d4-\u0003",
-    "\u0002\u0002\u0002\u00d5\u00d6\u00050\u0019\u0002\u00d6\u00d7\u0007",
-    "\u0013\u0002\u0002\u00d7\u00d8\u00052\u001a\u0002\u00d8\u00d9\u0007",
-    "\u0013\u0002\u0002\u00d9\u00da\u00054\u001b\u0002\u00da/\u0003\u0002",
-    "\u0002\u0002\u00db\u00dc\u0005D#\u0002\u00dc1\u0003\u0002\u0002\u0002",
-    "\u00dd\u00de\u0005D#\u0002\u00de3\u0003\u0002\u0002\u0002\u00df\u00e0",
-    "\u0005D#\u0002\u00e05\u0003\u0002\u0002\u0002\u00e1\u00e2\u00058\u001d",
-    "\u0002\u00e27\u0003\u0002\u0002\u0002\u00e3\u00e9\u0005> \u0002\u00e4",
-    "\u00e5\u0005> \u0002\u00e5\u00e6\u0007\u0013\u0002\u0002\u00e6\u00e7",
-    "\u00058\u001d\u0002\u00e7\u00e9\u0003\u0002\u0002\u0002\u00e8\u00e3",
-    "\u0003\u0002\u0002\u0002\u00e8\u00e4\u0003\u0002\u0002\u0002\u00e99",
-    "\u0003\u0002\u0002\u0002\u00ea\u00eb\u0005<\u001f\u0002\u00eb;\u0003",
-    "\u0002\u0002\u0002\u00ec\u00f2\u0005@!\u0002\u00ed\u00ee\u0005@!\u0002",
-    "\u00ee\u00ef\u0007\u0013\u0002\u0002\u00ef\u00f0\u0005<\u001f\u0002",
-    "\u00f0\u00f2\u0003\u0002\u0002\u0002\u00f1\u00ec\u0003\u0002\u0002\u0002",
-    "\u00f1\u00ed\u0003\u0002\u0002\u0002\u00f2=\u0003\u0002\u0002\u0002",
-    "\u00f3\u00f6\u0005B\"\u0002\u00f4\u00f6\u0005D#\u0002\u00f5\u00f3\u0003",
-    "\u0002\u0002\u0002\u00f5\u00f4\u0003\u0002\u0002\u0002\u00f6?\u0003",
-    "\u0002\u0002\u0002\u00f7\u00fa\u0005B\"\u0002\u00f8\u00fa\u0005L\'\u0002",
-    "\u00f9\u00f7\u0003\u0002\u0002\u0002\u00f9\u00f8\u0003\u0002\u0002\u0002",
-    "\u00faA\u0003\u0002\u0002\u0002\u00fb\u0107\u0005J&\u0002\u00fc\u00fd",
-    "\u0005J&\u0002\u00fd\u00fe\u0005F$\u0002\u00fe\u0107\u0003\u0002\u0002",
-    "\u0002\u00ff\u0100\u0005F$\u0002\u0100\u0101\u0005J&\u0002\u0101\u0107",
-    "\u0003\u0002\u0002\u0002\u0102\u0103\u0005F$\u0002\u0103\u0104\u0005",
-    "J&\u0002\u0104\u0105\u0005F$\u0002\u0105\u0107\u0003\u0002\u0002\u0002",
-    "\u0106\u00fb\u0003\u0002\u0002\u0002\u0106\u00fc\u0003\u0002\u0002\u0002",
-    "\u0106\u00ff\u0003\u0002\u0002\u0002\u0106\u0102\u0003\u0002\u0002\u0002",
-    "\u0107C\u0003\u0002\u0002\u0002\u0108\u010e\u0007\u0014\u0002\u0002",
-    "\u0109\u010e\u0005P)\u0002\u010a\u010b\u0005P)\u0002\u010b\u010c\u0005",
-    "L\'\u0002\u010c\u010e\u0003\u0002\u0002\u0002\u010d\u0108\u0003\u0002",
-    "\u0002\u0002\u010d\u0109\u0003\u0002\u0002\u0002\u010d\u010a\u0003\u0002",
-    "\u0002\u0002\u010eE\u0003\u0002\u0002\u0002\u010f\u0114\u0005H%\u0002",
-    "\u0110\u0111\u0005H%\u0002\u0111\u0112\u0005F$\u0002\u0112\u0114\u0003",
-    "\u0002\u0002\u0002\u0113\u010f\u0003\u0002\u0002\u0002\u0113\u0110\u0003",
-    "\u0002\u0002\u0002\u0114G\u0003\u0002\u0002\u0002\u0115\u0118\u0005",
-    "N(\u0002\u0116\u0118\u0005J&\u0002\u0117\u0115\u0003\u0002\u0002\u0002",
-    "\u0117\u0116\u0003\u0002\u0002\u0002\u0118I\u0003\u0002\u0002\u0002",
-    "\u0119\u011c\u0005R*\u0002\u011a\u011c\u0007\u0006\u0002\u0002\u011b",
-    "\u0119\u0003\u0002\u0002\u0002\u011b\u011a\u0003\u0002\u0002\u0002\u011c",
-    "K\u0003\u0002\u0002\u0002\u011d\u0122\u0005N(\u0002\u011e\u011f\u0005",
-    "N(\u0002\u011f\u0120\u0005L\'\u0002\u0120\u0122\u0003\u0002\u0002\u0002",
-    "\u0121\u011d\u0003\u0002\u0002\u0002\u0121\u011e\u0003\u0002\u0002\u0002",
-    "\u0122M\u0003\u0002\u0002\u0002\u0123\u0126\u0007\u0014\u0002\u0002",
-    "\u0124\u0126\u0005P)\u0002\u0125\u0123\u0003\u0002\u0002\u0002\u0125",
-    "\u0124\u0003\u0002\u0002\u0002\u0126O\u0003\u0002\u0002\u0002\u0127",
-    "\u0128\t\u0002\u0002\u0002\u0128Q\u0003\u0002\u0002\u0002\u0129\u012a",
-    "\t\u0003\u0002\u0002\u012aS\u0003\u0002\u0002\u0002\u0019W^k}\u0081",
-    "\u0089\u0098\u009e\u00a7\u00ab\u00b3\u00d3\u00e8\u00f1\u00f5\u00f9\u0106",
-    "\u010d\u0113\u0117\u011b\u0121\u0125"].join("");
+    "%\t%\u0004&\t&\u0004\'\t\'\u0004(\t(\u0004)\t)\u0004*\t*\u0004+\t+\u0004",
+    ",\t,\u0003\u0002\u0006\u0002Z\n\u0002\r\u0002\u000e\u0002[\u0003\u0003",
+    "\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0005\u0003c\n\u0003",
+    "\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0004\u0005\u0004",
+    "j\n\u0004\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0005\u0003\u0005",
+    "\u0005\u0005q\n\u0005\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0007",
+    "\u0003\u0007\u0003\u0007\u0003\b\u0003\b\u0003\b\u0003\b\u0003\t\u0003",
+    "\t\u0003\t\u0003\t\u0007\t\u0081\n\t\f\t\u000e\t\u0084\u000b\t\u0003",
+    "\t\u0005\t\u0087\n\t\u0003\t\u0003\t\u0003\n\u0003\n\u0003\u000b\u0003",
+    "\u000b\u0005\u000b\u008f\n\u000b\u0003\f\u0003\f\u0003\r\u0003\r\u0003",
+    "\u000e\u0003\u000e\u0003\u000f\u0003\u000f\u0003\u000f\u0003\u000f\u0003",
+    "\u0010\u0003\u0010\u0003\u0010\u0003\u0010\u0003\u0010\u0007\u0010\u00a0",
+    "\n\u0010\f\u0010\u000e\u0010\u00a3\u000b\u0010\u0003\u0010\u0003\u0010",
+    "\u0003\u0010\u0005\u0010\u00a8\n\u0010\u0003\u0011\u0003\u0011\u0003",
+    "\u0011\u0003\u0011\u0003\u0011\u0007\u0011\u00af\n\u0011\f\u0011\u000e",
+    "\u0011\u00b2\u000b\u0011\u0003\u0011\u0005\u0011\u00b5\n\u0011\u0003",
+    "\u0012\u0003\u0012\u0003\u0012\u0003\u0012\u0003\u0012\u0003\u0012\u0005",
+    "\u0012\u00bd\n\u0012\u0003\u0013\u0003\u0013\u0003\u0013\u0003\u0013",
+    "\u0003\u0013\u0003\u0014\u0003\u0014\u0003\u0015\u0003\u0015\u0003\u0016",
+    "\u0003\u0016\u0003\u0017\u0003\u0017\u0003\u0018\u0003\u0018\u0003\u0019",
+    "\u0003\u0019\u0003\u0019\u0003\u0019\u0003\u0019\u0003\u0019\u0003\u0019",
+    "\u0003\u0019\u0003\u0019\u0003\u0019\u0003\u0019\u0003\u0019\u0003\u0019",
+    "\u0003\u0019\u0003\u0019\u0005\u0019\u00dd\n\u0019\u0003\u001a\u0003",
+    "\u001a\u0003\u001a\u0003\u001a\u0003\u001a\u0003\u001a\u0003\u001b\u0003",
+    "\u001b\u0003\u001c\u0003\u001c\u0003\u001d\u0003\u001d\u0003\u001e\u0003",
+    "\u001e\u0003\u001f\u0003\u001f\u0003\u001f\u0003\u001f\u0003\u001f\u0005",
+    "\u001f\u00f2\n\u001f\u0003 \u0003 \u0003!\u0003!\u0003!\u0003!\u0003",
+    "!\u0005!\u00fb\n!\u0003\"\u0003\"\u0005\"\u00ff\n\"\u0003#\u0003#\u0005",
+    "#\u0103\n#\u0003$\u0003$\u0003$\u0003$\u0003$\u0003$\u0003$\u0003$\u0003",
+    "$\u0003$\u0003$\u0005$\u0110\n$\u0003%\u0003%\u0003%\u0003%\u0003%\u0005",
+    "%\u0117\n%\u0003&\u0003&\u0003&\u0003&\u0005&\u011d\n&\u0003\'\u0003",
+    "\'\u0005\'\u0121\n\'\u0003(\u0003(\u0005(\u0125\n(\u0003)\u0003)\u0003",
+    ")\u0003)\u0005)\u012b\n)\u0003*\u0003*\u0005*\u012f\n*\u0003+\u0003",
+    "+\u0003,\u0003,\u0003,\u0002\u0002-\u0002\u0004\u0006\b\n\f\u000e\u0010",
+    "\u0012\u0014\u0016\u0018\u001a\u001c\u001e \"$&(*,.02468:<>@BDFHJLN",
+    "PRTV\u0002\u0004\u0003\u0002\u0015\u001d\u0003\u0002\u001eQ\u0002\u0129",
+    "\u0002Y\u0003\u0002\u0002\u0002\u0004b\u0003\u0002\u0002\u0002\u0006",
+    "d\u0003\u0002\u0002\u0002\bk\u0003\u0002\u0002\u0002\nr\u0003\u0002",
+    "\u0002\u0002\fu\u0003\u0002\u0002\u0002\u000ex\u0003\u0002\u0002\u0002",
+    "\u0010|\u0003\u0002\u0002\u0002\u0012\u008a\u0003\u0002\u0002\u0002",
+    "\u0014\u008e\u0003\u0002\u0002\u0002\u0016\u0090\u0003\u0002\u0002\u0002",
+    "\u0018\u0092\u0003\u0002\u0002\u0002\u001a\u0094\u0003\u0002\u0002\u0002",
+    "\u001c\u0096\u0003\u0002\u0002\u0002\u001e\u00a7\u0003\u0002\u0002\u0002",
+    " \u00a9\u0003\u0002\u0002\u0002\"\u00b6\u0003\u0002\u0002\u0002$\u00be",
+    "\u0003\u0002\u0002\u0002&\u00c3\u0003\u0002\u0002\u0002(\u00c5\u0003",
+    "\u0002\u0002\u0002*\u00c7\u0003\u0002\u0002\u0002,\u00c9\u0003\u0002",
+    "\u0002\u0002.\u00cb\u0003\u0002\u0002\u00020\u00dc\u0003\u0002\u0002",
+    "\u00022\u00de\u0003\u0002\u0002\u00024\u00e4\u0003\u0002\u0002\u0002",
+    "6\u00e6\u0003\u0002\u0002\u00028\u00e8\u0003\u0002\u0002\u0002:\u00ea",
+    "\u0003\u0002\u0002\u0002<\u00f1\u0003\u0002\u0002\u0002>\u00f3\u0003",
+    "\u0002\u0002\u0002@\u00fa\u0003\u0002\u0002\u0002B\u00fe\u0003\u0002",
+    "\u0002\u0002D\u0102\u0003\u0002\u0002\u0002F\u010f\u0003\u0002\u0002",
+    "\u0002H\u0116\u0003\u0002\u0002\u0002J\u011c\u0003\u0002\u0002\u0002",
+    "L\u0120\u0003\u0002\u0002\u0002N\u0124\u0003\u0002\u0002\u0002P\u012a",
+    "\u0003\u0002\u0002\u0002R\u012e\u0003\u0002\u0002\u0002T\u0130\u0003",
+    "\u0002\u0002\u0002V\u0132\u0003\u0002\u0002\u0002XZ\u0005\u0004\u0003",
+    "\u0002YX\u0003\u0002\u0002\u0002Z[\u0003\u0002\u0002\u0002[Y\u0003\u0002",
+    "\u0002\u0002[\\\u0003\u0002\u0002\u0002\\\u0003\u0003\u0002\u0002\u0002",
+    "]c\u0005\u0006\u0004\u0002^c\u0005\b\u0005\u0002_c\u0005\n\u0006\u0002",
+    "`c\u0005\f\u0007\u0002ac\u0005\u000e\b\u0002b]\u0003\u0002\u0002\u0002",
+    "b^\u0003\u0002\u0002\u0002b_\u0003\u0002\u0002\u0002b`\u0003\u0002\u0002",
+    "\u0002ba\u0003\u0002\u0002\u0002c\u0005\u0003\u0002\u0002\u0002de\u0007",
+    "\u0003\u0002\u0002ef\u0005&\u0014\u0002fg\u0007\u0004\u0002\u0002gi",
+    "\u0005\u001a\u000e\u0002hj\u0005\u0010\t\u0002ih\u0003\u0002\u0002\u0002",
+    "ij\u0003\u0002\u0002\u0002j\u0007\u0003\u0002\u0002\u0002kl\u0007\u0005",
+    "\u0002\u0002lm\u0005\u0016\f\u0002mn\u0007\u0004\u0002\u0002np\u0005",
+    "\u0018\r\u0002oq\u0005\u001c\u000f\u0002po\u0003\u0002\u0002\u0002p",
+    "q\u0003\u0002\u0002\u0002q\t\u0003\u0002\u0002\u0002rs\u0007\u0006\u0002",
+    "\u0002st\u0005&\u0014\u0002t\u000b\u0003\u0002\u0002\u0002uv\u0007\u0007",
+    "\u0002\u0002vw\u0005&\u0014\u0002w\r\u0003\u0002\u0002\u0002xy\u0007",
+    "\b\u0002\u0002yz\u0005&\u0014\u0002z{\u0005\u0010\t\u0002{\u000f\u0003",
+    "\u0002\u0002\u0002|\u0086\u0007\t\u0002\u0002}~\u0005\u0012\n\u0002",
+    "~\u007f\u0007\n\u0002\u0002\u007f\u0081\u0003\u0002\u0002\u0002\u0080",
+    "}\u0003\u0002\u0002\u0002\u0081\u0084\u0003\u0002\u0002\u0002\u0082",
+    "\u0080\u0003\u0002\u0002\u0002\u0082\u0083\u0003\u0002\u0002\u0002\u0083",
+    "\u0085\u0003\u0002\u0002\u0002\u0084\u0082\u0003\u0002\u0002\u0002\u0085",
+    "\u0087\u0005\u0012\n\u0002\u0086\u0082\u0003\u0002\u0002\u0002\u0086",
+    "\u0087\u0003\u0002\u0002\u0002\u0087\u0088\u0003\u0002\u0002\u0002\u0088",
+    "\u0089\u0007\u000b\u0002\u0002\u0089\u0011\u0003\u0002\u0002\u0002\u008a",
+    "\u008b\u0007T\u0002\u0002\u008b\u0013\u0003\u0002\u0002\u0002\u008c",
+    "\u008f\u0005\"\u0012\u0002\u008d\u008f\u0005$\u0013\u0002\u008e\u008c",
+    "\u0003\u0002\u0002\u0002\u008e\u008d\u0003\u0002\u0002\u0002\u008f\u0015",
+    "\u0003\u0002\u0002\u0002\u0090\u0091\u0005\"\u0012\u0002\u0091\u0017",
+    "\u0003\u0002\u0002\u0002\u0092\u0093\u0005\u0014\u000b\u0002\u0093\u0019",
+    "\u0003\u0002\u0002\u0002\u0094\u0095\u0005\u0014\u000b\u0002\u0095\u001b",
+    "\u0003\u0002\u0002\u0002\u0096\u0097\u0007R\u0002\u0002\u0097\u0098",
+    "\u0007\f\u0002\u0002\u0098\u0099\u0005\u001e\u0010\u0002\u0099\u001d",
+    "\u0003\u0002\u0002\u0002\u009a\u00a8\u0005 \u0011\u0002\u009b\u00a1",
+    "\u0007\r\u0002\u0002\u009c\u009d\u0005 \u0011\u0002\u009d\u009e\u0007",
+    "\n\u0002\u0002\u009e\u00a0\u0003\u0002\u0002\u0002\u009f\u009c\u0003",
+    "\u0002\u0002\u0002\u00a0\u00a3\u0003\u0002\u0002\u0002\u00a1\u009f\u0003",
+    "\u0002\u0002\u0002\u00a1\u00a2\u0003\u0002\u0002\u0002\u00a2\u00a4\u0003",
+    "\u0002\u0002\u0002\u00a3\u00a1\u0003\u0002\u0002\u0002\u00a4\u00a5\u0005",
+    " \u0011\u0002\u00a5\u00a6\u0007\u000b\u0002\u0002\u00a6\u00a8\u0003",
+    "\u0002\u0002\u0002\u00a7\u009a\u0003\u0002\u0002\u0002\u00a7\u009b\u0003",
+    "\u0002\u0002\u0002\u00a8\u001f\u0003\u0002\u0002\u0002\u00a9\u00b4\u0005",
+    "&\u0014\u0002\u00aa\u00b0\u0007\u000e\u0002\u0002\u00ab\u00ac\u0005",
+    "\u0014\u000b\u0002\u00ac\u00ad\u0007\u000e\u0002\u0002\u00ad\u00af\u0003",
+    "\u0002\u0002\u0002\u00ae\u00ab\u0003\u0002\u0002\u0002\u00af\u00b2\u0003",
+    "\u0002\u0002\u0002\u00b0\u00ae\u0003\u0002\u0002\u0002\u00b0\u00b1\u0003",
+    "\u0002\u0002\u0002\u00b1\u00b3\u0003\u0002\u0002\u0002\u00b2\u00b0\u0003",
+    "\u0002\u0002\u0002\u00b3\u00b5\u0005\u0014\u000b\u0002\u00b4\u00aa\u0003",
+    "\u0002\u0002\u0002\u00b4\u00b5\u0003\u0002\u0002\u0002\u00b5!\u0003",
+    "\u0002\u0002\u0002\u00b6\u00b7\u0007\u000f\u0002\u0002\u00b7\u00b8\u0005",
+    ".\u0018\u0002\u00b8\u00b9\u0007\u0010\u0002\u0002\u00b9\u00bc\u0005",
+    "(\u0015\u0002\u00ba\u00bb\u0007\u0011\u0002\u0002\u00bb\u00bd\u0005",
+    "0\u0019\u0002\u00bc\u00ba\u0003\u0002\u0002\u0002\u00bc\u00bd\u0003",
+    "\u0002\u0002\u0002\u00bd#\u0003\u0002\u0002\u0002\u00be\u00bf\u0007",
+    "\u0012\u0002\u0002\u00bf\u00c0\u0005,\u0017\u0002\u00c0\u00c1\u0007",
+    "\u0010\u0002\u0002\u00c1\u00c2\u0005*\u0016\u0002\u00c2%\u0003\u0002",
+    "\u0002\u0002\u00c3\u00c4\u0007T\u0002\u0002\u00c4\'\u0003\u0002\u0002",
+    "\u0002\u00c5\u00c6\u0007T\u0002\u0002\u00c6)\u0003\u0002\u0002\u0002",
+    "\u00c7\u00c8\u0007T\u0002\u0002\u00c8+\u0003\u0002\u0002\u0002\u00c9",
+    "\u00ca\u0007T\u0002\u0002\u00ca-\u0003\u0002\u0002\u0002\u00cb\u00cc",
+    "\u0007T\u0002\u0002\u00cc/\u0003\u0002\u0002\u0002\u00cd\u00dd\u0005",
+    "2\u001a\u0002\u00ce\u00cf\u00052\u001a\u0002\u00cf\u00d0\u0007\u0006",
+    "\u0002\u0002\u00d0\u00d1\u0005:\u001e\u0002\u00d1\u00dd\u0003\u0002",
+    "\u0002\u0002\u00d2\u00d3\u00052\u001a\u0002\u00d3\u00d4\u0007\u0003",
+    "\u0002\u0002\u00d4\u00d5\u0005> \u0002\u00d5\u00dd\u0003\u0002\u0002",
+    "\u0002\u00d6\u00d7\u00052\u001a\u0002\u00d7\u00d8\u0007\u0006\u0002",
+    "\u0002\u00d8\u00d9\u0005:\u001e\u0002\u00d9\u00da\u0007\u0003\u0002",
+    "\u0002\u00da\u00db\u0005> \u0002\u00db\u00dd\u0003\u0002\u0002\u0002",
+    "\u00dc\u00cd\u0003\u0002\u0002\u0002\u00dc\u00ce\u0003\u0002\u0002\u0002",
+    "\u00dc\u00d2\u0003\u0002\u0002\u0002\u00dc\u00d6\u0003\u0002\u0002\u0002",
+    "\u00dd1\u0003\u0002\u0002\u0002\u00de\u00df\u00054\u001b\u0002\u00df",
+    "\u00e0\u0007\u0013\u0002\u0002\u00e0\u00e1\u00056\u001c\u0002\u00e1",
+    "\u00e2\u0007\u0013\u0002\u0002\u00e2\u00e3\u00058\u001d\u0002\u00e3",
+    "3\u0003\u0002\u0002\u0002\u00e4\u00e5\u0005H%\u0002\u00e55\u0003\u0002",
+    "\u0002\u0002\u00e6\u00e7\u0005H%\u0002\u00e77\u0003\u0002\u0002\u0002",
+    "\u00e8\u00e9\u0005H%\u0002\u00e99\u0003\u0002\u0002\u0002\u00ea\u00eb",
+    "\u0005<\u001f\u0002\u00eb;\u0003\u0002\u0002\u0002\u00ec\u00f2\u0005",
+    "B\"\u0002\u00ed\u00ee\u0005B\"\u0002\u00ee\u00ef\u0007\u0013\u0002\u0002",
+    "\u00ef\u00f0\u0005<\u001f\u0002\u00f0\u00f2\u0003\u0002\u0002\u0002",
+    "\u00f1\u00ec\u0003\u0002\u0002\u0002\u00f1\u00ed\u0003\u0002\u0002\u0002",
+    "\u00f2=\u0003\u0002\u0002\u0002\u00f3\u00f4\u0005@!\u0002\u00f4?\u0003",
+    "\u0002\u0002\u0002\u00f5\u00fb\u0005D#\u0002\u00f6\u00f7\u0005D#\u0002",
+    "\u00f7\u00f8\u0007\u0013\u0002\u0002\u00f8\u00f9\u0005@!\u0002\u00f9",
+    "\u00fb\u0003\u0002\u0002\u0002\u00fa\u00f5\u0003\u0002\u0002\u0002\u00fa",
+    "\u00f6\u0003\u0002\u0002\u0002\u00fbA\u0003\u0002\u0002\u0002\u00fc",
+    "\u00ff\u0005F$\u0002\u00fd\u00ff\u0005H%\u0002\u00fe\u00fc\u0003\u0002",
+    "\u0002\u0002\u00fe\u00fd\u0003\u0002\u0002\u0002\u00ffC\u0003\u0002",
+    "\u0002\u0002\u0100\u0103\u0005F$\u0002\u0101\u0103\u0005P)\u0002\u0102",
+    "\u0100\u0003\u0002\u0002\u0002\u0102\u0101\u0003\u0002\u0002\u0002\u0103",
+    "E\u0003\u0002\u0002\u0002\u0104\u0110\u0005N(\u0002\u0105\u0106\u0005",
+    "N(\u0002\u0106\u0107\u0005J&\u0002\u0107\u0110\u0003\u0002\u0002\u0002",
+    "\u0108\u0109\u0005J&\u0002\u0109\u010a\u0005N(\u0002\u010a\u0110\u0003",
+    "\u0002\u0002\u0002\u010b\u010c\u0005J&\u0002\u010c\u010d\u0005N(\u0002",
+    "\u010d\u010e\u0005J&\u0002\u010e\u0110\u0003\u0002\u0002\u0002\u010f",
+    "\u0104\u0003\u0002\u0002\u0002\u010f\u0105\u0003\u0002\u0002\u0002\u010f",
+    "\u0108\u0003\u0002\u0002\u0002\u010f\u010b\u0003\u0002\u0002\u0002\u0110",
+    "G\u0003\u0002\u0002\u0002\u0111\u0117\u0007\u0014\u0002\u0002\u0112",
+    "\u0117\u0005T+\u0002\u0113\u0114\u0005T+\u0002\u0114\u0115\u0005P)\u0002",
+    "\u0115\u0117\u0003\u0002\u0002\u0002\u0116\u0111\u0003\u0002\u0002\u0002",
+    "\u0116\u0112\u0003\u0002\u0002\u0002\u0116\u0113\u0003\u0002\u0002\u0002",
+    "\u0117I\u0003\u0002\u0002\u0002\u0118\u011d\u0005L\'\u0002\u0119\u011a",
+    "\u0005L\'\u0002\u011a\u011b\u0005J&\u0002\u011b\u011d\u0003\u0002\u0002",
+    "\u0002\u011c\u0118\u0003\u0002\u0002\u0002\u011c\u0119\u0003\u0002\u0002",
+    "\u0002\u011dK\u0003\u0002\u0002\u0002\u011e\u0121\u0005R*\u0002\u011f",
+    "\u0121\u0005N(\u0002\u0120\u011e\u0003\u0002\u0002\u0002\u0120\u011f",
+    "\u0003\u0002\u0002\u0002\u0121M\u0003\u0002\u0002\u0002\u0122\u0125",
+    "\u0005V,\u0002\u0123\u0125\u0007\u0006\u0002\u0002\u0124\u0122\u0003",
+    "\u0002\u0002\u0002\u0124\u0123\u0003\u0002\u0002\u0002\u0125O\u0003",
+    "\u0002\u0002\u0002\u0126\u012b\u0005R*\u0002\u0127\u0128\u0005R*\u0002",
+    "\u0128\u0129\u0005P)\u0002\u0129\u012b\u0003\u0002\u0002\u0002\u012a",
+    "\u0126\u0003\u0002\u0002\u0002\u012a\u0127\u0003\u0002\u0002\u0002\u012b",
+    "Q\u0003\u0002\u0002\u0002\u012c\u012f\u0007\u0014\u0002\u0002\u012d",
+    "\u012f\u0005T+\u0002\u012e\u012c\u0003\u0002\u0002\u0002\u012e\u012d",
+    "\u0003\u0002\u0002\u0002\u012fS\u0003\u0002\u0002\u0002\u0130\u0131",
+    "\t\u0002\u0002\u0002\u0131U\u0003\u0002\u0002\u0002\u0132\u0133\t\u0003",
+    "\u0002\u0002\u0133W\u0003\u0002\u0002\u0002\u001a[bip\u0082\u0086\u008e",
+    "\u00a1\u00a7\u00b0\u00b4\u00bc\u00dc\u00f1\u00fa\u00fe\u0102\u010f\u0116",
+    "\u011c\u0120\u0124\u012a\u012e"].join("");
 
 
 var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -218,15 +222,15 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, null,
 var ruleNames =  [ "mapping_rules", "mapping_rule", "add_presentation_rule", 
                    "replace_presentation_rule", "downline_presentation_rule", 
                    "online_presentation_rule", "set_tags_rule", "set_tags", 
-                   "tag", "source_entity", "replaced", "scope_specification", 
-                   "scope_set", "scope_set_element", "release_id", "mock_id", 
-                   "presentation_name", "release_name", "mock_name", "bucket_name", 
-                   "user_name", "valid_semver", "version_core", "major", 
-                   "minor", "patch", "preRelease", "dotSeparated_preRelease_identifiers", 
-                   "build", "dotSeparated_build_identifiers", "preRelease_identifier", 
-                   "build_identifier", "alphanumeric_identifier", "numeric_identifier", 
-                   "identifier_characters", "identifier_character", "nonDigit", 
-                   "digits", "digit", "positive_digit", "letter" ];
+                   "tag", "source_entity", "replaced", "replacer", "the_candidate", 
+                   "scope_specification", "scope_set", "scope_set_element", 
+                   "release_id", "mock_id", "presentation_name", "release_name", 
+                   "mock_name", "bucket_name", "user_name", "valid_semver", 
+                   "version_core", "major", "minor", "patch", "preRelease", 
+                   "dotSeparated_preRelease_identifiers", "build", "dotSeparated_build_identifiers", 
+                   "preRelease_identifier", "build_identifier", "alphanumeric_identifier", 
+                   "numeric_identifier", "identifier_characters", "identifier_character", 
+                   "nonDigit", "digits", "digit", "positive_digit", "letter" ];
 
 function mappingParser (input) {
 	antlr4.Parser.call(this, input);
@@ -342,36 +346,38 @@ mappingParser.RULE_set_tags = 7;
 mappingParser.RULE_tag = 8;
 mappingParser.RULE_source_entity = 9;
 mappingParser.RULE_replaced = 10;
-mappingParser.RULE_scope_specification = 11;
-mappingParser.RULE_scope_set = 12;
-mappingParser.RULE_scope_set_element = 13;
-mappingParser.RULE_release_id = 14;
-mappingParser.RULE_mock_id = 15;
-mappingParser.RULE_presentation_name = 16;
-mappingParser.RULE_release_name = 17;
-mappingParser.RULE_mock_name = 18;
-mappingParser.RULE_bucket_name = 19;
-mappingParser.RULE_user_name = 20;
-mappingParser.RULE_valid_semver = 21;
-mappingParser.RULE_version_core = 22;
-mappingParser.RULE_major = 23;
-mappingParser.RULE_minor = 24;
-mappingParser.RULE_patch = 25;
-mappingParser.RULE_preRelease = 26;
-mappingParser.RULE_dotSeparated_preRelease_identifiers = 27;
-mappingParser.RULE_build = 28;
-mappingParser.RULE_dotSeparated_build_identifiers = 29;
-mappingParser.RULE_preRelease_identifier = 30;
-mappingParser.RULE_build_identifier = 31;
-mappingParser.RULE_alphanumeric_identifier = 32;
-mappingParser.RULE_numeric_identifier = 33;
-mappingParser.RULE_identifier_characters = 34;
-mappingParser.RULE_identifier_character = 35;
-mappingParser.RULE_nonDigit = 36;
-mappingParser.RULE_digits = 37;
-mappingParser.RULE_digit = 38;
-mappingParser.RULE_positive_digit = 39;
-mappingParser.RULE_letter = 40;
+mappingParser.RULE_replacer = 11;
+mappingParser.RULE_the_candidate = 12;
+mappingParser.RULE_scope_specification = 13;
+mappingParser.RULE_scope_set = 14;
+mappingParser.RULE_scope_set_element = 15;
+mappingParser.RULE_release_id = 16;
+mappingParser.RULE_mock_id = 17;
+mappingParser.RULE_presentation_name = 18;
+mappingParser.RULE_release_name = 19;
+mappingParser.RULE_mock_name = 20;
+mappingParser.RULE_bucket_name = 21;
+mappingParser.RULE_user_name = 22;
+mappingParser.RULE_valid_semver = 23;
+mappingParser.RULE_version_core = 24;
+mappingParser.RULE_major = 25;
+mappingParser.RULE_minor = 26;
+mappingParser.RULE_patch = 27;
+mappingParser.RULE_preRelease = 28;
+mappingParser.RULE_dotSeparated_preRelease_identifiers = 29;
+mappingParser.RULE_build = 30;
+mappingParser.RULE_dotSeparated_build_identifiers = 31;
+mappingParser.RULE_preRelease_identifier = 32;
+mappingParser.RULE_build_identifier = 33;
+mappingParser.RULE_alphanumeric_identifier = 34;
+mappingParser.RULE_numeric_identifier = 35;
+mappingParser.RULE_identifier_characters = 36;
+mappingParser.RULE_identifier_character = 37;
+mappingParser.RULE_nonDigit = 38;
+mappingParser.RULE_digits = 39;
+mappingParser.RULE_digit = 40;
+mappingParser.RULE_positive_digit = 41;
+mappingParser.RULE_letter = 42;
 
 function Mapping_rulesContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -432,13 +438,13 @@ mappingParser.prototype.mapping_rules = function() {
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 83; 
+        this.state = 87; 
         this._errHandler.sync(this);
         _la = this._input.LA(1);
         do {
-            this.state = 82;
+            this.state = 86;
             this.mapping_rule();
-            this.state = 85; 
+            this.state = 89; 
             this._errHandler.sync(this);
             _la = this._input.LA(1);
         } while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << mappingParser.T__0) | (1 << mappingParser.T__2) | (1 << mappingParser.T__3) | (1 << mappingParser.T__4) | (1 << mappingParser.T__5))) !== 0));
@@ -522,32 +528,32 @@ mappingParser.prototype.mapping_rule = function() {
     var localctx = new Mapping_ruleContext(this, this._ctx, this.state);
     this.enterRule(localctx, 2, mappingParser.RULE_mapping_rule);
     try {
-        this.state = 92;
+        this.state = 96;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
         case mappingParser.T__0:
             this.enterOuterAlt(localctx, 1);
-            this.state = 87;
+            this.state = 91;
             this.add_presentation_rule();
             break;
         case mappingParser.T__2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 88;
+            this.state = 92;
             this.replace_presentation_rule();
             break;
         case mappingParser.T__3:
             this.enterOuterAlt(localctx, 3);
-            this.state = 89;
+            this.state = 93;
             this.downline_presentation_rule();
             break;
         case mappingParser.T__4:
             this.enterOuterAlt(localctx, 4);
-            this.state = 90;
+            this.state = 94;
             this.online_presentation_rule();
             break;
         case mappingParser.T__5:
             this.enterOuterAlt(localctx, 5);
-            this.state = 91;
+            this.state = 95;
             this.set_tags_rule();
             break;
         default:
@@ -587,8 +593,8 @@ Add_presentation_ruleContext.prototype.presentation_name = function() {
     return this.getTypedRuleContext(Presentation_nameContext,0);
 };
 
-Add_presentation_ruleContext.prototype.source_entity = function() {
-    return this.getTypedRuleContext(Source_entityContext,0);
+Add_presentation_ruleContext.prototype.the_candidate = function() {
+    return this.getTypedRuleContext(The_candidateContext,0);
 };
 
 Add_presentation_ruleContext.prototype.set_tags = function() {
@@ -624,18 +630,25 @@ mappingParser.prototype.add_presentation_rule = function() {
 
     var localctx = new Add_presentation_ruleContext(this, this._ctx, this.state);
     this.enterRule(localctx, 4, mappingParser.RULE_add_presentation_rule);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 94;
-        this.match(mappingParser.T__0);
-        this.state = 95;
-        this.presentation_name();
-        this.state = 96;
-        this.match(mappingParser.T__1);
-        this.state = 97;
-        this.source_entity();
         this.state = 98;
-        this.set_tags();
+        this.match(mappingParser.T__0);
+        this.state = 99;
+        this.presentation_name();
+        this.state = 100;
+        this.match(mappingParser.T__1);
+        this.state = 101;
+        this.the_candidate();
+        this.state = 103;
+        this._errHandler.sync(this);
+        _la = this._input.LA(1);
+        if(_la===mappingParser.T__6) {
+            this.state = 102;
+            this.set_tags();
+        }
+
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -670,8 +683,8 @@ Replace_presentation_ruleContext.prototype.replaced = function() {
     return this.getTypedRuleContext(ReplacedContext,0);
 };
 
-Replace_presentation_ruleContext.prototype.source_entity = function() {
-    return this.getTypedRuleContext(Source_entityContext,0);
+Replace_presentation_ruleContext.prototype.replacer = function() {
+    return this.getTypedRuleContext(ReplacerContext,0);
 };
 
 Replace_presentation_ruleContext.prototype.scope_specification = function() {
@@ -710,19 +723,19 @@ mappingParser.prototype.replace_presentation_rule = function() {
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 100;
-        this.match(mappingParser.T__2);
-        this.state = 101;
-        this.replaced();
-        this.state = 102;
-        this.match(mappingParser.T__1);
-        this.state = 103;
-        this.source_entity();
         this.state = 105;
+        this.match(mappingParser.T__2);
+        this.state = 106;
+        this.replaced();
+        this.state = 107;
+        this.match(mappingParser.T__1);
+        this.state = 108;
+        this.replacer();
+        this.state = 110;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
         if(_la===mappingParser.SCOPE) {
-            this.state = 104;
+            this.state = 109;
             this.scope_specification();
         }
 
@@ -791,9 +804,9 @@ mappingParser.prototype.downline_presentation_rule = function() {
     this.enterRule(localctx, 8, mappingParser.RULE_downline_presentation_rule);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 107;
+        this.state = 112;
         this.match(mappingParser.T__3);
-        this.state = 108;
+        this.state = 113;
         this.presentation_name();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -860,9 +873,9 @@ mappingParser.prototype.online_presentation_rule = function() {
     this.enterRule(localctx, 10, mappingParser.RULE_online_presentation_rule);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 110;
+        this.state = 115;
         this.match(mappingParser.T__4);
-        this.state = 111;
+        this.state = 116;
         this.presentation_name();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -933,11 +946,11 @@ mappingParser.prototype.set_tags_rule = function() {
     this.enterRule(localctx, 12, mappingParser.RULE_set_tags_rule);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 113;
+        this.state = 118;
         this.match(mappingParser.T__5);
-        this.state = 114;
+        this.state = 119;
         this.presentation_name();
-        this.state = 115;
+        this.state = 120;
         this.set_tags();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -1012,32 +1025,32 @@ mappingParser.prototype.set_tags = function() {
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 117;
+        this.state = 122;
         this.match(mappingParser.T__6);
-        this.state = 127;
+        this.state = 132;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
         if(_la===mappingParser.ID) {
-            this.state = 123;
+            this.state = 128;
             this._errHandler.sync(this);
-            var _alt = this._interp.adaptivePredict(this._input,3,this._ctx)
+            var _alt = this._interp.adaptivePredict(this._input,4,this._ctx)
             while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
                 if(_alt===1) {
-                    this.state = 118;
+                    this.state = 123;
                     this.tag();
-                    this.state = 119;
+                    this.state = 124;
                     this.match(mappingParser.T__7); 
                 }
-                this.state = 125;
+                this.state = 130;
                 this._errHandler.sync(this);
-                _alt = this._interp.adaptivePredict(this._input,3,this._ctx);
+                _alt = this._interp.adaptivePredict(this._input,4,this._ctx);
             }
 
-            this.state = 126;
+            this.state = 131;
             this.tag();
         }
 
-        this.state = 129;
+        this.state = 134;
         this.match(mappingParser.T__8);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -1104,7 +1117,7 @@ mappingParser.prototype.tag = function() {
     this.enterRule(localctx, 16, mappingParser.RULE_tag);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 131;
+        this.state = 136;
         this.match(mappingParser.ID);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -1174,17 +1187,17 @@ mappingParser.prototype.source_entity = function() {
     var localctx = new Source_entityContext(this, this._ctx, this.state);
     this.enterRule(localctx, 18, mappingParser.RULE_source_entity);
     try {
-        this.state = 135;
+        this.state = 140;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
         case mappingParser.T__12:
             this.enterOuterAlt(localctx, 1);
-            this.state = 133;
+            this.state = 138;
             this.release_id();
             break;
         case mappingParser.T__15:
             this.enterOuterAlt(localctx, 2);
-            this.state = 134;
+            this.state = 139;
             this.mock_id();
             break;
         default:
@@ -1255,8 +1268,142 @@ mappingParser.prototype.replaced = function() {
     this.enterRule(localctx, 20, mappingParser.RULE_replaced);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 137;
+        this.state = 142;
         this.release_id();
+    } catch (re) {
+    	if(re instanceof antlr4.error.RecognitionException) {
+	        localctx.exception = re;
+	        this._errHandler.reportError(this, re);
+	        this._errHandler.recover(this, re);
+	    } else {
+	    	throw re;
+	    }
+    } finally {
+        this.exitRule();
+    }
+    return localctx;
+};
+
+function ReplacerContext(parser, parent, invokingState) {
+	if(parent===undefined) {
+	    parent = null;
+	}
+	if(invokingState===undefined || invokingState===null) {
+		invokingState = -1;
+	}
+	antlr4.ParserRuleContext.call(this, parent, invokingState);
+    this.parser = parser;
+    this.ruleIndex = mappingParser.RULE_replacer;
+    return this;
+}
+
+ReplacerContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+ReplacerContext.prototype.constructor = ReplacerContext;
+
+ReplacerContext.prototype.source_entity = function() {
+    return this.getTypedRuleContext(Source_entityContext,0);
+};
+
+ReplacerContext.prototype.enterRule = function(listener) {
+    if(listener instanceof mappingListener ) {
+        listener.enterReplacer(this);
+	}
+};
+
+ReplacerContext.prototype.exitRule = function(listener) {
+    if(listener instanceof mappingListener ) {
+        listener.exitReplacer(this);
+	}
+};
+
+ReplacerContext.prototype.accept = function(visitor) {
+    if ( visitor instanceof mappingVisitor ) {
+        return visitor.visitReplacer(this);
+    } else {
+        return visitor.visitChildren(this);
+    }
+};
+
+
+
+
+mappingParser.ReplacerContext = ReplacerContext;
+
+mappingParser.prototype.replacer = function() {
+
+    var localctx = new ReplacerContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 22, mappingParser.RULE_replacer);
+    try {
+        this.enterOuterAlt(localctx, 1);
+        this.state = 144;
+        this.source_entity();
+    } catch (re) {
+    	if(re instanceof antlr4.error.RecognitionException) {
+	        localctx.exception = re;
+	        this._errHandler.reportError(this, re);
+	        this._errHandler.recover(this, re);
+	    } else {
+	    	throw re;
+	    }
+    } finally {
+        this.exitRule();
+    }
+    return localctx;
+};
+
+function The_candidateContext(parser, parent, invokingState) {
+	if(parent===undefined) {
+	    parent = null;
+	}
+	if(invokingState===undefined || invokingState===null) {
+		invokingState = -1;
+	}
+	antlr4.ParserRuleContext.call(this, parent, invokingState);
+    this.parser = parser;
+    this.ruleIndex = mappingParser.RULE_the_candidate;
+    return this;
+}
+
+The_candidateContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+The_candidateContext.prototype.constructor = The_candidateContext;
+
+The_candidateContext.prototype.source_entity = function() {
+    return this.getTypedRuleContext(Source_entityContext,0);
+};
+
+The_candidateContext.prototype.enterRule = function(listener) {
+    if(listener instanceof mappingListener ) {
+        listener.enterThe_candidate(this);
+	}
+};
+
+The_candidateContext.prototype.exitRule = function(listener) {
+    if(listener instanceof mappingListener ) {
+        listener.exitThe_candidate(this);
+	}
+};
+
+The_candidateContext.prototype.accept = function(visitor) {
+    if ( visitor instanceof mappingVisitor ) {
+        return visitor.visitThe_candidate(this);
+    } else {
+        return visitor.visitChildren(this);
+    }
+};
+
+
+
+
+mappingParser.The_candidateContext = The_candidateContext;
+
+mappingParser.prototype.the_candidate = function() {
+
+    var localctx = new The_candidateContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 24, mappingParser.RULE_the_candidate);
+    try {
+        this.enterOuterAlt(localctx, 1);
+        this.state = 146;
+        this.source_entity();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1323,14 +1470,14 @@ mappingParser.Scope_specificationContext = Scope_specificationContext;
 mappingParser.prototype.scope_specification = function() {
 
     var localctx = new Scope_specificationContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 22, mappingParser.RULE_scope_specification);
+    this.enterRule(localctx, 26, mappingParser.RULE_scope_specification);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 139;
+        this.state = 148;
         this.match(mappingParser.SCOPE);
-        this.state = 140;
+        this.state = 149;
         this.match(mappingParser.T__9);
-        this.state = 141;
+        this.state = 150;
         this.scope_set();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -1401,38 +1548,38 @@ mappingParser.Scope_setContext = Scope_setContext;
 mappingParser.prototype.scope_set = function() {
 
     var localctx = new Scope_setContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 24, mappingParser.RULE_scope_set);
+    this.enterRule(localctx, 28, mappingParser.RULE_scope_set);
     try {
-        this.state = 156;
+        this.state = 165;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
         case mappingParser.ID:
             this.enterOuterAlt(localctx, 1);
-            this.state = 143;
+            this.state = 152;
             this.scope_set_element();
             break;
         case mappingParser.T__10:
             this.enterOuterAlt(localctx, 2);
-            this.state = 144;
+            this.state = 153;
             this.match(mappingParser.T__10);
-            this.state = 150;
+            this.state = 159;
             this._errHandler.sync(this);
-            var _alt = this._interp.adaptivePredict(this._input,6,this._ctx)
+            var _alt = this._interp.adaptivePredict(this._input,7,this._ctx)
             while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
                 if(_alt===1) {
-                    this.state = 145;
+                    this.state = 154;
                     this.scope_set_element();
-                    this.state = 146;
+                    this.state = 155;
                     this.match(mappingParser.T__7); 
                 }
-                this.state = 152;
+                this.state = 161;
                 this._errHandler.sync(this);
-                _alt = this._interp.adaptivePredict(this._input,6,this._ctx);
+                _alt = this._interp.adaptivePredict(this._input,7,this._ctx);
             }
 
-            this.state = 153;
+            this.state = 162;
             this.scope_set_element();
-            this.state = 154;
+            this.state = 163;
             this.match(mappingParser.T__8);
             break;
         default:
@@ -1511,34 +1658,34 @@ mappingParser.Scope_set_elementContext = Scope_set_elementContext;
 mappingParser.prototype.scope_set_element = function() {
 
     var localctx = new Scope_set_elementContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 26, mappingParser.RULE_scope_set_element);
+    this.enterRule(localctx, 30, mappingParser.RULE_scope_set_element);
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 158;
+        this.state = 167;
         this.presentation_name();
-        this.state = 169;
+        this.state = 178;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
         if(_la===mappingParser.T__11) {
-            this.state = 159;
+            this.state = 168;
             this.match(mappingParser.T__11);
-            this.state = 165;
+            this.state = 174;
             this._errHandler.sync(this);
-            var _alt = this._interp.adaptivePredict(this._input,8,this._ctx)
+            var _alt = this._interp.adaptivePredict(this._input,9,this._ctx)
             while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
                 if(_alt===1) {
-                    this.state = 160;
+                    this.state = 169;
                     this.source_entity();
-                    this.state = 161;
+                    this.state = 170;
                     this.match(mappingParser.T__11); 
                 }
-                this.state = 167;
+                this.state = 176;
                 this._errHandler.sync(this);
-                _alt = this._interp.adaptivePredict(this._input,8,this._ctx);
+                _alt = this._interp.adaptivePredict(this._input,9,this._ctx);
             }
 
-            this.state = 168;
+            this.state = 177;
             this.source_entity();
         }
 
@@ -1612,25 +1759,25 @@ mappingParser.Release_idContext = Release_idContext;
 mappingParser.prototype.release_id = function() {
 
     var localctx = new Release_idContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 28, mappingParser.RULE_release_id);
+    this.enterRule(localctx, 32, mappingParser.RULE_release_id);
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 171;
+        this.state = 180;
         this.match(mappingParser.T__12);
-        this.state = 172;
+        this.state = 181;
         this.user_name();
-        this.state = 173;
+        this.state = 182;
         this.match(mappingParser.T__13);
-        this.state = 174;
+        this.state = 183;
         this.release_name();
-        this.state = 177;
+        this.state = 186;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
         if(_la===mappingParser.T__14) {
-            this.state = 175;
+            this.state = 184;
             this.match(mappingParser.T__14);
-            this.state = 176;
+            this.state = 185;
             this.valid_semver();
         }
 
@@ -1700,16 +1847,16 @@ mappingParser.Mock_idContext = Mock_idContext;
 mappingParser.prototype.mock_id = function() {
 
     var localctx = new Mock_idContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 30, mappingParser.RULE_mock_id);
+    this.enterRule(localctx, 34, mappingParser.RULE_mock_id);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 179;
+        this.state = 188;
         this.match(mappingParser.T__15);
-        this.state = 180;
+        this.state = 189;
         this.bucket_name();
-        this.state = 181;
+        this.state = 190;
         this.match(mappingParser.T__13);
-        this.state = 182;
+        this.state = 191;
         this.mock_name();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -1773,10 +1920,10 @@ mappingParser.Presentation_nameContext = Presentation_nameContext;
 mappingParser.prototype.presentation_name = function() {
 
     var localctx = new Presentation_nameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 32, mappingParser.RULE_presentation_name);
+    this.enterRule(localctx, 36, mappingParser.RULE_presentation_name);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 184;
+        this.state = 193;
         this.match(mappingParser.ID);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -1840,10 +1987,10 @@ mappingParser.Release_nameContext = Release_nameContext;
 mappingParser.prototype.release_name = function() {
 
     var localctx = new Release_nameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 34, mappingParser.RULE_release_name);
+    this.enterRule(localctx, 38, mappingParser.RULE_release_name);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 186;
+        this.state = 195;
         this.match(mappingParser.ID);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -1907,10 +2054,10 @@ mappingParser.Mock_nameContext = Mock_nameContext;
 mappingParser.prototype.mock_name = function() {
 
     var localctx = new Mock_nameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 36, mappingParser.RULE_mock_name);
+    this.enterRule(localctx, 40, mappingParser.RULE_mock_name);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 188;
+        this.state = 197;
         this.match(mappingParser.ID);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -1974,10 +2121,10 @@ mappingParser.Bucket_nameContext = Bucket_nameContext;
 mappingParser.prototype.bucket_name = function() {
 
     var localctx = new Bucket_nameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 38, mappingParser.RULE_bucket_name);
+    this.enterRule(localctx, 42, mappingParser.RULE_bucket_name);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 190;
+        this.state = 199;
         this.match(mappingParser.ID);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2041,10 +2188,10 @@ mappingParser.User_nameContext = User_nameContext;
 mappingParser.prototype.user_name = function() {
 
     var localctx = new User_nameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 40, mappingParser.RULE_user_name);
+    this.enterRule(localctx, 44, mappingParser.RULE_user_name);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 192;
+        this.state = 201;
         this.match(mappingParser.ID);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2116,49 +2263,49 @@ mappingParser.Valid_semverContext = Valid_semverContext;
 mappingParser.prototype.valid_semver = function() {
 
     var localctx = new Valid_semverContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 42, mappingParser.RULE_valid_semver);
+    this.enterRule(localctx, 46, mappingParser.RULE_valid_semver);
     try {
-        this.state = 209;
+        this.state = 218;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,11,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,12,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 194;
+            this.state = 203;
             this.version_core();
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 195;
+            this.state = 204;
             this.version_core();
-            this.state = 196;
+            this.state = 205;
             this.match(mappingParser.T__3);
-            this.state = 197;
+            this.state = 206;
             this.preRelease();
             break;
 
         case 3:
             this.enterOuterAlt(localctx, 3);
-            this.state = 199;
+            this.state = 208;
             this.version_core();
-            this.state = 200;
+            this.state = 209;
             this.match(mappingParser.T__0);
-            this.state = 201;
+            this.state = 210;
             this.build();
             break;
 
         case 4:
             this.enterOuterAlt(localctx, 4);
-            this.state = 203;
+            this.state = 212;
             this.version_core();
-            this.state = 204;
+            this.state = 213;
             this.match(mappingParser.T__3);
-            this.state = 205;
+            this.state = 214;
             this.preRelease();
-            this.state = 206;
+            this.state = 215;
             this.match(mappingParser.T__0);
-            this.state = 207;
+            this.state = 216;
             this.build();
             break;
 
@@ -2233,18 +2380,18 @@ mappingParser.Version_coreContext = Version_coreContext;
 mappingParser.prototype.version_core = function() {
 
     var localctx = new Version_coreContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 44, mappingParser.RULE_version_core);
+    this.enterRule(localctx, 48, mappingParser.RULE_version_core);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 211;
+        this.state = 220;
         this.major();
-        this.state = 212;
+        this.state = 221;
         this.match(mappingParser.T__16);
-        this.state = 213;
+        this.state = 222;
         this.minor();
-        this.state = 214;
+        this.state = 223;
         this.match(mappingParser.T__16);
-        this.state = 215;
+        this.state = 224;
         this.patch();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2308,10 +2455,10 @@ mappingParser.MajorContext = MajorContext;
 mappingParser.prototype.major = function() {
 
     var localctx = new MajorContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 46, mappingParser.RULE_major);
+    this.enterRule(localctx, 50, mappingParser.RULE_major);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 217;
+        this.state = 226;
         this.numeric_identifier();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2375,10 +2522,10 @@ mappingParser.MinorContext = MinorContext;
 mappingParser.prototype.minor = function() {
 
     var localctx = new MinorContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 48, mappingParser.RULE_minor);
+    this.enterRule(localctx, 52, mappingParser.RULE_minor);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 219;
+        this.state = 228;
         this.numeric_identifier();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2442,10 +2589,10 @@ mappingParser.PatchContext = PatchContext;
 mappingParser.prototype.patch = function() {
 
     var localctx = new PatchContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 50, mappingParser.RULE_patch);
+    this.enterRule(localctx, 54, mappingParser.RULE_patch);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 221;
+        this.state = 230;
         this.numeric_identifier();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2509,10 +2656,10 @@ mappingParser.PreReleaseContext = PreReleaseContext;
 mappingParser.prototype.preRelease = function() {
 
     var localctx = new PreReleaseContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 52, mappingParser.RULE_preRelease);
+    this.enterRule(localctx, 56, mappingParser.RULE_preRelease);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 223;
+        this.state = 232;
         this.dotSeparated_preRelease_identifiers();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2580,25 +2727,25 @@ mappingParser.DotSeparated_preRelease_identifiersContext = DotSeparated_preRelea
 mappingParser.prototype.dotSeparated_preRelease_identifiers = function() {
 
     var localctx = new DotSeparated_preRelease_identifiersContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 54, mappingParser.RULE_dotSeparated_preRelease_identifiers);
+    this.enterRule(localctx, 58, mappingParser.RULE_dotSeparated_preRelease_identifiers);
     try {
-        this.state = 230;
+        this.state = 239;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,12,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,13,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 225;
+            this.state = 234;
             this.preRelease_identifier();
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 226;
+            this.state = 235;
             this.preRelease_identifier();
-            this.state = 227;
+            this.state = 236;
             this.match(mappingParser.T__16);
-            this.state = 228;
+            this.state = 237;
             this.dotSeparated_preRelease_identifiers();
             break;
 
@@ -2665,10 +2812,10 @@ mappingParser.BuildContext = BuildContext;
 mappingParser.prototype.build = function() {
 
     var localctx = new BuildContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 56, mappingParser.RULE_build);
+    this.enterRule(localctx, 60, mappingParser.RULE_build);
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 232;
+        this.state = 241;
         this.dotSeparated_build_identifiers();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2736,25 +2883,25 @@ mappingParser.DotSeparated_build_identifiersContext = DotSeparated_build_identif
 mappingParser.prototype.dotSeparated_build_identifiers = function() {
 
     var localctx = new DotSeparated_build_identifiersContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 58, mappingParser.RULE_dotSeparated_build_identifiers);
+    this.enterRule(localctx, 62, mappingParser.RULE_dotSeparated_build_identifiers);
     try {
-        this.state = 239;
+        this.state = 248;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,13,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,14,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 234;
+            this.state = 243;
             this.build_identifier();
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 235;
+            this.state = 244;
             this.build_identifier();
-            this.state = 236;
+            this.state = 245;
             this.match(mappingParser.T__16);
-            this.state = 237;
+            this.state = 246;
             this.dotSeparated_build_identifiers();
             break;
 
@@ -2825,21 +2972,21 @@ mappingParser.PreRelease_identifierContext = PreRelease_identifierContext;
 mappingParser.prototype.preRelease_identifier = function() {
 
     var localctx = new PreRelease_identifierContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 60, mappingParser.RULE_preRelease_identifier);
+    this.enterRule(localctx, 64, mappingParser.RULE_preRelease_identifier);
     try {
-        this.state = 243;
+        this.state = 252;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,14,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,15,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 241;
+            this.state = 250;
             this.alphanumeric_identifier();
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 242;
+            this.state = 251;
             this.numeric_identifier();
             break;
 
@@ -2910,21 +3057,21 @@ mappingParser.Build_identifierContext = Build_identifierContext;
 mappingParser.prototype.build_identifier = function() {
 
     var localctx = new Build_identifierContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 62, mappingParser.RULE_build_identifier);
+    this.enterRule(localctx, 66, mappingParser.RULE_build_identifier);
     try {
-        this.state = 247;
+        this.state = 256;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,15,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,16,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 245;
+            this.state = 254;
             this.alphanumeric_identifier();
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 246;
+            this.state = 255;
             this.digits();
             break;
 
@@ -3002,41 +3149,41 @@ mappingParser.Alphanumeric_identifierContext = Alphanumeric_identifierContext;
 mappingParser.prototype.alphanumeric_identifier = function() {
 
     var localctx = new Alphanumeric_identifierContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 64, mappingParser.RULE_alphanumeric_identifier);
+    this.enterRule(localctx, 68, mappingParser.RULE_alphanumeric_identifier);
     try {
-        this.state = 260;
+        this.state = 269;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,16,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,17,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 249;
+            this.state = 258;
             this.nonDigit();
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 250;
+            this.state = 259;
             this.nonDigit();
-            this.state = 251;
+            this.state = 260;
             this.identifier_characters();
             break;
 
         case 3:
             this.enterOuterAlt(localctx, 3);
-            this.state = 253;
+            this.state = 262;
             this.identifier_characters();
-            this.state = 254;
+            this.state = 263;
             this.nonDigit();
             break;
 
         case 4:
             this.enterOuterAlt(localctx, 4);
-            this.state = 256;
+            this.state = 265;
             this.identifier_characters();
-            this.state = 257;
+            this.state = 266;
             this.nonDigit();
-            this.state = 258;
+            this.state = 267;
             this.identifier_characters();
             break;
 
@@ -3107,29 +3254,29 @@ mappingParser.Numeric_identifierContext = Numeric_identifierContext;
 mappingParser.prototype.numeric_identifier = function() {
 
     var localctx = new Numeric_identifierContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 66, mappingParser.RULE_numeric_identifier);
+    this.enterRule(localctx, 70, mappingParser.RULE_numeric_identifier);
     try {
-        this.state = 267;
+        this.state = 276;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,17,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,18,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 262;
+            this.state = 271;
             this.match(mappingParser.T__17);
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 263;
+            this.state = 272;
             this.positive_digit();
             break;
 
         case 3:
             this.enterOuterAlt(localctx, 3);
-            this.state = 264;
+            this.state = 273;
             this.positive_digit();
-            this.state = 265;
+            this.state = 274;
             this.digits();
             break;
 
@@ -3200,23 +3347,23 @@ mappingParser.Identifier_charactersContext = Identifier_charactersContext;
 mappingParser.prototype.identifier_characters = function() {
 
     var localctx = new Identifier_charactersContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 68, mappingParser.RULE_identifier_characters);
+    this.enterRule(localctx, 72, mappingParser.RULE_identifier_characters);
     try {
-        this.state = 273;
+        this.state = 282;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,18,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,19,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 269;
+            this.state = 278;
             this.identifier_character();
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 270;
+            this.state = 279;
             this.identifier_character();
-            this.state = 271;
+            this.state = 280;
             this.identifier_characters();
             break;
 
@@ -3287,9 +3434,9 @@ mappingParser.Identifier_characterContext = Identifier_characterContext;
 mappingParser.prototype.identifier_character = function() {
 
     var localctx = new Identifier_characterContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 70, mappingParser.RULE_identifier_character);
+    this.enterRule(localctx, 74, mappingParser.RULE_identifier_character);
     try {
-        this.state = 277;
+        this.state = 286;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
         case mappingParser.T__17:
@@ -3303,7 +3450,7 @@ mappingParser.prototype.identifier_character = function() {
         case mappingParser.T__25:
         case mappingParser.T__26:
             this.enterOuterAlt(localctx, 1);
-            this.state = 275;
+            this.state = 284;
             this.digit();
             break;
         case mappingParser.T__3:
@@ -3360,7 +3507,7 @@ mappingParser.prototype.identifier_character = function() {
         case mappingParser.T__77:
         case mappingParser.T__78:
             this.enterOuterAlt(localctx, 2);
-            this.state = 276;
+            this.state = 285;
             this.nonDigit();
             break;
         default:
@@ -3428,9 +3575,9 @@ mappingParser.NonDigitContext = NonDigitContext;
 mappingParser.prototype.nonDigit = function() {
 
     var localctx = new NonDigitContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 72, mappingParser.RULE_nonDigit);
+    this.enterRule(localctx, 76, mappingParser.RULE_nonDigit);
     try {
-        this.state = 281;
+        this.state = 290;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
         case mappingParser.T__27:
@@ -3486,12 +3633,12 @@ mappingParser.prototype.nonDigit = function() {
         case mappingParser.T__77:
         case mappingParser.T__78:
             this.enterOuterAlt(localctx, 1);
-            this.state = 279;
+            this.state = 288;
             this.letter();
             break;
         case mappingParser.T__3:
             this.enterOuterAlt(localctx, 2);
-            this.state = 280;
+            this.state = 289;
             this.match(mappingParser.T__3);
             break;
         default:
@@ -3563,23 +3710,23 @@ mappingParser.DigitsContext = DigitsContext;
 mappingParser.prototype.digits = function() {
 
     var localctx = new DigitsContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 74, mappingParser.RULE_digits);
+    this.enterRule(localctx, 78, mappingParser.RULE_digits);
     try {
-        this.state = 287;
+        this.state = 296;
         this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,21,this._ctx);
+        var la_ = this._interp.adaptivePredict(this._input,22,this._ctx);
         switch(la_) {
         case 1:
             this.enterOuterAlt(localctx, 1);
-            this.state = 283;
+            this.state = 292;
             this.digit();
             break;
 
         case 2:
             this.enterOuterAlt(localctx, 2);
-            this.state = 284;
+            this.state = 293;
             this.digit();
-            this.state = 285;
+            this.state = 294;
             this.digits();
             break;
 
@@ -3646,14 +3793,14 @@ mappingParser.DigitContext = DigitContext;
 mappingParser.prototype.digit = function() {
 
     var localctx = new DigitContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 76, mappingParser.RULE_digit);
+    this.enterRule(localctx, 80, mappingParser.RULE_digit);
     try {
-        this.state = 291;
+        this.state = 300;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
         case mappingParser.T__17:
             this.enterOuterAlt(localctx, 1);
-            this.state = 289;
+            this.state = 298;
             this.match(mappingParser.T__17);
             break;
         case mappingParser.T__18:
@@ -3666,7 +3813,7 @@ mappingParser.prototype.digit = function() {
         case mappingParser.T__25:
         case mappingParser.T__26:
             this.enterOuterAlt(localctx, 2);
-            this.state = 290;
+            this.state = 299;
             this.positive_digit();
             break;
         default:
@@ -3731,11 +3878,11 @@ mappingParser.Positive_digitContext = Positive_digitContext;
 mappingParser.prototype.positive_digit = function() {
 
     var localctx = new Positive_digitContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 78, mappingParser.RULE_positive_digit);
+    this.enterRule(localctx, 82, mappingParser.RULE_positive_digit);
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 293;
+        this.state = 302;
         _la = this._input.LA(1);
         if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << mappingParser.T__18) | (1 << mappingParser.T__19) | (1 << mappingParser.T__20) | (1 << mappingParser.T__21) | (1 << mappingParser.T__22) | (1 << mappingParser.T__23) | (1 << mappingParser.T__24) | (1 << mappingParser.T__25) | (1 << mappingParser.T__26))) !== 0))) {
         this._errHandler.recoverInline(this);
@@ -3803,11 +3950,11 @@ mappingParser.LetterContext = LetterContext;
 mappingParser.prototype.letter = function() {
 
     var localctx = new LetterContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 80, mappingParser.RULE_letter);
+    this.enterRule(localctx, 84, mappingParser.RULE_letter);
     var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
-        this.state = 295;
+        this.state = 304;
         _la = this._input.LA(1);
         if(!(((((_la - 28)) & ~0x1f) == 0 && ((1 << (_la - 28)) & ((1 << (mappingParser.T__27 - 28)) | (1 << (mappingParser.T__28 - 28)) | (1 << (mappingParser.T__29 - 28)) | (1 << (mappingParser.T__30 - 28)) | (1 << (mappingParser.T__31 - 28)) | (1 << (mappingParser.T__32 - 28)) | (1 << (mappingParser.T__33 - 28)) | (1 << (mappingParser.T__34 - 28)) | (1 << (mappingParser.T__35 - 28)) | (1 << (mappingParser.T__36 - 28)) | (1 << (mappingParser.T__37 - 28)) | (1 << (mappingParser.T__38 - 28)) | (1 << (mappingParser.T__39 - 28)) | (1 << (mappingParser.T__40 - 28)) | (1 << (mappingParser.T__41 - 28)) | (1 << (mappingParser.T__42 - 28)) | (1 << (mappingParser.T__43 - 28)) | (1 << (mappingParser.T__44 - 28)) | (1 << (mappingParser.T__45 - 28)) | (1 << (mappingParser.T__46 - 28)) | (1 << (mappingParser.T__47 - 28)) | (1 << (mappingParser.T__48 - 28)) | (1 << (mappingParser.T__49 - 28)) | (1 << (mappingParser.T__50 - 28)) | (1 << (mappingParser.T__51 - 28)) | (1 << (mappingParser.T__52 - 28)) | (1 << (mappingParser.T__53 - 28)) | (1 << (mappingParser.T__54 - 28)) | (1 << (mappingParser.T__55 - 28)) | (1 << (mappingParser.T__56 - 28)) | (1 << (mappingParser.T__57 - 28)) | (1 << (mappingParser.T__58 - 28)))) !== 0) || ((((_la - 60)) & ~0x1f) == 0 && ((1 << (_la - 60)) & ((1 << (mappingParser.T__59 - 60)) | (1 << (mappingParser.T__60 - 60)) | (1 << (mappingParser.T__61 - 60)) | (1 << (mappingParser.T__62 - 60)) | (1 << (mappingParser.T__63 - 60)) | (1 << (mappingParser.T__64 - 60)) | (1 << (mappingParser.T__65 - 60)) | (1 << (mappingParser.T__66 - 60)) | (1 << (mappingParser.T__67 - 60)) | (1 << (mappingParser.T__68 - 60)) | (1 << (mappingParser.T__69 - 60)) | (1 << (mappingParser.T__70 - 60)) | (1 << (mappingParser.T__71 - 60)) | (1 << (mappingParser.T__72 - 60)) | (1 << (mappingParser.T__73 - 60)) | (1 << (mappingParser.T__74 - 60)) | (1 << (mappingParser.T__75 - 60)) | (1 << (mappingParser.T__76 - 60)) | (1 << (mappingParser.T__77 - 60)) | (1 << (mappingParser.T__78 - 60)))) !== 0))) {
         this._errHandler.recoverInline(this);

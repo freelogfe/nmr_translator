@@ -7,3 +7,5 @@ const mappingText = fs.readFileSync(filePath, 'utf-8');
 // console.log(mappingText);
 
 console.log(getAllRules(mappingText), '##########');
+
+console.log('');

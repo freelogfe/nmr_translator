@@ -16,11 +16,11 @@ mapping_rule
 
 // 添加规则
 add_presentation_rule
-  : '+' presentation_name '=>' source_entity set_tags
+  : '+' presentation_name '=>' the_candidate set_tags?
   ;
 
 replace_presentation_rule
-  : '*' replaced '=>' source_entity scope_specification?
+  : '*' replaced '=>' replacer scope_specification?
   ;
 
 // 下线规则
@@ -60,6 +60,15 @@ source_entity
 replaced
   : release_id
   ;
+
+replacer
+  : source_entity
+  ;
+
+the_candidate
+  : source_entity
+  ;
+
 
 //
 scope_specification

@@ -78,6 +78,18 @@ mappingVisitor.prototype.visitReplaced = function(ctx) {
 };
 
 
+// Visit a parse tree produced by mappingParser#replacer.
+mappingVisitor.prototype.visitReplacer = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by mappingParser#the_candidate.
+mappingVisitor.prototype.visitThe_candidate = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by mappingParser#scope_specification.
 mappingVisitor.prototype.visitScope_specification = function(ctx) {
   return this.visitChildren(ctx);

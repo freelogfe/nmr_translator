@@ -110,6 +110,24 @@ mappingListener.prototype.exitReplaced = function(ctx) {
 };
 
 
+// Enter a parse tree produced by mappingParser#replacer.
+mappingListener.prototype.enterReplacer = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#replacer.
+mappingListener.prototype.exitReplacer = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#the_candidate.
+mappingListener.prototype.enterThe_candidate = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#the_candidate.
+mappingListener.prototype.exitThe_candidate = function(ctx) {
+};
+
+
 // Enter a parse tree produced by mappingParser#scope_specification.
 mappingListener.prototype.enterScope_specification = function(ctx) {
 };
