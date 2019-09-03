@@ -29,39 +29,66 @@ mappingListener.prototype.exitMapping_rule = function(ctx) {
 };
 
 
-// Enter a parse tree produced by mappingParser#hide_existing_presentation_rule.
-mappingListener.prototype.enterHide_existing_presentation_rule = function(ctx) {
+// Enter a parse tree produced by mappingParser#add_presentation_rule.
+mappingListener.prototype.enterAdd_presentation_rule = function(ctx) {
 };
 
-// Exit a parse tree produced by mappingParser#hide_existing_presentation_rule.
-mappingListener.prototype.exitHide_existing_presentation_rule = function(ctx) {
-};
-
-
-// Enter a parse tree produced by mappingParser#mock_presentation_rule.
-mappingListener.prototype.enterMock_presentation_rule = function(ctx) {
-};
-
-// Exit a parse tree produced by mappingParser#mock_presentation_rule.
-mappingListener.prototype.exitMock_presentation_rule = function(ctx) {
+// Exit a parse tree produced by mappingParser#add_presentation_rule.
+mappingListener.prototype.exitAdd_presentation_rule = function(ctx) {
 };
 
 
-// Enter a parse tree produced by mappingParser#remapping_rule.
-mappingListener.prototype.enterRemapping_rule = function(ctx) {
+// Enter a parse tree produced by mappingParser#replace_presentation_rule.
+mappingListener.prototype.enterReplace_presentation_rule = function(ctx) {
 };
 
-// Exit a parse tree produced by mappingParser#remapping_rule.
-mappingListener.prototype.exitRemapping_rule = function(ctx) {
+// Exit a parse tree produced by mappingParser#replace_presentation_rule.
+mappingListener.prototype.exitReplace_presentation_rule = function(ctx) {
 };
 
 
-// Enter a parse tree produced by mappingParser#replaced.
-mappingListener.prototype.enterReplaced = function(ctx) {
+// Enter a parse tree produced by mappingParser#downline_presentation_rule.
+mappingListener.prototype.enterDownline_presentation_rule = function(ctx) {
 };
 
-// Exit a parse tree produced by mappingParser#replaced.
-mappingListener.prototype.exitReplaced = function(ctx) {
+// Exit a parse tree produced by mappingParser#downline_presentation_rule.
+mappingListener.prototype.exitDownline_presentation_rule = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#online_presentation_rule.
+mappingListener.prototype.enterOnline_presentation_rule = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#online_presentation_rule.
+mappingListener.prototype.exitOnline_presentation_rule = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#set_tags_rule.
+mappingListener.prototype.enterSet_tags_rule = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#set_tags_rule.
+mappingListener.prototype.exitSet_tags_rule = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#set_tags.
+mappingListener.prototype.enterSet_tags = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#set_tags.
+mappingListener.prototype.exitSet_tags = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#tag.
+mappingListener.prototype.enterTag = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#tag.
+mappingListener.prototype.exitTag = function(ctx) {
 };
 
 
@@ -71,6 +98,15 @@ mappingListener.prototype.enterSource_entity = function(ctx) {
 
 // Exit a parse tree produced by mappingParser#source_entity.
 mappingListener.prototype.exitSource_entity = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#replaced.
+mappingListener.prototype.enterReplaced = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#replaced.
+mappingListener.prototype.exitReplaced = function(ctx) {
 };
 
 
@@ -98,15 +134,6 @@ mappingListener.prototype.enterScope_set_element = function(ctx) {
 
 // Exit a parse tree produced by mappingParser#scope_set_element.
 mappingListener.prototype.exitScope_set_element = function(ctx) {
-};
-
-
-// Enter a parse tree produced by mappingParser#resource_id.
-mappingListener.prototype.enterResource_id = function(ctx) {
-};
-
-// Exit a parse tree produced by mappingParser#resource_id.
-mappingListener.prototype.exitResource_id = function(ctx) {
 };
 
 
@@ -170,6 +197,186 @@ mappingListener.prototype.enterUser_name = function(ctx) {
 
 // Exit a parse tree produced by mappingParser#user_name.
 mappingListener.prototype.exitUser_name = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#valid_semver.
+mappingListener.prototype.enterValid_semver = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#valid_semver.
+mappingListener.prototype.exitValid_semver = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#version_core.
+mappingListener.prototype.enterVersion_core = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#version_core.
+mappingListener.prototype.exitVersion_core = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#major.
+mappingListener.prototype.enterMajor = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#major.
+mappingListener.prototype.exitMajor = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#minor.
+mappingListener.prototype.enterMinor = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#minor.
+mappingListener.prototype.exitMinor = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#patch.
+mappingListener.prototype.enterPatch = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#patch.
+mappingListener.prototype.exitPatch = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#preRelease.
+mappingListener.prototype.enterPreRelease = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#preRelease.
+mappingListener.prototype.exitPreRelease = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#dotSeparated_preRelease_identifiers.
+mappingListener.prototype.enterDotSeparated_preRelease_identifiers = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#dotSeparated_preRelease_identifiers.
+mappingListener.prototype.exitDotSeparated_preRelease_identifiers = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#build.
+mappingListener.prototype.enterBuild = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#build.
+mappingListener.prototype.exitBuild = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#dotSeparated_build_identifiers.
+mappingListener.prototype.enterDotSeparated_build_identifiers = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#dotSeparated_build_identifiers.
+mappingListener.prototype.exitDotSeparated_build_identifiers = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#preRelease_identifier.
+mappingListener.prototype.enterPreRelease_identifier = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#preRelease_identifier.
+mappingListener.prototype.exitPreRelease_identifier = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#build_identifier.
+mappingListener.prototype.enterBuild_identifier = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#build_identifier.
+mappingListener.prototype.exitBuild_identifier = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#alphanumeric_identifier.
+mappingListener.prototype.enterAlphanumeric_identifier = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#alphanumeric_identifier.
+mappingListener.prototype.exitAlphanumeric_identifier = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#numeric_identifier.
+mappingListener.prototype.enterNumeric_identifier = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#numeric_identifier.
+mappingListener.prototype.exitNumeric_identifier = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#identifier_characters.
+mappingListener.prototype.enterIdentifier_characters = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#identifier_characters.
+mappingListener.prototype.exitIdentifier_characters = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#identifier_character.
+mappingListener.prototype.enterIdentifier_character = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#identifier_character.
+mappingListener.prototype.exitIdentifier_character = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#nonDigit.
+mappingListener.prototype.enterNonDigit = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#nonDigit.
+mappingListener.prototype.exitNonDigit = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#digits.
+mappingListener.prototype.enterDigits = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#digits.
+mappingListener.prototype.exitDigits = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#digit.
+mappingListener.prototype.enterDigit = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#digit.
+mappingListener.prototype.exitDigit = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#positive_digit.
+mappingListener.prototype.enterPositive_digit = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#positive_digit.
+mappingListener.prototype.exitPositive_digit = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#letter.
+mappingListener.prototype.enterLetter = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#letter.
+mappingListener.prototype.exitLetter = function(ctx) {
 };
 
 

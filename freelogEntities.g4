@@ -1,5 +1,7 @@
 grammar freelogEntities;
 
+import semver;
+
 fragment DIGIT : [0-9] ;
 fragment ALPHABET : [a-zA-Z];
 fragment HEX_ALPHABET : [a-fA-F];
@@ -15,16 +17,16 @@ ID
   : ALPHABET (ALPHABET | INT | '_' | '-')*
   ;
 
-SHA_ID_4MIN
-  : SHA_DIGIT SHA_DIGIT SHA_DIGIT SHA_DIGIT SHA_DIGIT*
-  ;
+//SHA_ID_4MIN
+//  : SHA_DIGIT SHA_DIGIT SHA_DIGIT SHA_DIGIT SHA_DIGIT*
+//  ;
 
 WS  : [ \t\r\n]+ -> skip;
 
-resource_id : '@:' SHA_ID_4MIN;
+//resource_id : '@:' SHA_ID_4MIN;
 
 release_id
-  : '$:' user_name '/' release_name
+  : '$:' user_name '/' release_name ('@' valid_semver)?
   ;
 
 mock_id
