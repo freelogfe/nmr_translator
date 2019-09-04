@@ -5,7 +5,7 @@
 + new_presentation_name_1 => $:user_name_1/release_name_1 tag=[tag1,tag2,tag3]
 * $:user_name_1/release_name_1 => #:bucket2/mock2
 * $:user_name_1/release_name_1 => #:bucket2/mock2 scope = [existing_presentation_2,
-existing_presentation_3 -> $:user_name_2/release_name_2]
+existing_presentation_3 -> #:bucket1/mock1 -> $:user_name_2/release_name_2 -> $:user_name_3/release_name_3 -> $:user_name_4/release_name_4]
 - existing_presentation_1
 ^ existing_presentation_2
-[SET] new_presentation_name_1 tag=[tag1,tag2,ta3]
+& new_presentation_name_1 tag=[tag1,tag2,ta3]

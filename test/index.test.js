@@ -6,6 +6,7 @@ const filePath = path.join(__dirname, '../sample_mapping.fnm');
 const mappingText = fs.readFileSync(filePath, 'utf-8');
 // console.log(mappingText);
 
-console.log(getAllRules(mappingText), '##########');
+// console.log(getAllRules(mappingText), '##########');
 
+fs.writeFileSync(path.join(__dirname, 'rules.json'), JSON.stringify(getAllRules(mappingText)));
 console.log('');

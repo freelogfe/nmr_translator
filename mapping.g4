@@ -35,7 +35,7 @@ online_presentation_rule
 
 // 设置标签规则
 set_tags_rule
-  : '[SET]' presentation_name set_tags
+  : '&' presentation_name set_tags
   ;
 
 
