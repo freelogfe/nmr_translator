@@ -1,4 +1,4 @@
-+ new_presentation_name_1 => #:bucket1/mock1
++ new_presentation_name_1 => :bucket1/mock1
 + new_presentation_name_1 => #:bucket1/mock1 tag=[tag1,tag2,tag3]
 + new_presentation_name_1 => $:user_name_1/release_name_1@1.1.0 tag=[tag1,tag2,tag3]
 + new_presentation_name_1 => $:user_name_1/release_name_1
