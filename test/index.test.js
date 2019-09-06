@@ -11,5 +11,5 @@ if (err) {
     console.error(err, 'Error');
     return;
 }
-fs.writeFileSync(path.join(__dirname, 'rules.json'), JSON.stringify(getAllRules(mappingText)));
+fs.writeFileSync(path.join(__dirname, 'rules.json'), JSON.stringify(result));
 console.log('');
