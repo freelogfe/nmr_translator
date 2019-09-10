@@ -156,6 +156,12 @@ mappingVisitor.prototype.visitValid_semver = function(ctx) {
 };
 
 
+// Visit a parse tree produced by mappingParser#prefix.
+mappingVisitor.prototype.visitPrefix = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by mappingParser#version_core.
 mappingVisitor.prototype.visitVersion_core = function(ctx) {
   return this.visitChildren(ctx);

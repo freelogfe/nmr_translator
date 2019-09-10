@@ -4,14 +4,20 @@ grammar semver;
 //fragment ALPHABET : [a-zA-Z];
 
 valid_semver
-    : version_core
-    | version_core '-' preRelease
-    | version_core '+' build
-    | version_core '-' preRelease '+' build
+    : prefix? version_core
+    | prefix? version_core '-' preRelease
+    | prefix? version_core '+' build
+    | prefix? version_core '-' preRelease '+' build
+    ;
+
+prefix
+    : '^'
+    | '~'
     ;
 
 version_core
     : major '.' minor '.' patch
+    | major '.' minor '.' patch
     ;
 
 major

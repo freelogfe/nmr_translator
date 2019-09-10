@@ -227,6 +227,15 @@ mappingListener.prototype.exitValid_semver = function(ctx) {
 };
 
 
+// Enter a parse tree produced by mappingParser#prefix.
+mappingListener.prototype.enterPrefix = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#prefix.
+mappingListener.prototype.exitPrefix = function(ctx) {
+};
+
+
 // Enter a parse tree produced by mappingParser#version_core.
 mappingListener.prototype.enterVersion_core = function(ctx) {
 };
