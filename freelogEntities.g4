@@ -13,8 +13,13 @@ SCOPE
 
 INT:  DIGIT+;
 
+CHAR
+  : ALPHABET | INT | '_'
+  ;
+
 ID
-  : ALPHABET (ALPHABET | INT | '_' | '-')*
+  : CHAR (CHAR)*
+  | CHAR (CHAR | '-')* CHAR
   ;
 
 //SHA_ID_4MIN

@@ -7,7 +7,7 @@ var mappingVisitor = require('./mappingVisitor').mappingVisitor;
 var grammarFileName = "mapping.g4";
 
 var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0003V\u014d\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
+    "\u0003W\u014d\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
     "\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007\u0004",
     "\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f\u0004",
     "\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010\t\u0010\u0004",
@@ -100,7 +100,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0003\u0002\u0002\u0002\u0087\u0089\u0005\u0012\n\u0002\u0088\u0084",
     "\u0003\u0002\u0002\u0002\u0088\u0089\u0003\u0002\u0002\u0002\u0089\u008a",
     "\u0003\u0002\u0002\u0002\u008a\u008b\u0007\u000b\u0002\u0002\u008b\u0011",
-    "\u0003\u0002\u0002\u0002\u008c\u008d\u0007U\u0002\u0002\u008d\u0013",
+    "\u0003\u0002\u0002\u0002\u008c\u008d\u0007V\u0002\u0002\u008d\u0013",
     "\u0003\u0002\u0002\u0002\u008e\u0091\u0005\"\u0012\u0002\u008f\u0091",
     "\u0005$\u0013\u0002\u0090\u008e\u0003\u0002\u0002\u0002\u0090\u008f",
     "\u0003\u0002\u0002\u0002\u0091\u0015\u0003\u0002\u0002\u0002\u0092\u0093",
@@ -131,11 +131,11 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\u00be\u00bf\u0003\u0002\u0002\u0002\u00bf#\u0003\u0002\u0002",
     "\u0002\u00c0\u00c1\u0007\u0012\u0002\u0002\u00c1\u00c2\u0005,\u0017",
     "\u0002\u00c2\u00c3\u0007\u0010\u0002\u0002\u00c3\u00c4\u0005*\u0016",
-    "\u0002\u00c4%\u0003\u0002\u0002\u0002\u00c5\u00c6\u0007U\u0002\u0002",
-    "\u00c6\'\u0003\u0002\u0002\u0002\u00c7\u00c8\u0007U\u0002\u0002\u00c8",
-    ")\u0003\u0002\u0002\u0002\u00c9\u00ca\u0007U\u0002\u0002\u00ca+\u0003",
-    "\u0002\u0002\u0002\u00cb\u00cc\u0007U\u0002\u0002\u00cc-\u0003\u0002",
-    "\u0002\u0002\u00cd\u00ce\u0007U\u0002\u0002\u00ce/\u0003\u0002\u0002",
+    "\u0002\u00c4%\u0003\u0002\u0002\u0002\u00c5\u00c6\u0007V\u0002\u0002",
+    "\u00c6\'\u0003\u0002\u0002\u0002\u00c7\u00c8\u0007V\u0002\u0002\u00c8",
+    ")\u0003\u0002\u0002\u0002\u00c9\u00ca\u0007V\u0002\u0002\u00ca+\u0003",
+    "\u0002\u0002\u0002\u00cb\u00cc\u0007V\u0002\u0002\u00cc-\u0003\u0002",
+    "\u0002\u0002\u00cd\u00ce\u0007V\u0002\u0002\u00ce/\u0003\u0002\u0002",
     "\u0002\u00cf\u00d1\u00052\u001a\u0002\u00d0\u00cf\u0003\u0002\u0002",
     "\u0002\u00d0\u00d1\u0003\u0002\u0002\u0002\u00d1\u00d2\u0003\u0002\u0002",
     "\u0002\u00d2\u00eb\u00054\u001b\u0002\u00d3\u00d5\u00052\u001a\u0002",
@@ -236,7 +236,7 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, null,
                       null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
-                      "SCOPE", "INT", "ID", "WS" ];
+                      "SCOPE", "INT", "CHAR", "ID", "WS" ];
 
 var ruleNames =  [ "mapping_rules", "mapping_rule", "add_presentation_rule", 
                    "replace_presentation_rule", "downline_presentation_rule", 
@@ -353,8 +353,9 @@ mappingParser.T__78 = 79;
 mappingParser.T__79 = 80;
 mappingParser.SCOPE = 81;
 mappingParser.INT = 82;
-mappingParser.ID = 83;
-mappingParser.WS = 84;
+mappingParser.CHAR = 83;
+mappingParser.ID = 84;
+mappingParser.WS = 85;
 
 mappingParser.RULE_mapping_rules = 0;
 mappingParser.RULE_mapping_rule = 1;
