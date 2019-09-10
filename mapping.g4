@@ -42,11 +42,11 @@ set_tags_rule
 
 // 设置标签
 set_tags
-  : 'tag=[' ((tag ',')* tag)? ']'
+  : 'tags=[' ((tags ',')* tags)? ']'
   ;
 
-// TODO 单个标签
-tag
+// TODO 单个标签s
+tags
   : ID
   ;
 

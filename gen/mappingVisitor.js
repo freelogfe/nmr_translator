@@ -60,8 +60,8 @@ mappingVisitor.prototype.visitSet_tags = function(ctx) {
 };
 
 
-// Visit a parse tree produced by mappingParser#tag.
-mappingVisitor.prototype.visitTag = function(ctx) {
+// Visit a parse tree produced by mappingParser#tags.
+mappingVisitor.prototype.visitTags = function(ctx) {
   return this.visitChildren(ctx);
 };
 

@@ -83,12 +83,12 @@ mappingListener.prototype.exitSet_tags = function(ctx) {
 };
 
 
-// Enter a parse tree produced by mappingParser#tag.
-mappingListener.prototype.enterTag = function(ctx) {
+// Enter a parse tree produced by mappingParser#tags.
+mappingListener.prototype.enterTags = function(ctx) {
 };
 
-// Exit a parse tree produced by mappingParser#tag.
-mappingListener.prototype.exitTag = function(ctx) {
+// Exit a parse tree produced by mappingParser#tags.
+mappingListener.prototype.exitTags = function(ctx) {
 };
 
 

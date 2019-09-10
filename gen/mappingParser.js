@@ -215,7 +215,7 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 
 var sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ null, "'+'", "'=>'", "'*'", "'-'", "'^'", "'&'", "'tag=['", 
+var literalNames = [ null, "'+'", "'=>'", "'*'", "'-'", "'^'", "'&'", "'tags=['", 
                      "','", "']'", "'='", "'['", "'->'", "'$:'", "'/'", 
                      "'@'", "'#:'", "'~'", "'.'", "'0'", "'1'", "'2'", "'3'", 
                      "'4'", "'5'", "'6'", "'7'", "'8'", "'9'", "'A'", "'B'", 
@@ -241,7 +241,7 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, null,
 var ruleNames =  [ "mapping_rules", "mapping_rule", "add_presentation_rule", 
                    "replace_presentation_rule", "downline_presentation_rule", 
                    "online_presentation_rule", "set_tags_rule", "set_tags", 
-                   "tag", "source_entity", "replaced", "replacer", "the_candidate", 
+                   "tags", "source_entity", "replaced", "replacer", "the_candidate", 
                    "scope_specification", "scope_set", "scope_set_element", 
                    "release_id", "mock_id", "presentation_name", "release_name", 
                    "mock_name", "bucket_name", "user_name", "valid_semver", 
@@ -364,7 +364,7 @@ mappingParser.RULE_downline_presentation_rule = 4;
 mappingParser.RULE_online_presentation_rule = 5;
 mappingParser.RULE_set_tags_rule = 6;
 mappingParser.RULE_set_tags = 7;
-mappingParser.RULE_tag = 8;
+mappingParser.RULE_tags = 8;
 mappingParser.RULE_source_entity = 9;
 mappingParser.RULE_replaced = 10;
 mappingParser.RULE_replacer = 11;
@@ -1004,14 +1004,14 @@ function Set_tagsContext(parser, parent, invokingState) {
 Set_tagsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 Set_tagsContext.prototype.constructor = Set_tagsContext;
 
-Set_tagsContext.prototype.tag = function(i) {
+Set_tagsContext.prototype.tags = function(i) {
     if(i===undefined) {
         i = null;
     }
     if(i===null) {
-        return this.getTypedRuleContexts(TagContext);
+        return this.getTypedRuleContexts(TagsContext);
     } else {
-        return this.getTypedRuleContext(TagContext,i);
+        return this.getTypedRuleContext(TagsContext,i);
     }
 };
 
@@ -1059,7 +1059,7 @@ mappingParser.prototype.set_tags = function() {
             while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
                 if(_alt===1) {
                     this.state = 125;
-                    this.tag();
+                    this.tags();
                     this.state = 126;
                     this.match(mappingParser.T__7); 
                 }
@@ -1069,7 +1069,7 @@ mappingParser.prototype.set_tags = function() {
             }
 
             this.state = 133;
-            this.tag();
+            this.tags();
         }
 
         this.state = 136;
@@ -1088,7 +1088,7 @@ mappingParser.prototype.set_tags = function() {
     return localctx;
 };
 
-function TagContext(parser, parent, invokingState) {
+function TagsContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -1097,32 +1097,32 @@ function TagContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = mappingParser.RULE_tag;
+    this.ruleIndex = mappingParser.RULE_tags;
     return this;
 }
 
-TagContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-TagContext.prototype.constructor = TagContext;
+TagsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+TagsContext.prototype.constructor = TagsContext;
 
-TagContext.prototype.ID = function() {
+TagsContext.prototype.ID = function() {
     return this.getToken(mappingParser.ID, 0);
 };
 
-TagContext.prototype.enterRule = function(listener) {
+TagsContext.prototype.enterRule = function(listener) {
     if(listener instanceof mappingListener ) {
-        listener.enterTag(this);
+        listener.enterTags(this);
 	}
 };
 
-TagContext.prototype.exitRule = function(listener) {
+TagsContext.prototype.exitRule = function(listener) {
     if(listener instanceof mappingListener ) {
-        listener.exitTag(this);
+        listener.exitTags(this);
 	}
 };
 
-TagContext.prototype.accept = function(visitor) {
+TagsContext.prototype.accept = function(visitor) {
     if ( visitor instanceof mappingVisitor ) {
-        return visitor.visitTag(this);
+        return visitor.visitTags(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -1131,12 +1131,12 @@ TagContext.prototype.accept = function(visitor) {
 
 
 
-mappingParser.TagContext = TagContext;
+mappingParser.TagsContext = TagsContext;
 
-mappingParser.prototype.tag = function() {
+mappingParser.prototype.tags = function() {
 
-    var localctx = new TagContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 16, mappingParser.RULE_tag);
+    var localctx = new TagsContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 16, mappingParser.RULE_tags);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 138;
