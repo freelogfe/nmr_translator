@@ -150,6 +150,30 @@ mappingVisitor.prototype.visitUser_name = function(ctx) {
 };
 
 
+// Visit a parse tree produced by mappingParser#strike_char1234.
+mappingVisitor.prototype.visitStrike_char1234 = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by mappingParser#char1234.
+mappingVisitor.prototype.visitChar1234 = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by mappingParser#digit1234.
+mappingVisitor.prototype.visitDigit1234 = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by mappingParser#letter1234.
+mappingVisitor.prototype.visitLetter1234 = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by mappingParser#valid_semver.
 mappingVisitor.prototype.visitValid_semver = function(ctx) {
   return this.visitChildren(ctx);

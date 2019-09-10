@@ -218,6 +218,42 @@ mappingListener.prototype.exitUser_name = function(ctx) {
 };
 
 
+// Enter a parse tree produced by mappingParser#strike_char1234.
+mappingListener.prototype.enterStrike_char1234 = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#strike_char1234.
+mappingListener.prototype.exitStrike_char1234 = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#char1234.
+mappingListener.prototype.enterChar1234 = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#char1234.
+mappingListener.prototype.exitChar1234 = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#digit1234.
+mappingListener.prototype.enterDigit1234 = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#digit1234.
+mappingListener.prototype.exitDigit1234 = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#letter1234.
+mappingListener.prototype.enterLetter1234 = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#letter1234.
+mappingListener.prototype.exitLetter1234 = function(ctx) {
+};
+
+
 // Enter a parse tree produced by mappingParser#valid_semver.
 mappingListener.prototype.enterValid_semver = function(ctx) {
 };

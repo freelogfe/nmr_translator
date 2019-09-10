@@ -46,9 +46,35 @@ mock_name
   ;
 
 bucket_name
-  : ID
+  : char1234 (char1234)*
+  | char1234 strike_char1234* char1234
   ;
 
 user_name
-  : ID
+  : char1234 (char1234)*
+  | char1234 strike_char1234* char1234
   ;
+
+strike_char1234
+  : char1234
+  | '-'
+  ;
+
+char1234
+  : digit1234
+  | letter1234
+  | '_'
+  ;
+
+digit1234
+    : '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
+    ;
+
+letter1234
+    : 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J'
+    | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R' | 'S' | 'T'
+    | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z' | 'a' | 'b' | 'c' | 'd'
+    | 'e' | 'f' | 'g' | 'h' | 'i' | 'j' | 'k' | 'l' | 'm' | 'n'
+    | 'o' | 'p' | 'q' | 'r' | 's' | 't' | 'u' | 'v' | 'w' | 'x'
+    | 'y' | 'z'
+    ;
