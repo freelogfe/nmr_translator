@@ -38,8 +38,6 @@ set_tags_rule
   : '&' presentation_name set_tags
   ;
 
-
-
 // 设置标签
 set_tags
   : 'tags=[' ((tags ',')* tags)? ']'

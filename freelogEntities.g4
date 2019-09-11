@@ -15,7 +15,13 @@ INT:  DIGIT+;
 
 CHAR
   : ALPHABET | INT | '_'
+  | '\u4e00'..'\u9fef'
   ;
+
+//CHINESE_WORD
+//  : 'A'..'Z' | 'a'..'z'
+//  | '0'..'9'
+//  ;
 
 ID
   : CHAR (CHAR)*
