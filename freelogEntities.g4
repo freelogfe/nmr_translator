@@ -14,7 +14,9 @@ SCOPE
 INT:  DIGIT+;
 
 CHAR
-  : ALPHABET | INT | '_'
+  : ALPHABET
+  | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '0'
+  | '_' | '(' | ')' | '（' | '）'
   | '\u4e00'..'\u9fef'
   ;
 
@@ -25,7 +27,7 @@ CHAR
 
 ID
   : CHAR (CHAR)*
-  | CHAR (CHAR | '-')* CHAR
+  | CHAR (CHAR | '-') * CHAR
   ;
 
 //SHA_ID_4MIN
@@ -46,20 +48,25 @@ mock_id
 
 presentation_name
   : ID
+  | INT
   ;
 
 release_name
   : ID
+  | INT
   ;
 
 mock_name
   : ID
+  | INT
   ;
 
 bucket_name
   : ID
+  | INT
   ;
 
 user_name
   : ID
+  | INT
   ;
