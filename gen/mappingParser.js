@@ -131,10 +131,10 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\u0002\u00be\u00bf\u0003\u0002\u0002\u0002\u00bf#\u0003\u0002",
     "\u0002\u0002\u00c0\u00c1\u0007\u0012\u0002\u0002\u00c1\u00c2\u0005,",
     "\u0017\u0002\u00c2\u00c3\u0007\u0010\u0002\u0002\u00c3\u00c4\u0005*",
-    "\u0016\u0002\u00c4%\u0003\u0002\u0002\u0002\u00c5\u00c6\u0007V\u0002",
-    "\u0002\u00c6\'\u0003\u0002\u0002\u0002\u00c7\u00c8\u0007V\u0002\u0002",
-    "\u00c8)\u0003\u0002\u0002\u0002\u00c9\u00ca\u0007V\u0002\u0002\u00ca",
-    "+\u0003\u0002\u0002\u0002\u00cb\u00cc\u0007V\u0002\u0002\u00cc-\u0003",
+    "\u0016\u0002\u00c4%\u0003\u0002\u0002\u0002\u00c5\u00c6\t\u0002\u0002",
+    "\u0002\u00c6\'\u0003\u0002\u0002\u0002\u00c7\u00c8\t\u0002\u0002\u0002",
+    "\u00c8)\u0003\u0002\u0002\u0002\u00c9\u00ca\t\u0002\u0002\u0002\u00ca",
+    "+\u0003\u0002\u0002\u0002\u00cb\u00cc\t\u0002\u0002\u0002\u00cc-\u0003",
     "\u0002\u0002\u0002\u00cd\u00ce\t\u0002\u0002\u0002\u00ce/\u0003\u0002",
     "\u0002\u0002\u00cf\u00d1\u00052\u001a\u0002\u00d0\u00cf\u0003\u0002",
     "\u0002\u0002\u00d0\u00d1\u0003\u0002\u0002\u0002\u00d1\u00d2\u0003\u0002",
@@ -1576,6 +1576,7 @@ mappingParser.prototype.scope_set = function() {
         this.state = 167;
         this._errHandler.sync(this);
         switch(this._input.LA(1)) {
+        case mappingParser.INT:
         case mappingParser.ID:
             this.enterOuterAlt(localctx, 1);
             this.state = 154;
@@ -1915,6 +1916,10 @@ Presentation_nameContext.prototype.ID = function() {
     return this.getToken(mappingParser.ID, 0);
 };
 
+Presentation_nameContext.prototype.INT = function() {
+    return this.getToken(mappingParser.INT, 0);
+};
+
 Presentation_nameContext.prototype.enterRule = function(listener) {
     if(listener instanceof mappingListener ) {
         listener.enterPresentation_name(this);
@@ -1944,10 +1949,18 @@ mappingParser.prototype.presentation_name = function() {
 
     var localctx = new Presentation_nameContext(this, this._ctx, this.state);
     this.enterRule(localctx, 36, mappingParser.RULE_presentation_name);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 195;
-        this.match(mappingParser.ID);
+        _la = this._input.LA(1);
+        if(!(_la===mappingParser.INT || _la===mappingParser.ID)) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1982,6 +1995,10 @@ Release_nameContext.prototype.ID = function() {
     return this.getToken(mappingParser.ID, 0);
 };
 
+Release_nameContext.prototype.INT = function() {
+    return this.getToken(mappingParser.INT, 0);
+};
+
 Release_nameContext.prototype.enterRule = function(listener) {
     if(listener instanceof mappingListener ) {
         listener.enterRelease_name(this);
@@ -2011,10 +2028,18 @@ mappingParser.prototype.release_name = function() {
 
     var localctx = new Release_nameContext(this, this._ctx, this.state);
     this.enterRule(localctx, 38, mappingParser.RULE_release_name);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 197;
-        this.match(mappingParser.ID);
+        _la = this._input.LA(1);
+        if(!(_la===mappingParser.INT || _la===mappingParser.ID)) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2049,6 +2074,10 @@ Mock_nameContext.prototype.ID = function() {
     return this.getToken(mappingParser.ID, 0);
 };
 
+Mock_nameContext.prototype.INT = function() {
+    return this.getToken(mappingParser.INT, 0);
+};
+
 Mock_nameContext.prototype.enterRule = function(listener) {
     if(listener instanceof mappingListener ) {
         listener.enterMock_name(this);
@@ -2078,10 +2107,18 @@ mappingParser.prototype.mock_name = function() {
 
     var localctx = new Mock_nameContext(this, this._ctx, this.state);
     this.enterRule(localctx, 40, mappingParser.RULE_mock_name);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 199;
-        this.match(mappingParser.ID);
+        _la = this._input.LA(1);
+        if(!(_la===mappingParser.INT || _la===mappingParser.ID)) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2116,6 +2153,10 @@ Bucket_nameContext.prototype.ID = function() {
     return this.getToken(mappingParser.ID, 0);
 };
 
+Bucket_nameContext.prototype.INT = function() {
+    return this.getToken(mappingParser.INT, 0);
+};
+
 Bucket_nameContext.prototype.enterRule = function(listener) {
     if(listener instanceof mappingListener ) {
         listener.enterBucket_name(this);
@@ -2145,10 +2186,18 @@ mappingParser.prototype.bucket_name = function() {
 
     var localctx = new Bucket_nameContext(this, this._ctx, this.state);
     this.enterRule(localctx, 42, mappingParser.RULE_bucket_name);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 201;
-        this.match(mappingParser.ID);
+        _la = this._input.LA(1);
+        if(!(_la===mappingParser.INT || _la===mappingParser.ID)) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
