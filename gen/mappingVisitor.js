@@ -24,6 +24,12 @@ mappingVisitor.prototype.visitMapping_rule = function(ctx) {
 };
 
 
+// Visit a parse tree produced by mappingParser#disabled_modifier.
+mappingVisitor.prototype.visitDisabled_modifier = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by mappingParser#add_presentation_rule.
 mappingVisitor.prototype.visitAdd_presentation_rule = function(ctx) {
   return this.visitChildren(ctx);

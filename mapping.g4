@@ -14,28 +14,30 @@ mapping_rule
   | set_tags_rule
   ;
 
+disabled_modifier: '!';
+
 // 添加规则
 add_presentation_rule
-  : '+' presentation_name '=>' the_candidate set_tags?
+  : disabled_modifier? '+' presentation_name '=>' the_candidate set_tags?
   ;
 
 replace_presentation_rule
-  : '*' replaced '=>' replacer scope_specification?
+  : disabled_modifier? '*' replaced '=>' replacer scope_specification?
   ;
 
 // 下线规则
 downline_presentation_rule
-  : '-' presentation_name
+  : disabled_modifier? '-' presentation_name
   ;
 
 // 上线规则
 online_presentation_rule
-  : '^' presentation_name
+  : disabled_modifier? '^' presentation_name
   ;
 
 // 设置标签规则
 set_tags_rule
-  : '&' presentation_name set_tags
+  : disabled_modifier? '&' presentation_name set_tags
   ;
 
 // 设置标签

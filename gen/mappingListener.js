@@ -29,6 +29,15 @@ mappingListener.prototype.exitMapping_rule = function(ctx) {
 };
 
 
+// Enter a parse tree produced by mappingParser#disabled_modifier.
+mappingListener.prototype.enterDisabled_modifier = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#disabled_modifier.
+mappingListener.prototype.exitDisabled_modifier = function(ctx) {
+};
+
+
 // Enter a parse tree produced by mappingParser#add_presentation_rule.
 mappingListener.prototype.enterAdd_presentation_rule = function(ctx) {
 };
