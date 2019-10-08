@@ -48,6 +48,7 @@ set_tags
 // TODO 单个标签s
 tags
   : ID
+  | INT
   ;
 
 // 独立的资源

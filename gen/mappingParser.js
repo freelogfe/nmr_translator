@@ -114,7 +114,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\u0002\u0002\u009a\u009c\u0005\u0014\u000b\u0002\u009b\u0097\u0003",
     "\u0002\u0002\u0002\u009b\u009c\u0003\u0002\u0002\u0002\u009c\u009d\u0003",
     "\u0002\u0002\u0002\u009d\u009e\u0007\f\u0002\u0002\u009e\u0013\u0003",
-    "\u0002\u0002\u0002\u009f\u00a0\u0007W\u0002\u0002\u00a0\u0015\u0003",
+    "\u0002\u0002\u0002\u009f\u00a0\t\u0002\u0002\u0002\u00a0\u0015\u0003",
     "\u0002\u0002\u0002\u00a1\u00a4\u0005$\u0013\u0002\u00a2\u00a4\u0005",
     "&\u0014\u0002\u00a3\u00a1\u0003\u0002\u0002\u0002\u00a3\u00a2\u0003",
     "\u0002\u0002\u0002\u00a4\u0017\u0003\u0002\u0002\u0002\u00a5\u00a6\u0005",
@@ -1202,7 +1202,7 @@ mappingParser.prototype.set_tags = function() {
         this.state = 153;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
-        if(_la===mappingParser.ID) {
+        if(_la===mappingParser.INT || _la===mappingParser.ID) {
             this.state = 149;
             this._errHandler.sync(this);
             var _alt = this._interp.adaptivePredict(this._input,9,this._ctx)
@@ -1258,6 +1258,10 @@ TagsContext.prototype.ID = function() {
     return this.getToken(mappingParser.ID, 0);
 };
 
+TagsContext.prototype.INT = function() {
+    return this.getToken(mappingParser.INT, 0);
+};
+
 TagsContext.prototype.enterRule = function(listener) {
     if(listener instanceof mappingListener ) {
         listener.enterTags(this);
@@ -1287,10 +1291,18 @@ mappingParser.prototype.tags = function() {
 
     var localctx = new TagsContext(this, this._ctx, this.state);
     this.enterRule(localctx, 18, mappingParser.RULE_tags);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 157;
-        this.match(mappingParser.ID);
+        _la = this._input.LA(1);
+        if(!(_la===mappingParser.INT || _la===mappingParser.ID)) {
+        this._errHandler.recoverInline(this);
+        }
+        else {
+        	this._errHandler.reportMatch(this);
+            this.consume();
+        }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
