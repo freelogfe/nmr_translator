@@ -54,8 +54,14 @@ mappingVisitor.prototype.visitOnline_presentation_rule = function(ctx) {
 };
 
 
-// Visit a parse tree produced by mappingParser#set_tags_rule.
-mappingVisitor.prototype.visitSet_tags_rule = function(ctx) {
+// Visit a parse tree produced by mappingParser#set_rule.
+mappingVisitor.prototype.visitSet_rule = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by mappingParser#set_version.
+mappingVisitor.prototype.visitSet_version = function(ctx) {
   return this.visitChildren(ctx);
 };
 

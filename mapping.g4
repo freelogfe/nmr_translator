@@ -11,7 +11,7 @@ mapping_rule
   | replace_presentation_rule
   | downline_presentation_rule
   | online_presentation_rule
-  | set_tags_rule
+  | set_rule
   ;
 
 disabled_modifier: '!';
@@ -36,8 +36,16 @@ online_presentation_rule
   ;
 
 // 设置标签规则
-set_tags_rule
+set_rule
   : disabled_modifier? '&' presentation_name set_tags
+  | disabled_modifier? '&' presentation_name set_version
+  | disabled_modifier? '&' presentation_name set_version set_tags
+  | disabled_modifier? '&' presentation_name set_tags set_version
+  ;
+
+// 设置版本
+set_version
+  : 'version=' (valid_semver)
   ;
 
 // 设置标签

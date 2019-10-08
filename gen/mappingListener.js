@@ -74,12 +74,21 @@ mappingListener.prototype.exitOnline_presentation_rule = function(ctx) {
 };
 
 
-// Enter a parse tree produced by mappingParser#set_tags_rule.
-mappingListener.prototype.enterSet_tags_rule = function(ctx) {
+// Enter a parse tree produced by mappingParser#set_rule.
+mappingListener.prototype.enterSet_rule = function(ctx) {
 };
 
-// Exit a parse tree produced by mappingParser#set_tags_rule.
-mappingListener.prototype.exitSet_tags_rule = function(ctx) {
+// Exit a parse tree produced by mappingParser#set_rule.
+mappingListener.prototype.exitSet_rule = function(ctx) {
+};
+
+
+// Enter a parse tree produced by mappingParser#set_version.
+mappingListener.prototype.enterSet_version = function(ctx) {
+};
+
+// Exit a parse tree produced by mappingParser#set_version.
+mappingListener.prototype.exitSet_version = function(ctx) {
 };
 
 
