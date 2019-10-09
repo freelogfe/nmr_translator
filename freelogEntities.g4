@@ -34,12 +34,19 @@ ID
 //  : SHA_DIGIT SHA_DIGIT SHA_DIGIT SHA_DIGIT SHA_DIGIT*
 //  ;
 
-// 双斜线 注释
-SL_COMMENT
-    : '//' .*? '\n' -> skip
-    ;
-// 忽略 空白字符
-WS : [ \t\r\n]+ -> skip;
+//// 双斜线 注释
+//SL_COMMENT
+//    : '//' .*? '\n' -> skip
+//    ;
+//// 忽略 空白字符
+//WS : [ \t\r\n]+ -> skip;
+
+//------ Comments
+LINE_COMMENT  : '//' .*? '\n' -> skip;
+BLOCK_COMMENT : '/*' .*? '*/' -> skip;
+
+//------ Whitespace
+WS : [ \t\n\r]+ -> skip;
 
 //resource_id : '@:' SHA_ID_4MIN;
 
