@@ -1,4 +1,4 @@
-// Generated from mapping.g4 by ANTLR 4.7.1
+// Generated from Mapping.g4 by ANTLR 4.7.1
 // jshint ignore: start
 var antlr4 = require('antlr4/index');
 
@@ -282,116 +282,116 @@ var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
 
 var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new antlr4.dfa.DFA(ds, index); });
 
-function mappingLexer(input) {
+function MappingLexer(input) {
 	antlr4.Lexer.call(this, input);
     this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.PredictionContextCache());
     return this;
 }
 
-mappingLexer.prototype = Object.create(antlr4.Lexer.prototype);
-mappingLexer.prototype.constructor = mappingLexer;
+MappingLexer.prototype = Object.create(antlr4.Lexer.prototype);
+MappingLexer.prototype.constructor = MappingLexer;
 
-Object.defineProperty(mappingLexer.prototype, "atn", {
+Object.defineProperty(MappingLexer.prototype, "atn", {
         get : function() {
                 return atn;
         }
 });
 
-mappingLexer.EOF = antlr4.Token.EOF;
-mappingLexer.T__0 = 1;
-mappingLexer.T__1 = 2;
-mappingLexer.T__2 = 3;
-mappingLexer.T__3 = 4;
-mappingLexer.T__4 = 5;
-mappingLexer.T__5 = 6;
-mappingLexer.T__6 = 7;
-mappingLexer.T__7 = 8;
-mappingLexer.T__8 = 9;
-mappingLexer.T__9 = 10;
-mappingLexer.T__10 = 11;
-mappingLexer.T__11 = 12;
-mappingLexer.T__12 = 13;
-mappingLexer.T__13 = 14;
-mappingLexer.T__14 = 15;
-mappingLexer.T__15 = 16;
-mappingLexer.T__16 = 17;
-mappingLexer.T__17 = 18;
-mappingLexer.T__18 = 19;
-mappingLexer.T__19 = 20;
-mappingLexer.T__20 = 21;
-mappingLexer.T__21 = 22;
-mappingLexer.T__22 = 23;
-mappingLexer.T__23 = 24;
-mappingLexer.T__24 = 25;
-mappingLexer.T__25 = 26;
-mappingLexer.T__26 = 27;
-mappingLexer.T__27 = 28;
-mappingLexer.T__28 = 29;
-mappingLexer.T__29 = 30;
-mappingLexer.T__30 = 31;
-mappingLexer.T__31 = 32;
-mappingLexer.T__32 = 33;
-mappingLexer.T__33 = 34;
-mappingLexer.T__34 = 35;
-mappingLexer.T__35 = 36;
-mappingLexer.T__36 = 37;
-mappingLexer.T__37 = 38;
-mappingLexer.T__38 = 39;
-mappingLexer.T__39 = 40;
-mappingLexer.T__40 = 41;
-mappingLexer.T__41 = 42;
-mappingLexer.T__42 = 43;
-mappingLexer.T__43 = 44;
-mappingLexer.T__44 = 45;
-mappingLexer.T__45 = 46;
-mappingLexer.T__46 = 47;
-mappingLexer.T__47 = 48;
-mappingLexer.T__48 = 49;
-mappingLexer.T__49 = 50;
-mappingLexer.T__50 = 51;
-mappingLexer.T__51 = 52;
-mappingLexer.T__52 = 53;
-mappingLexer.T__53 = 54;
-mappingLexer.T__54 = 55;
-mappingLexer.T__55 = 56;
-mappingLexer.T__56 = 57;
-mappingLexer.T__57 = 58;
-mappingLexer.T__58 = 59;
-mappingLexer.T__59 = 60;
-mappingLexer.T__60 = 61;
-mappingLexer.T__61 = 62;
-mappingLexer.T__62 = 63;
-mappingLexer.T__63 = 64;
-mappingLexer.T__64 = 65;
-mappingLexer.T__65 = 66;
-mappingLexer.T__66 = 67;
-mappingLexer.T__67 = 68;
-mappingLexer.T__68 = 69;
-mappingLexer.T__69 = 70;
-mappingLexer.T__70 = 71;
-mappingLexer.T__71 = 72;
-mappingLexer.T__72 = 73;
-mappingLexer.T__73 = 74;
-mappingLexer.T__74 = 75;
-mappingLexer.T__75 = 76;
-mappingLexer.T__76 = 77;
-mappingLexer.T__77 = 78;
-mappingLexer.T__78 = 79;
-mappingLexer.T__79 = 80;
-mappingLexer.T__80 = 81;
-mappingLexer.T__81 = 82;
-mappingLexer.SCOPE = 83;
-mappingLexer.INT = 84;
-mappingLexer.ID = 85;
-mappingLexer.LINE_COMMENT = 86;
-mappingLexer.BLOCK_COMMENT = 87;
-mappingLexer.WS = 88;
+MappingLexer.EOF = antlr4.Token.EOF;
+MappingLexer.T__0 = 1;
+MappingLexer.T__1 = 2;
+MappingLexer.T__2 = 3;
+MappingLexer.T__3 = 4;
+MappingLexer.T__4 = 5;
+MappingLexer.T__5 = 6;
+MappingLexer.T__6 = 7;
+MappingLexer.T__7 = 8;
+MappingLexer.T__8 = 9;
+MappingLexer.T__9 = 10;
+MappingLexer.T__10 = 11;
+MappingLexer.T__11 = 12;
+MappingLexer.T__12 = 13;
+MappingLexer.T__13 = 14;
+MappingLexer.T__14 = 15;
+MappingLexer.T__15 = 16;
+MappingLexer.T__16 = 17;
+MappingLexer.T__17 = 18;
+MappingLexer.T__18 = 19;
+MappingLexer.T__19 = 20;
+MappingLexer.T__20 = 21;
+MappingLexer.T__21 = 22;
+MappingLexer.T__22 = 23;
+MappingLexer.T__23 = 24;
+MappingLexer.T__24 = 25;
+MappingLexer.T__25 = 26;
+MappingLexer.T__26 = 27;
+MappingLexer.T__27 = 28;
+MappingLexer.T__28 = 29;
+MappingLexer.T__29 = 30;
+MappingLexer.T__30 = 31;
+MappingLexer.T__31 = 32;
+MappingLexer.T__32 = 33;
+MappingLexer.T__33 = 34;
+MappingLexer.T__34 = 35;
+MappingLexer.T__35 = 36;
+MappingLexer.T__36 = 37;
+MappingLexer.T__37 = 38;
+MappingLexer.T__38 = 39;
+MappingLexer.T__39 = 40;
+MappingLexer.T__40 = 41;
+MappingLexer.T__41 = 42;
+MappingLexer.T__42 = 43;
+MappingLexer.T__43 = 44;
+MappingLexer.T__44 = 45;
+MappingLexer.T__45 = 46;
+MappingLexer.T__46 = 47;
+MappingLexer.T__47 = 48;
+MappingLexer.T__48 = 49;
+MappingLexer.T__49 = 50;
+MappingLexer.T__50 = 51;
+MappingLexer.T__51 = 52;
+MappingLexer.T__52 = 53;
+MappingLexer.T__53 = 54;
+MappingLexer.T__54 = 55;
+MappingLexer.T__55 = 56;
+MappingLexer.T__56 = 57;
+MappingLexer.T__57 = 58;
+MappingLexer.T__58 = 59;
+MappingLexer.T__59 = 60;
+MappingLexer.T__60 = 61;
+MappingLexer.T__61 = 62;
+MappingLexer.T__62 = 63;
+MappingLexer.T__63 = 64;
+MappingLexer.T__64 = 65;
+MappingLexer.T__65 = 66;
+MappingLexer.T__66 = 67;
+MappingLexer.T__67 = 68;
+MappingLexer.T__68 = 69;
+MappingLexer.T__69 = 70;
+MappingLexer.T__70 = 71;
+MappingLexer.T__71 = 72;
+MappingLexer.T__72 = 73;
+MappingLexer.T__73 = 74;
+MappingLexer.T__74 = 75;
+MappingLexer.T__75 = 76;
+MappingLexer.T__76 = 77;
+MappingLexer.T__77 = 78;
+MappingLexer.T__78 = 79;
+MappingLexer.T__79 = 80;
+MappingLexer.T__80 = 81;
+MappingLexer.T__81 = 82;
+MappingLexer.SCOPE = 83;
+MappingLexer.INT = 84;
+MappingLexer.ID = 85;
+MappingLexer.LINE_COMMENT = 86;
+MappingLexer.BLOCK_COMMENT = 87;
+MappingLexer.WS = 88;
 
-mappingLexer.prototype.channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
+MappingLexer.prototype.channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
 
-mappingLexer.prototype.modeNames = [ "DEFAULT_MODE" ];
+MappingLexer.prototype.modeNames = [ "DEFAULT_MODE" ];
 
-mappingLexer.prototype.literalNames = [ null, "'!'", "'+'", "'=>'", "'*'", 
+MappingLexer.prototype.literalNames = [ null, "'!'", "'+'", "'=>'", "'*'", 
                                         "'-'", "'^'", "'&'", "'version='", 
                                         "'tags=['", "','", "']'", "'='", 
                                         "'['", "'->'", "'$:'", "'/'", "'@'", 
@@ -410,7 +410,7 @@ mappingLexer.prototype.literalNames = [ null, "'!'", "'+'", "'=>'", "'*'",
                                         "'v'", "'w'", "'x'", "'y'", "'z'", 
                                         "'scope'" ];
 
-mappingLexer.prototype.symbolicNames = [ null, null, null, null, null, null, 
+MappingLexer.prototype.symbolicNames = [ null, null, null, null, null, null, 
                                          null, null, null, null, null, null, 
                                          null, null, null, null, null, null, 
                                          null, null, null, null, null, null, 
@@ -427,7 +427,7 @@ mappingLexer.prototype.symbolicNames = [ null, null, null, null, null, null,
                                          "INT", "ID", "LINE_COMMENT", "BLOCK_COMMENT", 
                                          "WS" ];
 
-mappingLexer.prototype.ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4", 
+MappingLexer.prototype.ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4", 
                                      "T__5", "T__6", "T__7", "T__8", "T__9", 
                                      "T__10", "T__11", "T__12", "T__13", 
                                      "T__14", "T__15", "T__16", "T__17", 
@@ -451,9 +451,9 @@ mappingLexer.prototype.ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4",
                                      "CHINESE_WORD", "CHAR", "ID", "LINE_COMMENT", 
                                      "BLOCK_COMMENT", "WS" ];
 
-mappingLexer.prototype.grammarFileName = "mapping.g4";
+MappingLexer.prototype.grammarFileName = "Mapping.g4";
 
 
 
-exports.mappingLexer = mappingLexer;
+exports.MappingLexer = MappingLexer;
 

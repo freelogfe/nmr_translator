@@ -1,6 +1,6 @@
-grammar freelogEntities;
+grammar FreelogEntities;
 
-import semver;
+import Semver;
 
 fragment DIGIT : [0-9] ;
 fragment ALPHABET : [a-zA-Z];

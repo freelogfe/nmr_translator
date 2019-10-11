@@ -1,4 +1,4 @@
-grammar semver;
+grammar Semver;
 
 //fragment ONE2NINE : [1-9];
 //fragment ALPHABET : [a-zA-Z];
