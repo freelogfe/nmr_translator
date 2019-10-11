@@ -7,7 +7,7 @@ fragment ALPHABET : [a-zA-Z];
 //fragment HEX_ALPHABET : [a-fA-F];
 //fragment SHA_DIGIT : (DIGIT|HEX_ALPHABET);
 
-fragment SCOPE
+SCOPE
   : 'scope'
   ;
 

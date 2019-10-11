@@ -62,7 +62,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     ",\u0003,\u0005,\u0174\n,\u0003-\u0003-\u0005-\u0178\n-\u0003.\u0003",
     ".\u0003/\u0003/\u0003/\u0002\u00020\u0002\u0004\u0006\b\n\f\u000e\u0010",
     "\u0012\u0014\u0016\u0018\u001a\u001c\u001e \"$&(*,.02468:<>@BDFHJLN",
-    "PRTVXZ\\\u0002\u0006\u0003\u0002UV\u0004\u0002\b\b\u0015\u0015\u0003",
+    "PRTVXZ\\\u0002\u0006\u0003\u0002VW\u0004\u0002\b\b\u0015\u0015\u0003",
     "\u0002\u0018 \u0003\u0002!T\u0002\u017f\u0002_\u0003\u0002\u0002\u0002",
     "\u0004h\u0003\u0002\u0002\u0002\u0006j\u0003\u0002\u0002\u0002\bm\u0003",
     "\u0002\u0002\u0002\nw\u0003\u0002\u0002\u0002\f\u0081\u0003\u0002\u0002",
@@ -142,7 +142,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\u00c2\u0019\u0003\u0002\u0002\u0002\u00c3\u00c4\u0005&\u0014",
     "\u0002\u00c4\u001b\u0003\u0002\u0002\u0002\u00c5\u00c6\u0005\u0018\r",
     "\u0002\u00c6\u001d\u0003\u0002\u0002\u0002\u00c7\u00c8\u0005\u0018\r",
-    "\u0002\u00c8\u001f\u0003\u0002\u0002\u0002\u00c9\u00ca\u0007Z\u0002",
+    "\u0002\u00c8\u001f\u0003\u0002\u0002\u0002\u00c9\u00ca\u0007U\u0002",
     "\u0002\u00ca\u00cb\u0007\u000e\u0002\u0002\u00cb\u00cc\u0005\"\u0012",
     "\u0002\u00cc!\u0003\u0002\u0002\u0002\u00cd\u00db\u0005$\u0013\u0002",
     "\u00ce\u00d4\u0007\u000f\u0002\u0002\u00cf\u00d0\u0005$\u0013\u0002",
@@ -261,7 +261,7 @@ var literalNames = [ null, "'!'", "'+'", "'=>'", "'*'", "'-'", "'^'", "'&'",
                      "'W'", "'X'", "'Y'", "'Z'", "'a'", "'b'", "'c'", "'d'", 
                      "'e'", "'f'", "'g'", "'h'", "'i'", "'j'", "'k'", "'l'", 
                      "'m'", "'n'", "'o'", "'p'", "'q'", "'r'", "'s'", "'t'", 
-                     "'u'", "'v'", "'w'", "'x'", "'y'", "'z'" ];
+                     "'u'", "'v'", "'w'", "'x'", "'y'", "'z'", "'scope'" ];
 
 var symbolicNames = [ null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
@@ -272,8 +272,8 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, null,
                       null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
-                      null, null, "INT", "ID", "LINE_COMMENT", "BLOCK_COMMENT", 
-                      "WS", "SCOPE" ];
+                      null, null, "SCOPE", "INT", "ID", "LINE_COMMENT", 
+                      "BLOCK_COMMENT", "WS" ];
 
 var ruleNames =  [ "mapping_rules", "mapping_rule", "disabled_modifier", 
                    "add_presentation_rule", "replace_presentation_rule", 
@@ -390,12 +390,12 @@ mappingParser.T__78 = 79;
 mappingParser.T__79 = 80;
 mappingParser.T__80 = 81;
 mappingParser.T__81 = 82;
-mappingParser.INT = 83;
-mappingParser.ID = 84;
-mappingParser.LINE_COMMENT = 85;
-mappingParser.BLOCK_COMMENT = 86;
-mappingParser.WS = 87;
-mappingParser.SCOPE = 88;
+mappingParser.SCOPE = 83;
+mappingParser.INT = 84;
+mappingParser.ID = 85;
+mappingParser.LINE_COMMENT = 86;
+mappingParser.BLOCK_COMMENT = 87;
+mappingParser.WS = 88;
 
 mappingParser.RULE_mapping_rules = 0;
 mappingParser.RULE_mapping_rule = 1;
@@ -1781,10 +1781,6 @@ function Scope_specificationContext(parser, parent, invokingState) {
 
 Scope_specificationContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 Scope_specificationContext.prototype.constructor = Scope_specificationContext;
-
-Scope_specificationContext.prototype.SCOPE = function() {
-    return this.getToken(mappingParser.SCOPE, 0);
-};
 
 Scope_specificationContext.prototype.scope_set = function() {
     return this.getTypedRuleContext(Scope_setContext,0);

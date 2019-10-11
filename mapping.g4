@@ -81,7 +81,7 @@ the_candidate
 
 //
 scope_specification
-  : SCOPE '=' scope_set
+  : 'scope' '=' scope_set
   ;
 
 //
