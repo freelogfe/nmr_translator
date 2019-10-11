@@ -4,42 +4,30 @@ import semver;
 
 fragment DIGIT : [0-9] ;
 fragment ALPHABET : [a-zA-Z];
-fragment HEX_ALPHABET : [a-fA-F];
-fragment SHA_DIGIT : (DIGIT|HEX_ALPHABET);
+//fragment HEX_ALPHABET : [a-fA-F];
+//fragment SHA_DIGIT : (DIGIT|HEX_ALPHABET);
 
-SCOPE
+fragment SCOPE
   : 'scope'
   ;
 
 INT:  DIGIT+;
 
-CHAR
-  : ALPHABET
-  | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '0'
-  | '_' | '(' | ')' | '（' | '）'
-  | '\u4e00'..'\u9fef'
+fragment CHINESE_WORD
+  : '\u4e00'..'\u9fef'
   ;
 
-//CHINESE_WORD
-//  : 'A'..'Z' | 'a'..'z'
-//  | '0'..'9'
-//  ;
+fragment CHAR
+  : ALPHABET
+  | CHINESE_WORD
+  | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '0'
+  | '_' | '(' | ')' | '（' | '）'
+  ;
 
 ID
   : CHAR (CHAR)*
   | CHAR (CHAR | '-') * CHAR
   ;
-
-//SHA_ID_4MIN
-//  : SHA_DIGIT SHA_DIGIT SHA_DIGIT SHA_DIGIT SHA_DIGIT*
-//  ;
-
-//// 双斜线 注释
-//SL_COMMENT
-//    : '//' .*? '\n' -> skip
-//    ;
-//// 忽略 空白字符
-//WS : [ \t\r\n]+ -> skip;
 
 //------ Comments
 LINE_COMMENT  : '//' .*? '\n' -> skip;
@@ -47,8 +35,6 @@ BLOCK_COMMENT : '/*' .*? '*/' -> skip;
 
 //------ Whitespace
 WS : [ \t\n\r]+ -> skip;
-
-//resource_id : '@:' SHA_ID_4MIN;
 
 release_id
   : '$:' user_name '/' release_name ('@' valid_semver)?
