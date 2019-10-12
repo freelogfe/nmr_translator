@@ -1,1 +1,1 @@
-[{"text":"+ 1234234 => #:bucket1/张阿斯顿发生的","disabled":false,"operation":"add","presentableName":"1234234","candidate":{"name":"bucket1/张阿斯顿发生的","type":"mock"},"tags":null}]
+[{"text":"+ 123.42 => $:1234/234@1.1.0","disabled":false,"operation":"add","presentableName":"123.42","candidate":{"name":"1234/234","versionRange":"1.1.0","type":"release"},"tags":null}]

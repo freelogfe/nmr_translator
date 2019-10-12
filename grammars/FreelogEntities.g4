@@ -2,32 +2,29 @@ grammar FreelogEntities;
 
 import Semver;
 
+// 数字字符
 fragment DIGIT : [0-9] ;
+// 英文大小写字母
 fragment ALPHABET : [a-zA-Z];
-//fragment HEX_ALPHABET : [a-fA-F];
-//fragment SHA_DIGIT : (DIGIT|HEX_ALPHABET);
-
-SCOPE
-  : 'scope'
-  ;
-
-INT:  DIGIT+;
-
+// 中文字符
 fragment CHINESE_WORD
   : '\u4e00'..'\u9fef'
   ;
+// 符号设定
+fragment SYMBOL
+  : '_' | '(' | ')' | '（' | '）' | '-'
+  ;
 
+// 组装后的标准通用字符集
 fragment CHAR
   : ALPHABET
-  | CHINESE_WORD
-//  | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '0'
   | DIGIT
-  | '_' | '(' | ')' | '（' | '）'
+  | SYMBOL
+  | CHINESE_WORD
   ;
 
 ID
   : CHAR (CHAR)*
-  | CHAR (CHAR | '-') * CHAR
   ;
 
 //------ Comments
@@ -38,7 +35,7 @@ BLOCK_COMMENT : '/*' .*? '*/' -> skip;
 WS : [ \t\n\r]+ -> skip;
 
 release_id
-  : '$:' user_name '/' release_name ('@' valid_semver)?
+  : '$:' user_name '/' release_name ('@' valid_semver)??
   ;
 
 mock_id
@@ -46,26 +43,21 @@ mock_id
   ;
 
 presentation_name
-  : ID
-  | INT
+  : ( '.' | ID)*
   ;
 
 release_name
   : ID
-  | INT
   ;
 
 mock_name
   : ID
-  | INT
   ;
 
 bucket_name
   : ID
-  | INT
   ;
 
 user_name
   : ID
-  | INT
   ;
