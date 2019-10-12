@@ -3,7 +3,7 @@
 ## 1 安装
 
 ```
-npm install nmr_translator
+npm i @freelog/nmr_translator
 ```
 
 ## 2 使用
