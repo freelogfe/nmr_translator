@@ -1,13 +1,1 @@
 + 1234234 => #:bucket1/张阿斯顿发生的
-+ a持续这娃 => #:bucket2/啊水电费 tags=[tag1,tag2,tag3]
-+ new_pres啊水电费entation_name_3 => $:user_name_3/发文@1.1.0 tags=[ta的撒g1,ta见客户g2,ta不哈去g3]
-+ new_prese微任务去ntation_name_4 => $:user_name_4/啊四分卫发
-+ 啊水电费问问问问 => $:user_name_5/啊水电费问问 tags=[tag1,tag2,tag3]
-* $:user_name_6/release_name_1 => #:bucket2/mock2
-* $:user_name_7/release_name_1 => #:bucket2/mock2 scope = [existing_presentation_2,
-existing_presentation_3 -> #:bucket1/mock1 -> $:user_name_2/release_name_2 -> $:user_name_3/release_name_3 -> $:user_name_4/release_name_4]
-- existing_presentation_8
-^ existing_presentation_9
-& new_presentation_name_10 tags=[tag1,tag2,ta3]
-& new_presentation_name_10 version=1.1.0
-& new_presentation_name_11 tags=[tag1,tag2,ta3] version=1.1.0

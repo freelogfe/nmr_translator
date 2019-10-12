@@ -20,7 +20,8 @@ fragment CHINESE_WORD
 fragment CHAR
   : ALPHABET
   | CHINESE_WORD
-  | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '0'
+//  | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '0'
+  | DIGIT
   | '_' | '(' | ')' | '（' | '）'
   ;
 
