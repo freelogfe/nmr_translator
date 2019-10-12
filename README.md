@@ -14,7 +14,7 @@ const {compile} = require('nmr_translator');
 // 要编译的字符内容
 const rulesText = '......';
 // 调用函数，并返回编译结果
-const {errors, rules} = compile(mappingText);
+const {errors, rules} = compile(rulesText);
 ```
 
 ## 3 结果说明
