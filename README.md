@@ -1,33 +1,22 @@
-# nmr_translator 开发
+# nmr_translator
 
-## 1 安装 Java 环境
-
-```
-下载并安装 [https://www.java.com](https://www.java.com)
-配置好 Java 环境
-```
-
-## 2 安装 npm 依赖
+## 1 安装
 
 ```
-yarn
+npm install nmr_translator
 ```
 
-## 3 生成 JavaScript 代码
-
-- 根据根目录下 mapping.g4 文件定义的语法规则，在 gen 目录下生成对应的 JavaScript 文件
-```
-yarn build
-```
-
-## 4 编写所需文法处理逻辑
+## 2 使用
 
 ```
-在 lib 目录下，根据业务需要，编写所需词法解析逻辑，并暴露出业务所需的函数
+// 引入编译器
+const {compile} = require('nmr_translator');
+// 要编译的字符内容
+const rulesText = '......';
+// 调用函数，并返回编译结果
+const {errors, rules} = compile(mappingText);
 ```
 
-## 5 测试结果是否正确
-
-```
-yarn test
-```
+## 3 结果说明
+- 如果编译出错，```error``` 变量为错误内容组成的数组
+- 如果编译通过，```error``` 变量为 ```null```，```rules``` 为编译结果的规则数组
