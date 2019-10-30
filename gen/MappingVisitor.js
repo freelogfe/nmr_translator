@@ -12,62 +12,44 @@ function MappingVisitor() {
 MappingVisitor.prototype = Object.create(antlr4.tree.ParseTreeVisitor.prototype);
 MappingVisitor.prototype.constructor = MappingVisitor;
 
-// Visit a parse tree produced by MappingParser#mapping_rules.
-MappingVisitor.prototype.visitMapping_rules = function(ctx) {
+// Visit a parse tree produced by MappingParser#mappingRules.
+MappingVisitor.prototype.visitMappingRules = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#mapping_rule.
-MappingVisitor.prototype.visitMapping_rule = function(ctx) {
+// Visit a parse tree produced by MappingParser#mappingRule.
+MappingVisitor.prototype.visitMappingRule = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#disabled_modifier.
-MappingVisitor.prototype.visitDisabled_modifier = function(ctx) {
+// Visit a parse tree produced by MappingParser#addRule.
+MappingVisitor.prototype.visitAddRule = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#add_presentation_rule.
-MappingVisitor.prototype.visitAdd_presentation_rule = function(ctx) {
+// Visit a parse tree produced by MappingParser#theCandidate.
+MappingVisitor.prototype.visitTheCandidate = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#replace_presentation_rule.
-MappingVisitor.prototype.visitReplace_presentation_rule = function(ctx) {
+// Visit a parse tree produced by MappingParser#setRule.
+MappingVisitor.prototype.visitSetRule = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#downline_presentation_rule.
-MappingVisitor.prototype.visitDownline_presentation_rule = function(ctx) {
+// Visit a parse tree produced by MappingParser#configs.
+MappingVisitor.prototype.visitConfigs = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#online_presentation_rule.
-MappingVisitor.prototype.visitOnline_presentation_rule = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by MappingParser#set_rule.
-MappingVisitor.prototype.visitSet_rule = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by MappingParser#set_version.
-MappingVisitor.prototype.visitSet_version = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by MappingParser#set_tags.
-MappingVisitor.prototype.visitSet_tags = function(ctx) {
+// Visit a parse tree produced by MappingParser#tagsConfig.
+MappingVisitor.prototype.visitTagsConfig = function(ctx) {
   return this.visitChildren(ctx);
 };
 
@@ -78,8 +60,14 @@ MappingVisitor.prototype.visitTags = function(ctx) {
 };
 
 
-// Visit a parse tree produced by MappingParser#source_entity.
-MappingVisitor.prototype.visitSource_entity = function(ctx) {
+// Visit a parse tree produced by MappingParser#replaceConfig.
+MappingVisitor.prototype.visitReplaceConfig = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#replaceItem.
+MappingVisitor.prototype.visitReplaceItem = function(ctx) {
   return this.visitChildren(ctx);
 };
 
@@ -96,14 +84,8 @@ MappingVisitor.prototype.visitReplacer = function(ctx) {
 };
 
 
-// Visit a parse tree produced by MappingParser#the_candidate.
-MappingVisitor.prototype.visitThe_candidate = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by MappingParser#scope_specification.
-MappingVisitor.prototype.visitScope_specification = function(ctx) {
+// Visit a parse tree produced by MappingParser#setScope.
+MappingVisitor.prototype.visitSetScope = function(ctx) {
   return this.visitChildren(ctx);
 };
 
@@ -114,8 +96,14 @@ MappingVisitor.prototype.visitScope_set = function(ctx) {
 };
 
 
-// Visit a parse tree produced by MappingParser#scope_set_element.
-MappingVisitor.prototype.visitScope_set_element = function(ctx) {
+// Visit a parse tree produced by MappingParser#sourceEntity.
+MappingVisitor.prototype.visitSourceEntity = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#onlineConfig.
+MappingVisitor.prototype.visitOnlineConfig = function(ctx) {
   return this.visitChildren(ctx);
 };
 
