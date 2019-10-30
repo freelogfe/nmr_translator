@@ -20,3 +20,36 @@ const {errors, rules} = compile(rulesText);
 ## 3 结果说明
 - 如果编译出错，```error``` 变量为错误内容组成的数组
 - 如果编译通过，```error``` 变量为 ```null```，```rules``` 为编译结果的规则数组
+
+
+```typescript
+interface ICandidate {
+    name: string;
+    versionRange?: string;
+    type: 'release' | 'mock';
+}
+
+interface IReplace {
+    replaced: ICandidate;
+    replacer: ICandidate;
+    scope: ICandidate[];
+}
+
+interface IRule {
+    text: string;
+    operation: 'add' | 'set';
+    presentableName: string;
+    candidate?: ICandidate;
+    tags: Array<string | number> | null;
+    replace: IReplace[];
+    online: boolean | null;
+}
+
+interface IResult {
+    error: string[] | null;
+    rules?: IRule[];
+}
+
+// 最终编译结果
+// const {errors, rules}: IResult = compile(rulesText);
+```
