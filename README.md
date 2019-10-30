@@ -42,7 +42,7 @@ interface IRule {
     candidate?: ICandidate;
     tags: Array<string | number> | null;
     replace: IReplace[];
-    online: boolean | null;
+    online: boolean;
 }
 
 interface IResult {
