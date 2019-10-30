@@ -32,7 +32,7 @@ interface ICandidate {
 interface IReplace {
     replaced: ICandidate;
     replacer: ICandidate;
-    scope: ICandidate[];
+    scope: ICandidate[][];
 }
 
 interface IRule {
