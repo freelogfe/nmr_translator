@@ -155,6 +155,15 @@ MappingListener.prototype.exitOnlineConfig = function(ctx) {
 };
 
 
+// Enter a parse tree produced by MappingParser#bool.
+MappingListener.prototype.enterBool = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#bool.
+MappingListener.prototype.exitBool = function(ctx) {
+};
+
+
 // Enter a parse tree produced by MappingParser#release_id.
 MappingListener.prototype.enterRelease_id = function(ctx) {
 };

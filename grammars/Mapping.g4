@@ -81,7 +81,7 @@ sourceEntity
   ;
 
 onlineConfig
-  : 'online'
+  : 'online' '=' bool
   ;
 
-
+bool: 'true' | 'false';

@@ -90,7 +90,7 @@ interface IRule {
     candidate?: ICandidate;
     tags: Array<string | number> | null;
     replace: IReplace[];
-    online: boolean;
+    online: boolean | null;
 }
 
 interface IResult {

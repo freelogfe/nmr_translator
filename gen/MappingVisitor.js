@@ -108,6 +108,12 @@ MappingVisitor.prototype.visitOnlineConfig = function(ctx) {
 };
 
 
+// Visit a parse tree produced by MappingParser#bool.
+MappingVisitor.prototype.visitBool = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by MappingParser#release_id.
 MappingVisitor.prototype.visitRelease_id = function(ctx) {
   return this.visitChildren(ctx);
