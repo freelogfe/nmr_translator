@@ -13,11 +13,15 @@ mappingRule
 
 // 添加规则
 addRule
-  : 'add' releaseOrMockName 'as' presentationName codeBlock
+  : 'add' candidate 'as' presentationName codeBlock
+  | 'add' candidate 'as' presentationName lineCode
   ;
+
+candidate: releaseOrMockName;
 
 alterRule
   : 'alter' presentationName codeBlock
+  | 'alter' presentationName lineCode
   ;
 
 
@@ -32,14 +36,16 @@ lineCode
 
 setTags: 'set_tags' tags;
 tags
-  : ((ID ',')* ID)?
+  : ((tag ',')* tag)?
   ;
+tag: ID;
 
 replace: 'replace' target 'with' source under?;
 target: releaseOrMockName;
 source: releaseOrMockName;
 under: 'under' scope (',' scope)*;
-scope: releaseOrMockName ('>' releaseOrMockName)*;
+scope: scopeNode ('>' scopeNode)*;
+scopeNode: releaseOrMockName;
 
 show: 'show';
 hide: 'hide';

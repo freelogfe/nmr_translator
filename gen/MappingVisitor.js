@@ -30,6 +30,12 @@ MappingVisitor.prototype.visitAddRule = function(ctx) {
 };
 
 
+// Visit a parse tree produced by MappingParser#candidate.
+MappingVisitor.prototype.visitCandidate = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by MappingParser#alterRule.
 MappingVisitor.prototype.visitAlterRule = function(ctx) {
   return this.visitChildren(ctx);
@@ -66,6 +72,12 @@ MappingVisitor.prototype.visitTags = function(ctx) {
 };
 
 
+// Visit a parse tree produced by MappingParser#tag.
+MappingVisitor.prototype.visitTag = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by MappingParser#replace.
 MappingVisitor.prototype.visitReplace = function(ctx) {
   return this.visitChildren(ctx);
@@ -92,6 +104,12 @@ MappingVisitor.prototype.visitUnder = function(ctx) {
 
 // Visit a parse tree produced by MappingParser#scope.
 MappingVisitor.prototype.visitScope = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#scopeNode.
+MappingVisitor.prototype.visitScopeNode = function(ctx) {
   return this.visitChildren(ctx);
 };
 

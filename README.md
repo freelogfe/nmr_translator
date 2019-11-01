@@ -80,12 +80,12 @@ interface ICandidate {
 interface IReplace {
     replaced: ICandidate;
     replacer: ICandidate;
-    scope: ICandidate[][];
+    scopes: ICandidate[][];
 }
 
 interface IRule {
     text: string;
-    operation: 'add' | 'set';
+    operation: 'add' | 'alter';
     presentableName: string;
     candidate?: ICandidate;
     tags: Array<string | number> | null;

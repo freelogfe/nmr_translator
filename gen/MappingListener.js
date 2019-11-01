@@ -38,6 +38,15 @@ MappingListener.prototype.exitAddRule = function(ctx) {
 };
 
 
+// Enter a parse tree produced by MappingParser#candidate.
+MappingListener.prototype.enterCandidate = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#candidate.
+MappingListener.prototype.exitCandidate = function(ctx) {
+};
+
+
 // Enter a parse tree produced by MappingParser#alterRule.
 MappingListener.prototype.enterAlterRule = function(ctx) {
 };
@@ -92,6 +101,15 @@ MappingListener.prototype.exitTags = function(ctx) {
 };
 
 
+// Enter a parse tree produced by MappingParser#tag.
+MappingListener.prototype.enterTag = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#tag.
+MappingListener.prototype.exitTag = function(ctx) {
+};
+
+
 // Enter a parse tree produced by MappingParser#replace.
 MappingListener.prototype.enterReplace = function(ctx) {
 };
@@ -134,6 +152,15 @@ MappingListener.prototype.enterScope = function(ctx) {
 
 // Exit a parse tree produced by MappingParser#scope.
 MappingListener.prototype.exitScope = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#scopeNode.
+MappingListener.prototype.enterScopeNode = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#scopeNode.
+MappingListener.prototype.exitScopeNode = function(ctx) {
 };
 
 
