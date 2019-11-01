@@ -30,26 +30,32 @@ MappingVisitor.prototype.visitAddRule = function(ctx) {
 };
 
 
-// Visit a parse tree produced by MappingParser#theCandidate.
-MappingVisitor.prototype.visitTheCandidate = function(ctx) {
+// Visit a parse tree produced by MappingParser#alterRule.
+MappingVisitor.prototype.visitAlterRule = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#setRule.
-MappingVisitor.prototype.visitSetRule = function(ctx) {
+// Visit a parse tree produced by MappingParser#codeBlock.
+MappingVisitor.prototype.visitCodeBlock = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#configs.
-MappingVisitor.prototype.visitConfigs = function(ctx) {
+// Visit a parse tree produced by MappingParser#linesCode.
+MappingVisitor.prototype.visitLinesCode = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#tagsConfig.
-MappingVisitor.prototype.visitTagsConfig = function(ctx) {
+// Visit a parse tree produced by MappingParser#lineCode.
+MappingVisitor.prototype.visitLineCode = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#setTags.
+MappingVisitor.prototype.visitSetTags = function(ctx) {
   return this.visitChildren(ctx);
 };
 
@@ -60,56 +66,68 @@ MappingVisitor.prototype.visitTags = function(ctx) {
 };
 
 
-// Visit a parse tree produced by MappingParser#replaceConfig.
-MappingVisitor.prototype.visitReplaceConfig = function(ctx) {
+// Visit a parse tree produced by MappingParser#replace.
+MappingVisitor.prototype.visitReplace = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#replaceItem.
-MappingVisitor.prototype.visitReplaceItem = function(ctx) {
+// Visit a parse tree produced by MappingParser#target.
+MappingVisitor.prototype.visitTarget = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#replaced.
-MappingVisitor.prototype.visitReplaced = function(ctx) {
+// Visit a parse tree produced by MappingParser#source.
+MappingVisitor.prototype.visitSource = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#replacer.
-MappingVisitor.prototype.visitReplacer = function(ctx) {
+// Visit a parse tree produced by MappingParser#under.
+MappingVisitor.prototype.visitUnder = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#setScope.
-MappingVisitor.prototype.visitSetScope = function(ctx) {
+// Visit a parse tree produced by MappingParser#scope.
+MappingVisitor.prototype.visitScope = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#scope_set.
-MappingVisitor.prototype.visitScope_set = function(ctx) {
+// Visit a parse tree produced by MappingParser#show.
+MappingVisitor.prototype.visitShow = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#sourceEntity.
-MappingVisitor.prototype.visitSourceEntity = function(ctx) {
+// Visit a parse tree produced by MappingParser#hide.
+MappingVisitor.prototype.visitHide = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#onlineConfig.
-MappingVisitor.prototype.visitOnlineConfig = function(ctx) {
+// Visit a parse tree produced by MappingParser#releaseOrMockName.
+MappingVisitor.prototype.visitReleaseOrMockName = function(ctx) {
   return this.visitChildren(ctx);
 };
 
 
-// Visit a parse tree produced by MappingParser#bool.
-MappingVisitor.prototype.visitBool = function(ctx) {
+// Visit a parse tree produced by MappingParser#presentationName.
+MappingVisitor.prototype.visitPresentationName = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#releaseName.
+MappingVisitor.prototype.visitReleaseName = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#mockName.
+MappingVisitor.prototype.visitMockName = function(ctx) {
   return this.visitChildren(ctx);
 };
 

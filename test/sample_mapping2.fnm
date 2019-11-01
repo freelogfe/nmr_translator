@@ -1,2 +1,16 @@
-+ p1 => #:b1/m1 tags=[t1,t2,t3] replace=[$:u1/r1=>#:b2/m2] online
-& p2 replace=[$u3/r3@1.0.0=>#:b4/m4~>[$:u3/r4->$u4/r4->$u3/r3@1.0.0,$:u3/r4->#:b1/m1],$u3/r3=>#:b1/m1]
+add $u2/r10@1.1.1 as p3
+   do
+     set_tags t1,t2,t3
+     replace $uu3/rr1 with #bb3/mm3 under $u1/m1>$u2/m2, $u3/m3
+     show
+     hide
+   end
+
+
+alter p4
+   do
+     set_tags t1,t2,t3
+     replace $uu3/rr1 with #bb3/mm3 under $u1/m1>$u2/m2, $u3/m3
+     show
+     hide
+   end

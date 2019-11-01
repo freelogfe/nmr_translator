@@ -38,39 +38,48 @@ MappingListener.prototype.exitAddRule = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#theCandidate.
-MappingListener.prototype.enterTheCandidate = function(ctx) {
+// Enter a parse tree produced by MappingParser#alterRule.
+MappingListener.prototype.enterAlterRule = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#theCandidate.
-MappingListener.prototype.exitTheCandidate = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#setRule.
-MappingListener.prototype.enterSetRule = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#setRule.
-MappingListener.prototype.exitSetRule = function(ctx) {
+// Exit a parse tree produced by MappingParser#alterRule.
+MappingListener.prototype.exitAlterRule = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#configs.
-MappingListener.prototype.enterConfigs = function(ctx) {
+// Enter a parse tree produced by MappingParser#codeBlock.
+MappingListener.prototype.enterCodeBlock = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#configs.
-MappingListener.prototype.exitConfigs = function(ctx) {
+// Exit a parse tree produced by MappingParser#codeBlock.
+MappingListener.prototype.exitCodeBlock = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#tagsConfig.
-MappingListener.prototype.enterTagsConfig = function(ctx) {
+// Enter a parse tree produced by MappingParser#linesCode.
+MappingListener.prototype.enterLinesCode = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#tagsConfig.
-MappingListener.prototype.exitTagsConfig = function(ctx) {
+// Exit a parse tree produced by MappingParser#linesCode.
+MappingListener.prototype.exitLinesCode = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#lineCode.
+MappingListener.prototype.enterLineCode = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#lineCode.
+MappingListener.prototype.exitLineCode = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#setTags.
+MappingListener.prototype.enterSetTags = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#setTags.
+MappingListener.prototype.exitSetTags = function(ctx) {
 };
 
 
@@ -83,84 +92,102 @@ MappingListener.prototype.exitTags = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#replaceConfig.
-MappingListener.prototype.enterReplaceConfig = function(ctx) {
+// Enter a parse tree produced by MappingParser#replace.
+MappingListener.prototype.enterReplace = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#replaceConfig.
-MappingListener.prototype.exitReplaceConfig = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#replaceItem.
-MappingListener.prototype.enterReplaceItem = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#replaceItem.
-MappingListener.prototype.exitReplaceItem = function(ctx) {
+// Exit a parse tree produced by MappingParser#replace.
+MappingListener.prototype.exitReplace = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#replaced.
-MappingListener.prototype.enterReplaced = function(ctx) {
+// Enter a parse tree produced by MappingParser#target.
+MappingListener.prototype.enterTarget = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#replaced.
-MappingListener.prototype.exitReplaced = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#replacer.
-MappingListener.prototype.enterReplacer = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#replacer.
-MappingListener.prototype.exitReplacer = function(ctx) {
+// Exit a parse tree produced by MappingParser#target.
+MappingListener.prototype.exitTarget = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#setScope.
-MappingListener.prototype.enterSetScope = function(ctx) {
+// Enter a parse tree produced by MappingParser#source.
+MappingListener.prototype.enterSource = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#setScope.
-MappingListener.prototype.exitSetScope = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#scope_set.
-MappingListener.prototype.enterScope_set = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#scope_set.
-MappingListener.prototype.exitScope_set = function(ctx) {
+// Exit a parse tree produced by MappingParser#source.
+MappingListener.prototype.exitSource = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#sourceEntity.
-MappingListener.prototype.enterSourceEntity = function(ctx) {
+// Enter a parse tree produced by MappingParser#under.
+MappingListener.prototype.enterUnder = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#sourceEntity.
-MappingListener.prototype.exitSourceEntity = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#onlineConfig.
-MappingListener.prototype.enterOnlineConfig = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#onlineConfig.
-MappingListener.prototype.exitOnlineConfig = function(ctx) {
+// Exit a parse tree produced by MappingParser#under.
+MappingListener.prototype.exitUnder = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#bool.
-MappingListener.prototype.enterBool = function(ctx) {
+// Enter a parse tree produced by MappingParser#scope.
+MappingListener.prototype.enterScope = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#bool.
-MappingListener.prototype.exitBool = function(ctx) {
+// Exit a parse tree produced by MappingParser#scope.
+MappingListener.prototype.exitScope = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#show.
+MappingListener.prototype.enterShow = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#show.
+MappingListener.prototype.exitShow = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#hide.
+MappingListener.prototype.enterHide = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#hide.
+MappingListener.prototype.exitHide = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#releaseOrMockName.
+MappingListener.prototype.enterReleaseOrMockName = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#releaseOrMockName.
+MappingListener.prototype.exitReleaseOrMockName = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#presentationName.
+MappingListener.prototype.enterPresentationName = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#presentationName.
+MappingListener.prototype.exitPresentationName = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#releaseName.
+MappingListener.prototype.enterReleaseName = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#releaseName.
+MappingListener.prototype.exitReleaseName = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#mockName.
+MappingListener.prototype.enterMockName = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#mockName.
+MappingListener.prototype.exitMockName = function(ctx) {
 };
 
 

@@ -35,11 +35,11 @@ BLOCK_COMMENT : '/*' .*? '*/' -> skip;
 WS : [ \t\n\r]+ -> skip;
 
 release_id
-  : '$:' user_name '/' release_name ('@' valid_semver)??
+  : user_name '/' release_name ('@' valid_semver)??
   ;
 
 mock_id
-  : '#:' bucket_name '/' mock_name
+  : bucket_name '/' mock_name
   ;
 
 presentation_name
