@@ -1,10 +1,10 @@
 const {compile} = require('../lib');
 
 const text = `
-    add $u2/r10@1.1.1 as p3
-      do
-        set_tags t1,t2,t3
-      end
+add $u2/r10@1.1.1 as p3
+  do
+    set_tags t1,t2,t3
+  end
     `;
 const {errors, rules} = compile(text);
 // describe('the La Croix cans on my desk',

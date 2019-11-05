@@ -13,19 +13,22 @@ mappingRule
 
 // 添加规则
 addRule
-  : 'add' candidate 'as' presentationName codeBlock
-  | 'add' candidate 'as' presentationName lineCode
+  : 'add' candidate 'as' presentationName codeBlock?
+  | 'add' candidate 'as' presentationName lineCode?
   ;
 
 candidate: releaseOrMockName;
 
 alterRule
-  : 'alter' presentationName codeBlock
-  | 'alter' presentationName lineCode
+  : 'alter' presentationName codeBlock?
+  | 'alter' presentationName lineCode?
   ;
 
 
-codeBlock: 'do' linesCode 'end';
+codeBlock
+  : 'do' 'end'
+  | 'do' linesCode 'end'
+  ;
 linesCode: lineCode*;
 lineCode
   : setTags
