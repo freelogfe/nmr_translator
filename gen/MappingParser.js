@@ -110,7 +110,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\u0098\u0099\u0003\u0002\u0002\u0002\u0099\u000f\u0003\u0002\u0002",
     "\u0002\u009a\u0098\u0003\u0002\u0002\u0002\u009b\u00a1\u0005\u0012\n",
     "\u0002\u009c\u00a1\u0005\u0018\r\u0002\u009d\u00a1\u0005$\u0013\u0002",
-    "\u009e\u00a1\u0005&\u0014\u0002\u009f\u00a1\n\u0003\u0002\u0002\u00a0",
+    "\u009e\u00a1\u0005&\u0014\u0002\u009f\u00a1\t\u0003\u0002\u0002\u00a0",
     "\u009b\u0003\u0002\u0002\u0002\u00a0\u009c\u0003\u0002\u0002\u0002\u00a0",
     "\u009d\u0003\u0002\u0002\u0002\u00a0\u009e\u0003\u0002\u0002\u0002\u00a0",
     "\u009f\u0003\u0002\u0002\u0002\u00a1\u0011\u0003\u0002\u0002\u0002\u00a2",
@@ -1118,21 +1118,19 @@ MappingParser.prototype.linesCode = function() {
 
     var localctx = new LinesCodeContext(this, this._ctx, this.state);
     this.enterRule(localctx, 12, MappingParser.RULE_linesCode);
+    var _la = 0; // Token type
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 150;
         this._errHandler.sync(this);
-        var _alt = this._interp.adaptivePredict(this._input,5,this._ctx)
-        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-            if(_alt===1) {
-                this.state = 147;
-                this.lineCode(); 
-            }
+        _la = this._input.LA(1);
+        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << MappingParser.T__5) | (1 << MappingParser.T__6) | (1 << MappingParser.T__7) | (1 << MappingParser.T__8))) !== 0)) {
+            this.state = 147;
+            this.lineCode();
             this.state = 152;
             this._errHandler.sync(this);
-            _alt = this._interp.adaptivePredict(this._input,5,this._ctx);
+            _la = this._input.LA(1);
         }
-
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1212,115 +1210,37 @@ MappingParser.prototype.lineCode = function() {
     try {
         this.state = 158;
         this._errHandler.sync(this);
-        switch(this._input.LA(1)) {
-        case MappingParser.T__5:
+        var la_ = this._interp.adaptivePredict(this._input,6,this._ctx);
+        switch(la_) {
+        case 1:
             this.enterOuterAlt(localctx, 1);
             this.state = 153;
             this.setTags();
             break;
-        case MappingParser.T__6:
+
+        case 2:
             this.enterOuterAlt(localctx, 2);
             this.state = 154;
             this.replace();
             break;
-        case MappingParser.T__7:
+
+        case 3:
             this.enterOuterAlt(localctx, 3);
             this.state = 155;
             this.show();
             break;
-        case MappingParser.T__8:
+
+        case 4:
             this.enterOuterAlt(localctx, 4);
             this.state = 156;
             this.hide();
             break;
-        case MappingParser.T__0:
-        case MappingParser.T__1:
-        case MappingParser.T__2:
-        case MappingParser.T__3:
-        case MappingParser.T__4:
-        case MappingParser.T__9:
-        case MappingParser.T__10:
-        case MappingParser.T__11:
-        case MappingParser.T__12:
-        case MappingParser.T__13:
-        case MappingParser.T__14:
-        case MappingParser.T__15:
-        case MappingParser.T__16:
-        case MappingParser.T__17:
-        case MappingParser.T__18:
-        case MappingParser.T__19:
-        case MappingParser.T__20:
-        case MappingParser.T__21:
-        case MappingParser.T__22:
-        case MappingParser.T__23:
-        case MappingParser.T__24:
-        case MappingParser.T__25:
-        case MappingParser.T__26:
-        case MappingParser.T__27:
-        case MappingParser.T__28:
-        case MappingParser.T__29:
-        case MappingParser.T__30:
-        case MappingParser.T__31:
-        case MappingParser.T__32:
-        case MappingParser.T__33:
-        case MappingParser.T__34:
-        case MappingParser.T__35:
-        case MappingParser.T__36:
-        case MappingParser.T__37:
-        case MappingParser.T__38:
-        case MappingParser.T__39:
-        case MappingParser.T__40:
-        case MappingParser.T__41:
-        case MappingParser.T__42:
-        case MappingParser.T__43:
-        case MappingParser.T__44:
-        case MappingParser.T__45:
-        case MappingParser.T__46:
-        case MappingParser.T__47:
-        case MappingParser.T__48:
-        case MappingParser.T__49:
-        case MappingParser.T__50:
-        case MappingParser.T__51:
-        case MappingParser.T__52:
-        case MappingParser.T__53:
-        case MappingParser.T__54:
-        case MappingParser.T__55:
-        case MappingParser.T__56:
-        case MappingParser.T__57:
-        case MappingParser.T__58:
-        case MappingParser.T__59:
-        case MappingParser.T__60:
-        case MappingParser.T__61:
-        case MappingParser.T__62:
-        case MappingParser.T__63:
-        case MappingParser.T__64:
-        case MappingParser.T__65:
-        case MappingParser.T__66:
-        case MappingParser.T__67:
-        case MappingParser.T__68:
-        case MappingParser.T__69:
-        case MappingParser.T__70:
-        case MappingParser.T__71:
-        case MappingParser.T__72:
-        case MappingParser.T__73:
-        case MappingParser.T__74:
-        case MappingParser.T__75:
-        case MappingParser.T__76:
-        case MappingParser.T__77:
-        case MappingParser.T__78:
-        case MappingParser.T__79:
-        case MappingParser.T__80:
-        case MappingParser.T__81:
-        case MappingParser.T__82:
-        case MappingParser.T__83:
-        case MappingParser.ID:
-        case MappingParser.LINE_COMMENT:
-        case MappingParser.BLOCK_COMMENT:
-        case MappingParser.WS:
+
+        case 5:
             this.enterOuterAlt(localctx, 5);
             this.state = 157;
             _la = this._input.LA(1);
-            if(_la<=0 || (((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << MappingParser.T__5) | (1 << MappingParser.T__6) | (1 << MappingParser.T__7) | (1 << MappingParser.T__8))) !== 0)) {
+            if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << MappingParser.T__5) | (1 << MappingParser.T__6) | (1 << MappingParser.T__7) | (1 << MappingParser.T__8))) !== 0))) {
             this._errHandler.recoverInline(this);
             }
             else {
@@ -1328,8 +1248,7 @@ MappingParser.prototype.lineCode = function() {
                 this.consume();
             }
             break;
-        default:
-            throw new antlr4.error.NoViableAltException(this);
+
         }
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
@@ -2697,24 +2616,21 @@ MappingParser.prototype.presentation_name = function() {
         this.enterOuterAlt(localctx, 1);
         this.state = 237;
         this._errHandler.sync(this);
-        var _alt = this._interp.adaptivePredict(this._input,14,this._ctx)
-        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-            if(_alt===1) {
-                this.state = 234;
-                _la = this._input.LA(1);
-                if(!(_la===MappingParser.T__17 || _la===MappingParser.ID)) {
-                this._errHandler.recoverInline(this);
-                }
-                else {
-                	this._errHandler.reportMatch(this);
-                    this.consume();
-                } 
+        _la = this._input.LA(1);
+        while(_la===MappingParser.T__17 || _la===MappingParser.ID) {
+            this.state = 234;
+            _la = this._input.LA(1);
+            if(!(_la===MappingParser.T__17 || _la===MappingParser.ID)) {
+            this._errHandler.recoverInline(this);
+            }
+            else {
+            	this._errHandler.reportMatch(this);
+                this.consume();
             }
             this.state = 239;
             this._errHandler.sync(this);
-            _alt = this._interp.adaptivePredict(this._input,14,this._ctx);
+            _la = this._input.LA(1);
         }
-
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;

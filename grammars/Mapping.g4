@@ -36,7 +36,7 @@ lineCode
   | replace
   | show
   | hide
-  | ~('set_tags' | 'replace' | 'show' | 'hide')
+  | ('set_tags' | 'replace' | 'show' | 'hide')
   ;
 
 setTags
