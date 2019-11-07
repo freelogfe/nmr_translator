@@ -19,8 +19,8 @@ fragment SYMBOL
 fragment CHAR
   : ALPHABET
   | DIGIT
-  | SYMBOL
-  | CHINESE_WORD
+//  | SYMBOL
+//  | CHINESE_WORD
   ;
 
 ID
