@@ -12,6 +12,6 @@ add #:b1/m1 as p2
 
 describe('字符集测试', () => {
     test('TODO:', () => {
-        expect(null).toBe(null);
+        expect(null).toBeNull();
     });
 });

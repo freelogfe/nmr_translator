@@ -10,11 +10,11 @@ describe('当没有任何操作时', () => {
     const {errors, rules} = compile(text);
 
     test('没有操作，不会报错', () => {
-        expect(errors).toBe(null);
+        expect(errors).toBeNull();
     });
 
     test('tags 为 null', () => {
-        expect(rules[0].tags).toBe(null);
+        expect(rules[0].tags).toBeNull();
     });
 
     test('replaces 为空数组', () => {
@@ -22,7 +22,7 @@ describe('当没有任何操作时', () => {
     });
 
     test('online 为空 null', () => {
-        expect(rules[0].online).toBe(null);
+        expect(rules[0].online).toBeNull();
     });
 });
 

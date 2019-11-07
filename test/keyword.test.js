@@ -8,7 +8,7 @@ describe('测试关键子错误', () => {
               end
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('把『do』关键字写错, 中间有其它内容，要报错', () => {
@@ -19,7 +19,7 @@ describe('测试关键子错误', () => {
               end
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('把『end』关键字写错要报错', () => {
@@ -29,7 +29,7 @@ describe('测试关键子错误', () => {
               en
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('把『end』关键字写错，中间有其它内容，要报错', () => {
@@ -39,7 +39,7 @@ describe('测试关键子错误', () => {
               en
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('每条语句必选以『add』或『alter』开头 1', () => {
@@ -49,7 +49,7 @@ describe('测试关键子错误', () => {
               end
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('每条语句必选以『add』或『alter』开头 2', () => {
@@ -63,7 +63,7 @@ describe('测试关键子错误', () => {
               end
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('动作『set_tags』必须正确书写', () => {
@@ -77,7 +77,7 @@ describe('测试关键子错误', () => {
              end
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('动作『replac』必须正确书写', () => {
@@ -91,7 +91,7 @@ describe('测试关键子错误', () => {
              end
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('动作『show』必须正确书写', () => {
@@ -105,7 +105,7 @@ describe('测试关键子错误', () => {
              end
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
     test('动作『hide』必须正确书写', () => {
@@ -119,7 +119,7 @@ describe('测试关键子错误', () => {
              end
         `;
         const {errors} = compile(text);
-        expect(errors).not.toBe(null);
+        expect(errors).not.toBeNull();
     });
 
 });

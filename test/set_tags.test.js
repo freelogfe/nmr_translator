@@ -11,7 +11,7 @@ describe('设置标签测试', () => {
     const {errors, rules} = compile(text);
 
     test('语法正确的话，不会报错', () => {
-        expect(errors).toBe(null);
+        expect(errors).toBeNull();
     });
 
     test('presentableName = p3', () => {
@@ -33,7 +33,7 @@ describe('设置标签测试', () => {
           end
         `;
         const {rules} = compile(text);
-        expect(rules[0].tags).toBe(null);
+        expect(rules[0].tags).toBeNull();
     });
 
     test('当设置标签没有内容时，结果应为空数组', () => {

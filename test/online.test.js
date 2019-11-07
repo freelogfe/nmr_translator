@@ -35,6 +35,6 @@ describe('测试上下线', () => {
           end
         `;
         const {rules} = compile(text);
-        expect(rules[0].online).toBe(null);
+        expect(rules[0].online).toBeNull();
     });
 });
