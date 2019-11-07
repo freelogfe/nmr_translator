@@ -39,7 +39,9 @@ lineCode
   | ~('set_tags' | 'replace' | 'show' | 'hide')
   ;
 
-setTags: 'set_tags' tags?;
+setTags
+  : 'set_tags' tags
+  | 'set_tags';
 tags
   : (tag ',')* tag
   ;
