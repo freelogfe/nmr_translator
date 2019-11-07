@@ -1,7 +1,9 @@
-alter p2
-  do
-  end
 
-lter p3
+
+alter p3
   do
+    set_tags a1
+    replace $u1/r1 with #b1/m1
+    show
+    hide
   end

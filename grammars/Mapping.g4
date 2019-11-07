@@ -9,7 +9,9 @@ mappingRules
 mappingRule
   : addRule
   | alterRule
+  | ~('add' | 'alter')
   ;
+
 
 // 添加规则
 addRule
@@ -24,7 +26,6 @@ alterRule
   | 'alter' presentationName lineCode
   ;
 
-
 codeBlock
   : 'do' 'end'
   | 'do' linesCode 'end'
@@ -35,11 +36,12 @@ lineCode
   | replace
   | show
   | hide
+  | ~('set_tags' | 'replace' | 'show' | 'hide')
   ;
 
-setTags: 'set_tags' tags;
+setTags: 'set_tags' tags?;
 tags
-  : ((tag ',')* tag)?
+  : (tag ',')* tag
   ;
 tag: ID;
 
