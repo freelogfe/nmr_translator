@@ -42,6 +42,12 @@ MappingVisitor.prototype.visitAlterRule = function(ctx) {
 };
 
 
+// Visit a parse tree produced by MappingParser#setRule.
+MappingVisitor.prototype.visitSetRule = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by MappingParser#codeBlock.
 MappingVisitor.prototype.visitCodeBlock = function(ctx) {
   return this.visitChildren(ctx);
@@ -134,6 +140,12 @@ MappingVisitor.prototype.visitReleaseOrMockName = function(ctx) {
 
 // Visit a parse tree produced by MappingParser#presentationName.
 MappingVisitor.prototype.visitPresentationName = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#hostage.
+MappingVisitor.prototype.visitHostage = function(ctx) {
   return this.visitChildren(ctx);
 };
 

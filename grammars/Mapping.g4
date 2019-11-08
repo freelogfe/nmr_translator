@@ -9,7 +9,8 @@ mappingRules
 mappingRule
   : addRule
   | alterRule
-  | ~('add' | 'alter')
+  | setRule
+  | ~('add' | 'alter' | 'important')
   ;
 
 
@@ -24,6 +25,10 @@ candidate: releaseOrMockName;
 alterRule
   : 'alter' presentationName codeBlock
   | 'alter' presentationName lineCode
+  ;
+
+setRule
+  : 'set' 'do' 'show_page_build' hostage 'end'
   ;
 
 codeBlock
@@ -59,5 +64,6 @@ hide: 'hide';
 
 releaseOrMockName: releaseName | mockName;
 presentationName: presentation_name;
+hostage: presentation_name;
 releaseName: '$' release_id;
 mockName: '#' mock_id;
