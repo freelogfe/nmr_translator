@@ -1,4 +1,4 @@
-const {decompile} = require('../lib');
+const {decompile} = require('../../lib');
 
 const rules = [
     {
@@ -21,6 +21,10 @@ const rules = [
         tags: null,
     }
 ];
-
-const text = decompile(rules);
-console.log(text);
+const text = 'alter DDDDDDDDDD\n  do\n    replace $12345123451234/AAAAAAAAAA with $12345123451234/CCC@0.1.0 under $12345123451234/DDDDDDDDDD > $12345123451234/BBBBBBBBBB\n  end';
+describe('综合测试1', () => {
+    test('测试', () => {
+        // console.log(JSON.stringify(decompile(rules)));
+        expect(decompile(rules)).toEqual(text);
+    });
+});
