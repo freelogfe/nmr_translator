@@ -1,10 +1,10 @@
-const {compile} = require('../lib');
+const {compile} = require('../../lib');
 
 describe('测试上下线', () => {
 
     test('online 最后一次为 show，结果为 true', () => {
         const text = `
-        add $u2/r10@1.1.1 as p3
+        add $u2/r1@1.1.1 as p3
           do
             show
             hide
@@ -17,7 +17,7 @@ describe('测试上下线', () => {
 
     test('online 最后一次为 hide，结果为 false', () => {
         const text = `
-        add $u2/r10@1.1.1 as p3
+        add $u2/r1@1.1.1 as p3
           do
             hide
             show
@@ -30,7 +30,7 @@ describe('测试上下线', () => {
 
     test('没有 show 和 hide 的操作，online 为 null', () => {
         const text = `
-        add $u2/r10@1.1.1 as p3
+        add $u2/r1@1.1.1 as p3
           do
           end
         `;

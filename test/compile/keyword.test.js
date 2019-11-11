@@ -1,4 +1,4 @@
-const {compile} = require('../lib');
+const {compile} = require('../../lib');
 
 describe('测试关键子错误', () => {
     test('把『do』关键字写错要报错', () => {

@@ -1,9 +1,9 @@
-const {compile} = require('../lib');
+const {compile} = require('../../lib');
 
 describe('设置标签测试', () => {
 
     const text = `
-    add $u2/r10@1.1.1 as p3
+    add $u2/r1@1.1.1 as p3
       do
         set_tags t1,t2,t3
       end
@@ -23,12 +23,12 @@ describe('设置标签测试', () => {
     });
 
     test('candidate 对象正确匹配', () => {
-        expect(rules[0].candidate).toEqual({"name": "u2/r10", "versionRange": "1.1.1", "type": "release"});
+        expect(rules[0].candidate).toEqual({"name": "u2/r1", "versionRange": "1.1.1", "type": "release"});
     });
 
     test('当没有设置标签动作时，结果应为 null', () => {
         const text = `
-        add $u2/r10@1.1.1 as p3
+        add $u2/r1@1.1.1 as p3
           do
           end
         `;
@@ -38,7 +38,7 @@ describe('设置标签测试', () => {
 
     test('当设置标签没有内容时，结果应为空数组', () => {
         const text = `
-        add $u2/r10@1.1.1 as p3
+        add $u2/r1@1.1.1 as p3
           do
             set_tags
           end

@@ -1,4 +1,4 @@
-const {compile} = require('../lib');
+const {compile} = require('../../lib');
 
 describe('当没有任何操作时', () => {
     const text = `

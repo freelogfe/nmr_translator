@@ -1,7 +1,7 @@
-const {compile} = require('../lib');
+const {compile} = require('../../lib');
 
 describe('测试替换规则', () => {
-    const text = 'alter p2 replace $uu9/rr9@1.1.1 with #bb0/mm0 under $u6/m6>$u7/m7, $u8/m8';
+    const text = 'alter p2 replace $uu9/rr9@1.1.1 with #bb/mm under $u6/m6>$u7/m7, $u8/m8';
 
     const {errors, rules} = compile(text);
 
@@ -19,7 +19,7 @@ describe('测试替换规则', () => {
 
     test('正确获取替换源信息', () => {
         expect(rules[0].replaces[0].replacer).toEqual({
-            "name": "bb0/mm0",
+            "name": "bb/mm",
             "type": "mock"
         });
     });
@@ -49,7 +49,7 @@ describe('测试替换规则', () => {
     });
 
     test('当不设范围时，scopes 应为空数组', () => {
-        const text = 'alter p2 replace $uu9/rr9@1.1.1 with #bb0/mm08';
+        const text = 'alter p2 replace $uu9/rr9@1.1.1 with #bb/mm8';
         const {rules} = compile(text);
         expect(rules[0].replaces[0].scopes).toEqual([]);
     });

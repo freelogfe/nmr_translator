@@ -1,8 +1,8 @@
-const {compile} = require('../lib');
+const {compile} = require('../../lib');
 
 describe('新建 presentable', () => {
 
-    const text = `add $u2/r10@1.1.1 as p3
+    const text = `add $u2/r1@1.1.1 as p3
       do
       end`;
     const {errors, rules} = compile(text);
@@ -25,7 +25,7 @@ describe('新建 presentable', () => {
 
     test('正确获取 candidate', () => {
         expect(rules[0].candidate).toEqual({
-            "name": "u2/r10",
+            "name": "u2/r1",
             "versionRange": "1.1.1",
             "type": "release"
         });
