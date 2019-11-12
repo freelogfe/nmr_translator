@@ -7,7 +7,7 @@
   },
   "scripts": {
     "publish": "npm publish --access=public",
-    "build": "cd grammars && java -Xmx500M -cp ../build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor Mapping.g4 -o ../gen",
+    "build": "cd grammars && java -Xmx500M -cp ../build/antlr-4.7.2-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor Mapping.g4 -o ../gen",
     "build2": "java -Xmx500M -cp build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor grammars/Semver.g4 -o gen",
     "dev": "nodemon inspect dev/index.test.js",
     "dev2": "nodemon inspect dev/semver.test.js",

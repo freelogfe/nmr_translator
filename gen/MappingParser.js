@@ -1,10 +1,11 @@
-// Generated from Mapping.g4 by ANTLR 4.7.1
+// Generated from Mapping.g4 by ANTLR 4.7.2
 // jshint ignore: start
 var antlr4 = require('antlr4/index');
 var MappingListener = require('./MappingListener').MappingListener;
 var MappingVisitor = require('./MappingVisitor').MappingVisitor;
 
 var grammarFileName = "Mapping.g4";
+
 
 var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0003[\u017e\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
@@ -444,6 +445,7 @@ MappingParser.RULE_digit = 49;
 MappingParser.RULE_positive_digit = 50;
 MappingParser.RULE_letter = 51;
 
+
 function MappingRulesContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -526,6 +528,7 @@ MappingParser.prototype.mappingRules = function() {
     }
     return localctx;
 };
+
 
 function MappingRuleContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -720,6 +723,7 @@ MappingParser.prototype.mappingRule = function() {
     return localctx;
 };
 
+
 function AddRuleContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -829,6 +833,7 @@ MappingParser.prototype.addRule = function() {
     return localctx;
 };
 
+
 function CandidateContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -895,6 +900,7 @@ MappingParser.prototype.candidate = function() {
     }
     return localctx;
 };
+
 
 function AlterRuleContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -993,6 +999,7 @@ MappingParser.prototype.alterRule = function() {
     return localctx;
 };
 
+
 function CodeBlockContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -1080,6 +1087,7 @@ MappingParser.prototype.codeBlock = function() {
     return localctx;
 };
 
+
 function LinesCodeContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -1162,6 +1170,7 @@ MappingParser.prototype.linesCode = function() {
     }
     return localctx;
 };
+
 
 function LineCodeContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -1282,6 +1291,7 @@ MappingParser.prototype.lineCode = function() {
     return localctx;
 };
 
+
 function SetTagsContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -1364,6 +1374,7 @@ MappingParser.prototype.setTags = function() {
     }
     return localctx;
 };
+
 
 function TagsContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -1454,6 +1465,7 @@ MappingParser.prototype.tags = function() {
     return localctx;
 };
 
+
 function TagContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -1520,6 +1532,7 @@ MappingParser.prototype.tag = function() {
     }
     return localctx;
 };
+
 
 function ReplaceContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -1610,6 +1623,7 @@ MappingParser.prototype.replace = function() {
     return localctx;
 };
 
+
 function TargetContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -1677,6 +1691,7 @@ MappingParser.prototype.target = function() {
     return localctx;
 };
 
+
 function SourceContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -1743,6 +1758,7 @@ MappingParser.prototype.source = function() {
     }
     return localctx;
 };
+
 
 function UnderContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -1835,6 +1851,7 @@ MappingParser.prototype.under = function() {
     return localctx;
 };
 
+
 function ScopeContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -1924,6 +1941,7 @@ MappingParser.prototype.scope = function() {
     return localctx;
 };
 
+
 function ScopeNodeContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -1991,6 +2009,7 @@ MappingParser.prototype.scopeNode = function() {
     return localctx;
 };
 
+
 function ShowContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -2055,6 +2074,7 @@ MappingParser.prototype.show = function() {
     return localctx;
 };
 
+
 function HideContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -2118,6 +2138,7 @@ MappingParser.prototype.hide = function() {
     }
     return localctx;
 };
+
 
 function ReleaseOrMockNameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -2203,6 +2224,7 @@ MappingParser.prototype.releaseOrMockName = function() {
     return localctx;
 };
 
+
 function PresentationNameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -2270,6 +2292,7 @@ MappingParser.prototype.presentationName = function() {
     return localctx;
 };
 
+
 function HostageContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -2336,6 +2359,7 @@ MappingParser.prototype.hostage = function() {
     }
     return localctx;
 };
+
 
 function ReleaseNameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -2406,6 +2430,7 @@ MappingParser.prototype.releaseName = function() {
     return localctx;
 };
 
+
 function MockNameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -2474,6 +2499,7 @@ MappingParser.prototype.mockName = function() {
     }
     return localctx;
 };
+
 
 function Release_idContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -2564,6 +2590,7 @@ MappingParser.prototype.release_id = function() {
     return localctx;
 };
 
+
 function Mock_idContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -2638,6 +2665,7 @@ MappingParser.prototype.mock_id = function() {
     }
     return localctx;
 };
+
 
 function Presentation_nameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -2733,6 +2761,7 @@ MappingParser.prototype.presentation_name = function() {
     return localctx;
 };
 
+
 function Release_nameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -2799,6 +2828,7 @@ MappingParser.prototype.release_name = function() {
     }
     return localctx;
 };
+
 
 function Mock_nameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -2867,6 +2897,7 @@ MappingParser.prototype.mock_name = function() {
     return localctx;
 };
 
+
 function Bucket_nameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -2934,6 +2965,7 @@ MappingParser.prototype.bucket_name = function() {
     return localctx;
 };
 
+
 function User_nameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -3000,6 +3032,7 @@ MappingParser.prototype.user_name = function() {
     }
     return localctx;
 };
+
 
 function Valid_semverContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -3155,6 +3188,7 @@ MappingParser.prototype.valid_semver = function() {
     return localctx;
 };
 
+
 function PrefixContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -3226,6 +3260,7 @@ MappingParser.prototype.prefix = function() {
     }
     return localctx;
 };
+
 
 function Version_coreContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -3332,6 +3367,7 @@ MappingParser.prototype.version_core = function() {
     return localctx;
 };
 
+
 function MajorContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -3398,6 +3434,7 @@ MappingParser.prototype.major = function() {
     }
     return localctx;
 };
+
 
 function MinorContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -3466,6 +3503,7 @@ MappingParser.prototype.minor = function() {
     return localctx;
 };
 
+
 function PatchContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -3533,6 +3571,7 @@ MappingParser.prototype.patch = function() {
     return localctx;
 };
 
+
 function PreReleaseContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -3599,6 +3638,7 @@ MappingParser.prototype.preRelease = function() {
     }
     return localctx;
 };
+
 
 function DotSeparated_preRelease_identifiersContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -3689,6 +3729,7 @@ MappingParser.prototype.dotSeparated_preRelease_identifiers = function() {
     return localctx;
 };
 
+
 function BuildContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -3755,6 +3796,7 @@ MappingParser.prototype.build = function() {
     }
     return localctx;
 };
+
 
 function DotSeparated_build_identifiersContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -3845,6 +3887,7 @@ MappingParser.prototype.dotSeparated_build_identifiers = function() {
     return localctx;
 };
 
+
 function PreRelease_identifierContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -3930,6 +3973,7 @@ MappingParser.prototype.preRelease_identifier = function() {
     return localctx;
 };
 
+
 function Build_identifierContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -4014,6 +4058,7 @@ MappingParser.prototype.build_identifier = function() {
     }
     return localctx;
 };
+
 
 function Alphanumeric_identifierContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -4127,6 +4172,7 @@ MappingParser.prototype.alphanumeric_identifier = function() {
     return localctx;
 };
 
+
 function Numeric_identifierContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -4220,6 +4266,7 @@ MappingParser.prototype.numeric_identifier = function() {
     return localctx;
 };
 
+
 function Identifier_charactersContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -4306,6 +4353,7 @@ MappingParser.prototype.identifier_characters = function() {
     }
     return localctx;
 };
+
 
 function Identifier_characterContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -4452,6 +4500,7 @@ MappingParser.prototype.identifier_character = function() {
     return localctx;
 };
 
+
 function NonDigitContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -4583,6 +4632,7 @@ MappingParser.prototype.nonDigit = function() {
     return localctx;
 };
 
+
 function DigitsContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -4669,6 +4719,7 @@ MappingParser.prototype.digits = function() {
     }
     return localctx;
 };
+
 
 function DigitContext(parser, parent, invokingState) {
 	if(parent===undefined) {
@@ -4758,6 +4809,7 @@ MappingParser.prototype.digit = function() {
     return localctx;
 };
 
+
 function Positive_digitContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
@@ -4829,6 +4881,7 @@ MappingParser.prototype.positive_digit = function() {
     }
     return localctx;
 };
+
 
 function LetterContext(parser, parent, invokingState) {
 	if(parent===undefined) {
