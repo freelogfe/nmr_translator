@@ -9,8 +9,8 @@ mappingRules
 mappingRule
   : addRule
   | alterRule
-  | setRule
-  | ~('add' | 'alter' | 'important')
+  | 'activate_theme' hostage
+  | ~('add' | 'alter' | 'activate_theme')
   ;
 
 
@@ -27,9 +27,9 @@ alterRule
   | 'alter' presentationName lineCode
   ;
 
-setRule
-  : 'set' 'do' 'show_page_build' hostage 'end'
-  ;
+//setRule
+//  : 'set' 'do' 'show_page_build' hostage 'end'
+//  ;
 
 codeBlock
   : 'do' 'end'
