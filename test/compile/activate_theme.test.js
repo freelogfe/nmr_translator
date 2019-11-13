@@ -8,7 +8,8 @@ describe('测试激活主题', () => {
 
         expect(rules[0]).toEqual({
             text: 'activate_theme presentable1',
-            showPageBuild: {name: 'presentable1'}
+            themeName:'presentable1',
+            operation: 'activate_theme',
         });
     });
 
