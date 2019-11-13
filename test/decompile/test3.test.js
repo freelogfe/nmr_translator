@@ -17,7 +17,7 @@ const rules = [
     }
 ];
 const text = 'alter 我爱你\n  do\n    replace $12345123451234/我爱你 with $12345123451234/下雪了@0.1.0\n  end';
-describe('综合测试1', () => {
+describe('综合测试3', () => {
     test('测试', () => {
         // console.log(JSON.stringify(decompile(rules)));
         expect(decompile(rules)).toEqual(text);
