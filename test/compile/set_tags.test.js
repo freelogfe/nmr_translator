@@ -8,10 +8,14 @@ describe('设置标签测试', () => {
         set_tags t1,t2,t3
       end
     `;
-    const {errors, rules} = compile(text);
+    const {errors, rules, errorObjects} = compile(text);
 
-    test('语法正确的话，不会报错', () => {
+    test('语法正确的话，不会报错1', () => {
         expect(errors).toBeNull();
+    });
+
+    test('语法正确的话，不会报错2', () => {
+        expect(errorObjects).toBeNull();
     });
 
     test('presentableName = p3', () => {

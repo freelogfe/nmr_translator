@@ -43,7 +43,7 @@ mock_id
   ;
 
 presentation_name
-  : ( '.' | ID)*
+  : ID
   ;
 
 release_name

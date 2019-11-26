@@ -5,10 +5,14 @@ describe('新建 presentable', () => {
     const text = `add $u2/r1@1.1.1 as p3
       do
       end`;
-    const {errors, rules} = compile(text);
+    const {errors, rules, errorObjects} = compile(text);
 
-    test('语法正确的话，不会报错', () => {
+    test('语法正确的话，不会报错1', () => {
         expect(errors).toBeNull();
+    });
+
+    test('语法正确的话，不会报错2', () => {
+        expect(errorObjects).toBeNull();
     });
 
     test('文本保持不变', () => {

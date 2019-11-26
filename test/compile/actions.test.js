@@ -7,10 +7,14 @@ describe('当没有任何操作时', () => {
       end
     `;
 
-    const {errors, rules} = compile(text);
+    const {errors, rules, errorObjects} = compile(text);
 
-    test('没有操作，不会报错', () => {
+    test('没有操作，不会报错1', () => {
         expect(errors).toBeNull();
+    });
+
+    test('没有操作，不会报错2', () => {
+        expect(errorObjects).toBeNull();
     });
 
     test('tags 为 null', () => {
