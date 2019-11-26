@@ -55,7 +55,7 @@ interface IErrorObject {
 }
 
 interface IResult {
-    error: string[] | null;
+    errors: string[] | null;
     rules?: IRule[];
     errorObjects: IErrorObject[] | null;
 }
