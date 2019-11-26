@@ -20,8 +20,8 @@ const {errors, rules, errorObjects} = compile(rulesText);
 <!-- **注：规则语法概要** -->
 
 ## 3 结果说明
-- 如果编译出错，```error``` 变量为错误内容组成的数组
-- 如果编译通过，```error``` 变量为 ```null```，```rules``` 为编译结果的规则数组
+- 如果编译出错，```error``` ```errorObjects``` 变量均为错误内容组成的数组
+- 如果编译通过，```error```  ```errorObjects``` 变量均为 ```null```，```rules``` 为编译结果的规则数组
 
 
 ```typescript

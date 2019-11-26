@@ -9,9 +9,9 @@ console.log(mappingText);
 const {errors, rules, errorObjects} = compile(mappingText);
 if (errors) {
     console.log(errors, 'Error');
+}
+if (errorObjects) {
     console.log(errorObjects, 'errorObjects');
-    debugger;
-    return;
 }
 // fs.writeFileSync(path.join(__dirname, 'rules.json'), JSON.stringify(rules));
 console.log(rules, 'result');
