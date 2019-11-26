@@ -6,12 +6,14 @@ const filePath = path.join(__dirname, './sample_mapping.fnm');
 const mappingText = fs.readFileSync(filePath, 'utf-8');
 console.log(mappingText);
 
-const {errors, rules} = compile(mappingText);
+const {errors, rules, errorObjects} = compile(mappingText);
 if (errors) {
     console.log(errors, 'Error');
+    console.log(errorObjects, 'errorObjects');
+    debugger;
     return;
 }
-fs.writeFileSync(path.join(__dirname, 'rules.json'), JSON.stringify(rules));
+// fs.writeFileSync(path.join(__dirname, 'rules.json'), JSON.stringify(rules));
 console.log(rules, 'result');
 
 debugger;
