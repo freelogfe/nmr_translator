@@ -56,6 +56,15 @@ MappingListener.prototype.exitAlterRule = function(ctx) {
 };
 
 
+// Enter a parse tree produced by MappingParser#actions.
+MappingListener.prototype.enterActions = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#actions.
+MappingListener.prototype.exitActions = function(ctx) {
+};
+
+
 // Enter a parse tree produced by MappingParser#codeBlock.
 MappingListener.prototype.enterCodeBlock = function(ctx) {
 };

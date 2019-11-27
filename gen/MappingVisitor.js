@@ -42,6 +42,12 @@ MappingVisitor.prototype.visitAlterRule = function(ctx) {
 };
 
 
+// Visit a parse tree produced by MappingParser#actions.
+MappingVisitor.prototype.visitActions = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by MappingParser#codeBlock.
 MappingVisitor.prototype.visitCodeBlock = function(ctx) {
   return this.visitChildren(ctx);

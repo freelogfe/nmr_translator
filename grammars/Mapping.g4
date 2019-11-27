@@ -16,15 +16,17 @@ mappingRule
 
 // 添加规则
 addRule
-  : 'add' candidate 'as' presentationName codeBlock
-  | 'add' candidate 'as' presentationName lineCode
+  : 'add' candidate 'as' presentationName actions
   ;
 
 candidate: releaseOrMockName;
 
 alterRule
-  : 'alter' presentationName codeBlock
-  | 'alter' presentationName lineCode
+  : 'alter' presentationName actions
+  ;
+
+actions
+  : (codeBlock | lineCode)
   ;
 
 //setRule

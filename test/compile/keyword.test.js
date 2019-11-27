@@ -1,28 +1,26 @@
 const {compile} = require('../../lib');
 
 describe('测试关键子错误', () => {
-    // TODO:
-    // test('把『do』关键字写错要报错', () => {
-    //     const text = `
-    //         alter p2
-    //           d
-    //           end
-    //     `;
-    //     const {errorObjects} = compile(text);
-    //     expect(errorObjects[0].line).toBe(3);
-    // });
+    test('把『do』关键字写错要报错', () => {
+        const text = `
+            alter p2
+              d
+              end
+        `;
+        const {errorObjects} = compile(text);
+        expect(errorObjects[0].line).toBe(3);
+    });
 
-    // TODO:
-    // test('把『do』关键字写错, 中间有其它内容，要报错', () => {
-    //     const text = `
-    //         alter p2
-    //           d
-    //             set_tags a1, b2
-    //           end
-    //     `;
-    //     const {errorObjects} = compile(text);
-    //     expect(errorObjects[0].line).toBe(3);
-    // });
+    test('把『do』关键字写错, 中间有其它内容，要报错', () => {
+        const text = `
+            alter p2
+              d
+                set_tags a1, b2
+              end
+        `;
+        const {errorObjects} = compile(text);
+        expect(errorObjects[0].line).toBe(3);
+    });
 
     test('把『end』关键字写错要报错', () => {
         const text = `
