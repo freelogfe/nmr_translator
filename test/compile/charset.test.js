@@ -49,10 +49,9 @@ describe('字符集测试', () => {
             expect(errors).not.toBeNull();
         });
 
-        // TODO:
-        // test('错行数应为 2', () => {
-        //     expect(errorObjects[0].line).toBe(2);
-        // });
+        test('错行数应为 2', () => {
+            expect(errorObjects[0].line).toBe(2);
+        });
     });
 
     describe('presentable 不能包含 "@" 字符', () => {
@@ -66,10 +65,9 @@ describe('字符集测试', () => {
             expect(errors).not.toBeNull();
         });
 
-        // TODO:
-        // test('错行数应为 2', () => {
-        //     expect(errorObjects[0].line).toBe(2);
-        // });
+        test('错行数应为 2', () => {
+            expect(errorObjects[0].line).toBe(2);
+        });
     });
 
     describe('presentable mock release 可以是纯数字', () => {
