@@ -16,13 +16,13 @@ mappingRule
 
 // 添加规则
 addRule
-  : 'add' candidate 'as' presentationName actions
+  : 'add' candidate 'as' exhibitName actions
   ;
 
-candidate: releaseOrMockName;
+candidate: resourceOrObjectName;
 
 alterRule
-  : 'alter' presentationName actions
+  : 'alter' exhibitName actions
   ;
 
 actions
@@ -39,33 +39,33 @@ codeBlock
   ;
 linesCode: lineCode*;
 lineCode
-  : setTags
+  : setLabels
   | replace
   | show
   | hide
-  | ('set_tags' | 'replace' | 'show' | 'hide')
+  | ('set_labels' | 'replace' | 'show' | 'hide')
   ;
 
-setTags
-  : 'set_tags' tags
-  | 'set_tags';
-tags
-  : (tag ',')* tag
+setLabels
+  : 'set_labels' labels
+  | 'set_labels';
+labels
+  : (label ',')* label
   ;
-tag: ID;
+label: ID;
 
 replace: 'replace' target 'with' source under?;
-target: releaseOrMockName;
-source: releaseOrMockName;
+target: resourceOrObjectName;
+source: resourceOrObjectName;
 under: 'under' scope (',' scope)*;
 scope: scopeNode ('>' scopeNode)*;
-scopeNode: releaseOrMockName;
+scopeNode: resourceOrObjectName;
 
 show: 'show';
 hide: 'hide';
 
-releaseOrMockName: releaseName | mockName;
-presentationName: presentation_name;
-hostage: presentation_name;
-releaseName: '$' release_id;
-mockName: '#' mock_id;
+resourceOrObjectName: reourceName | objectName;
+exhibitName: exhibit_name;
+hostage: exhibit_name;
+reourceName: '$' resource_id;
+objectName: '#' object_id;

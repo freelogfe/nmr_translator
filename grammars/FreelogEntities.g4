@@ -34,23 +34,23 @@ BLOCK_COMMENT : '/*' .*? '*/' -> skip;
 //------ Whitespace
 WS : [ \t\n\r]+ -> skip;
 
-release_id
-  : user_name '/' release_name ('@' valid_semver)??
+resource_id
+  : user_name '/' resource_name ('@' valid_semver)??
   ;
 
-mock_id
-  : bucket_name '/' mock_name
+object_id
+  : bucket_name '/' bucket_name
   ;
 
-presentation_name
+exhibit_name
   : ID
   ;
 
-release_name
+resource_name
   : ID
   ;
 
-mock_name
+object_name
   : ID
   ;
 
