@@ -64,8 +64,8 @@ scopeNode: resourceOrObjectName;
 show: 'show';
 hide: 'hide';
 
-resourceOrObjectName: reourceName | objectName;
+resourceOrObjectName: resourceName | objectName;
 exhibitName: exhibit_name;
 hostage: exhibit_name;
-reourceName: '$' resource_id;
+resourceName: '$' resource_id;
 objectName: '#' object_id;

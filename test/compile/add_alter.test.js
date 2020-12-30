@@ -23,8 +23,8 @@ describe('新建 presentable', () => {
         expect(rules[0].operation).toBe('add');
     });
 
-    test('presentableName 应为 p3', () => {
-        expect(rules[0].presentableName).toBe('p3');
+    test('exhibitName 应为 p3', () => {
+        expect(rules[0].exhibitName).toBe('p3');
     });
 
     test('正确获取 candidate', () => {
@@ -36,7 +36,7 @@ describe('新建 presentable', () => {
     });
 });
 
-describe('修改 presentable', () => {
+describe('修改 exhibit', () => {
 
     const text = `alter p3
       do
@@ -55,7 +55,7 @@ describe('修改 presentable', () => {
         expect(rules[0].operation).toBe('alter');
     });
 
-    test('presentableName 应为 p3', () => {
-        expect(rules[0].presentableName).toBe('p3');
+    test('exhibitName 应为 p3', () => {
+        expect(rules[0].exhibitName).toBe('p3');
     });
 });

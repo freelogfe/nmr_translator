@@ -149,44 +149,44 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u00e2\u00e3\u0007\u0014\u0002\u0002\u00e3\u00e5\u0005B\"\u0002\u00e4",
     "\u00e5\u0003\u0002\u0002\u0002\u00e4\u00e2\u0003\u0002\u0002\u0002\u00e5",
     "5\u0003\u0002\u0002\u0002\u00e6\u00e7\u0005> \u0002\u00e7\u00e8\u0007",
-    "\u0013\u0002\u0002\u00e8\u00e9\u0005<\u001f\u0002\u00e97\u0003\u0002",
-    "\u0002\u0002\u00ea\u00eb\u0007X\u0002\u0002\u00eb9\u0003\u0002\u0002",
-    "\u0002\u00ec\u00ed\u0007X\u0002\u0002\u00ed;\u0003\u0002\u0002\u0002",
-    "\u00ee\u00ef\u0007X\u0002\u0002\u00ef=\u0003\u0002\u0002\u0002\u00f0",
-    "\u00f1\u0007X\u0002\u0002\u00f1?\u0003\u0002\u0002\u0002\u00f2\u00f3",
-    "\u0007X\u0002\u0002\u00f3A\u0003\u0002\u0002\u0002\u00f4\u00f6\u0005",
-    "D#\u0002\u00f5\u00f4\u0003\u0002\u0002\u0002\u00f5\u00f6\u0003\u0002",
-    "\u0002\u0002\u00f6\u00f7\u0003\u0002\u0002\u0002\u00f7\u0110\u0005F",
-    "$\u0002\u00f8\u00fa\u0005D#\u0002\u00f9\u00f8\u0003\u0002\u0002\u0002",
-    "\u00f9\u00fa\u0003\u0002\u0002\u0002\u00fa\u00fb\u0003\u0002\u0002\u0002",
-    "\u00fb\u00fc\u0005F$\u0002\u00fc\u00fd\u0007\u0015\u0002\u0002\u00fd",
-    "\u00fe\u0005N(\u0002\u00fe\u0110\u0003\u0002\u0002\u0002\u00ff\u0101",
-    "\u0005D#\u0002\u0100\u00ff\u0003\u0002\u0002\u0002\u0100\u0101\u0003",
-    "\u0002\u0002\u0002\u0101\u0102\u0003\u0002\u0002\u0002\u0102\u0103\u0005",
-    "F$\u0002\u0103\u0104\u0007\u0016\u0002\u0002\u0104\u0105\u0005R*\u0002",
-    "\u0105\u0110\u0003\u0002\u0002\u0002\u0106\u0108\u0005D#\u0002\u0107",
-    "\u0106\u0003\u0002\u0002\u0002\u0107\u0108\u0003\u0002\u0002\u0002\u0108",
-    "\u0109\u0003\u0002\u0002\u0002\u0109\u010a\u0005F$\u0002\u010a\u010b",
-    "\u0007\u0015\u0002\u0002\u010b\u010c\u0005N(\u0002\u010c\u010d\u0007",
-    "\u0016\u0002\u0002\u010d\u010e\u0005R*\u0002\u010e\u0110\u0003\u0002",
-    "\u0002\u0002\u010f\u00f5\u0003\u0002\u0002\u0002\u010f\u00f9\u0003\u0002",
-    "\u0002\u0002\u010f\u0100\u0003\u0002\u0002\u0002\u010f\u0107\u0003\u0002",
-    "\u0002\u0002\u0110C\u0003\u0002\u0002\u0002\u0111\u0112\t\u0004\u0002",
-    "\u0002\u0112E\u0003\u0002\u0002\u0002\u0113\u0114\u0005H%\u0002\u0114",
-    "\u0115\u0007\u0019\u0002\u0002\u0115\u0116\u0005J&\u0002\u0116\u0117",
-    "\u0007\u0019\u0002\u0002\u0117\u0118\u0005L\'\u0002\u0118\u0120\u0003",
-    "\u0002\u0002\u0002\u0119\u011a\u0005H%\u0002\u011a\u011b\u0007\u0019",
-    "\u0002\u0002\u011b\u011c\u0005J&\u0002\u011c\u011d\u0007\u0019\u0002",
-    "\u0002\u011d\u011e\u0005L\'\u0002\u011e\u0120\u0003\u0002\u0002\u0002",
-    "\u011f\u0113\u0003\u0002\u0002\u0002\u011f\u0119\u0003\u0002\u0002\u0002",
-    "\u0120G\u0003\u0002\u0002\u0002\u0121\u0122\u0005\\/\u0002\u0122I\u0003",
-    "\u0002\u0002\u0002\u0123\u0124\u0005\\/\u0002\u0124K\u0003\u0002\u0002",
-    "\u0002\u0125\u0126\u0005\\/\u0002\u0126M\u0003\u0002\u0002\u0002\u0127",
-    "\u0128\u0005P)\u0002\u0128O\u0003\u0002\u0002\u0002\u0129\u012f\u0005",
-    "V,\u0002\u012a\u012b\u0005V,\u0002\u012b\u012c\u0007\u0019\u0002\u0002",
-    "\u012c\u012d\u0005P)\u0002\u012d\u012f\u0003\u0002\u0002\u0002\u012e",
-    "\u0129\u0003\u0002\u0002\u0002\u012e\u012a\u0003\u0002\u0002\u0002\u012f",
-    "Q\u0003\u0002\u0002\u0002\u0130\u0131\u0005T+\u0002\u0131S\u0003\u0002",
+    "\u0013\u0002\u0002\u00e8\u00e9\u0005> \u0002\u00e97\u0003\u0002\u0002",
+    "\u0002\u00ea\u00eb\u0007X\u0002\u0002\u00eb9\u0003\u0002\u0002\u0002",
+    "\u00ec\u00ed\u0007X\u0002\u0002\u00ed;\u0003\u0002\u0002\u0002\u00ee",
+    "\u00ef\u0007X\u0002\u0002\u00ef=\u0003\u0002\u0002\u0002\u00f0\u00f1",
+    "\u0007X\u0002\u0002\u00f1?\u0003\u0002\u0002\u0002\u00f2\u00f3\u0007",
+    "X\u0002\u0002\u00f3A\u0003\u0002\u0002\u0002\u00f4\u00f6\u0005D#\u0002",
+    "\u00f5\u00f4\u0003\u0002\u0002\u0002\u00f5\u00f6\u0003\u0002\u0002\u0002",
+    "\u00f6\u00f7\u0003\u0002\u0002\u0002\u00f7\u0110\u0005F$\u0002\u00f8",
+    "\u00fa\u0005D#\u0002\u00f9\u00f8\u0003\u0002\u0002\u0002\u00f9\u00fa",
+    "\u0003\u0002\u0002\u0002\u00fa\u00fb\u0003\u0002\u0002\u0002\u00fb\u00fc",
+    "\u0005F$\u0002\u00fc\u00fd\u0007\u0015\u0002\u0002\u00fd\u00fe\u0005",
+    "N(\u0002\u00fe\u0110\u0003\u0002\u0002\u0002\u00ff\u0101\u0005D#\u0002",
+    "\u0100\u00ff\u0003\u0002\u0002\u0002\u0100\u0101\u0003\u0002\u0002\u0002",
+    "\u0101\u0102\u0003\u0002\u0002\u0002\u0102\u0103\u0005F$\u0002\u0103",
+    "\u0104\u0007\u0016\u0002\u0002\u0104\u0105\u0005R*\u0002\u0105\u0110",
+    "\u0003\u0002\u0002\u0002\u0106\u0108\u0005D#\u0002\u0107\u0106\u0003",
+    "\u0002\u0002\u0002\u0107\u0108\u0003\u0002\u0002\u0002\u0108\u0109\u0003",
+    "\u0002\u0002\u0002\u0109\u010a\u0005F$\u0002\u010a\u010b\u0007\u0015",
+    "\u0002\u0002\u010b\u010c\u0005N(\u0002\u010c\u010d\u0007\u0016\u0002",
+    "\u0002\u010d\u010e\u0005R*\u0002\u010e\u0110\u0003\u0002\u0002\u0002",
+    "\u010f\u00f5\u0003\u0002\u0002\u0002\u010f\u00f9\u0003\u0002\u0002\u0002",
+    "\u010f\u0100\u0003\u0002\u0002\u0002\u010f\u0107\u0003\u0002\u0002\u0002",
+    "\u0110C\u0003\u0002\u0002\u0002\u0111\u0112\t\u0004\u0002\u0002\u0112",
+    "E\u0003\u0002\u0002\u0002\u0113\u0114\u0005H%\u0002\u0114\u0115\u0007",
+    "\u0019\u0002\u0002\u0115\u0116\u0005J&\u0002\u0116\u0117\u0007\u0019",
+    "\u0002\u0002\u0117\u0118\u0005L\'\u0002\u0118\u0120\u0003\u0002\u0002",
+    "\u0002\u0119\u011a\u0005H%\u0002\u011a\u011b\u0007\u0019\u0002\u0002",
+    "\u011b\u011c\u0005J&\u0002\u011c\u011d\u0007\u0019\u0002\u0002\u011d",
+    "\u011e\u0005L\'\u0002\u011e\u0120\u0003\u0002\u0002\u0002\u011f\u0113",
+    "\u0003\u0002\u0002\u0002\u011f\u0119\u0003\u0002\u0002\u0002\u0120G",
+    "\u0003\u0002\u0002\u0002\u0121\u0122\u0005\\/\u0002\u0122I\u0003\u0002",
+    "\u0002\u0002\u0123\u0124\u0005\\/\u0002\u0124K\u0003\u0002\u0002\u0002",
+    "\u0125\u0126\u0005\\/\u0002\u0126M\u0003\u0002\u0002\u0002\u0127\u0128",
+    "\u0005P)\u0002\u0128O\u0003\u0002\u0002\u0002\u0129\u012f\u0005V,\u0002",
+    "\u012a\u012b\u0005V,\u0002\u012b\u012c\u0007\u0019\u0002\u0002\u012c",
+    "\u012d\u0005P)\u0002\u012d\u012f\u0003\u0002\u0002\u0002\u012e\u0129",
+    "\u0003\u0002\u0002\u0002\u012e\u012a\u0003\u0002\u0002\u0002\u012fQ",
+    "\u0003\u0002\u0002\u0002\u0130\u0131\u0005T+\u0002\u0131S\u0003\u0002",
     "\u0002\u0002\u0132\u0138\u0005X-\u0002\u0133\u0134\u0005X-\u0002\u0134",
     "\u0135\u0007\u0019\u0002\u0002\u0135\u0136\u0005T+\u0002\u0136\u0138",
     "\u0003\u0002\u0002\u0002\u0137\u0132\u0003\u0002\u0002\u0002\u0137\u0133",
@@ -233,7 +233,7 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 var sharedContextCache = new antlr4.PredictionContextCache();
 
 var literalNames = [ null, "'activate_theme'", "'add'", "'alter'", "'as'", 
-                     "'do'", "'end'", "'set_tags'", "'replace'", "'show'", 
+                     "'do'", "'end'", "'set_labels'", "'replace'", "'show'", 
                      "'hide'", "','", "'with'", "'under'", "'>'", "'$'", 
                      "'#'", "'/'", "'@'", "'-'", "'+'", "'^'", "'~'", "'.'", 
                      "'0'", "'1'", "'2'", "'3'", "'4'", "'5'", "'6'", "'7'", 
@@ -259,13 +259,13 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, null,
 
 var ruleNames =  [ "mappingRules", "mappingRule", "addRule", "candidate", 
                    "alterRule", "actions", "codeBlock", "linesCode", "lineCode", 
-                   "setTags", "tags", "tag", "replace", "target", "source", 
-                   "under", "scope", "scopeNode", "show", "hide", "releaseOrMockName", 
-                   "presentationName", "hostage", "releaseName", "mockName", 
-                   "release_id", "mock_id", "presentation_name", "release_name", 
-                   "mock_name", "bucket_name", "user_name", "valid_semver", 
-                   "prefix", "version_core", "major", "minor", "patch", 
-                   "preRelease", "dotSeparated_preRelease_identifiers", 
+                   "setLabels", "labels", "label", "replace", "target", 
+                   "source", "under", "scope", "scopeNode", "show", "hide", 
+                   "resourceOrObjectName", "exhibitName", "hostage", "reourceName", 
+                   "objectName", "resource_id", "object_id", "exhibit_name", 
+                   "resource_name", "object_name", "bucket_name", "user_name", 
+                   "valid_semver", "prefix", "version_core", "major", "minor", 
+                   "patch", "preRelease", "dotSeparated_preRelease_identifiers", 
                    "build", "dotSeparated_build_identifiers", "preRelease_identifier", 
                    "build_identifier", "alphanumeric_identifier", "numeric_identifier", 
                    "identifier_characters", "identifier_character", "nonDigit", 
@@ -389,9 +389,9 @@ MappingParser.RULE_actions = 5;
 MappingParser.RULE_codeBlock = 6;
 MappingParser.RULE_linesCode = 7;
 MappingParser.RULE_lineCode = 8;
-MappingParser.RULE_setTags = 9;
-MappingParser.RULE_tags = 10;
-MappingParser.RULE_tag = 11;
+MappingParser.RULE_setLabels = 9;
+MappingParser.RULE_labels = 10;
+MappingParser.RULE_label = 11;
 MappingParser.RULE_replace = 12;
 MappingParser.RULE_target = 13;
 MappingParser.RULE_source = 14;
@@ -400,16 +400,16 @@ MappingParser.RULE_scope = 16;
 MappingParser.RULE_scopeNode = 17;
 MappingParser.RULE_show = 18;
 MappingParser.RULE_hide = 19;
-MappingParser.RULE_releaseOrMockName = 20;
-MappingParser.RULE_presentationName = 21;
+MappingParser.RULE_resourceOrObjectName = 20;
+MappingParser.RULE_exhibitName = 21;
 MappingParser.RULE_hostage = 22;
-MappingParser.RULE_releaseName = 23;
-MappingParser.RULE_mockName = 24;
-MappingParser.RULE_release_id = 25;
-MappingParser.RULE_mock_id = 26;
-MappingParser.RULE_presentation_name = 27;
-MappingParser.RULE_release_name = 28;
-MappingParser.RULE_mock_name = 29;
+MappingParser.RULE_reourceName = 23;
+MappingParser.RULE_objectName = 24;
+MappingParser.RULE_resource_id = 25;
+MappingParser.RULE_object_id = 26;
+MappingParser.RULE_exhibit_name = 27;
+MappingParser.RULE_resource_name = 28;
+MappingParser.RULE_object_name = 29;
 MappingParser.RULE_bucket_name = 30;
 MappingParser.RULE_user_name = 31;
 MappingParser.RULE_valid_semver = 32;
@@ -733,8 +733,8 @@ AddRuleContext.prototype.candidate = function() {
     return this.getTypedRuleContext(CandidateContext,0);
 };
 
-AddRuleContext.prototype.presentationName = function() {
-    return this.getTypedRuleContext(PresentationNameContext,0);
+AddRuleContext.prototype.exhibitName = function() {
+    return this.getTypedRuleContext(ExhibitNameContext,0);
 };
 
 AddRuleContext.prototype.actions = function() {
@@ -779,7 +779,7 @@ MappingParser.prototype.addRule = function() {
         this.state = 121;
         this.match(MappingParser.T__3);
         this.state = 122;
-        this.presentationName();
+        this.exhibitName();
         this.state = 123;
         this.actions();
     } catch (re) {
@@ -813,8 +813,8 @@ function CandidateContext(parser, parent, invokingState) {
 CandidateContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 CandidateContext.prototype.constructor = CandidateContext;
 
-CandidateContext.prototype.releaseOrMockName = function() {
-    return this.getTypedRuleContext(ReleaseOrMockNameContext,0);
+CandidateContext.prototype.resourceOrObjectName = function() {
+    return this.getTypedRuleContext(ResourceOrObjectNameContext,0);
 };
 
 CandidateContext.prototype.enterRule = function(listener) {
@@ -849,7 +849,7 @@ MappingParser.prototype.candidate = function() {
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 125;
-        this.releaseOrMockName();
+        this.resourceOrObjectName();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -881,8 +881,8 @@ function AlterRuleContext(parser, parent, invokingState) {
 AlterRuleContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 AlterRuleContext.prototype.constructor = AlterRuleContext;
 
-AlterRuleContext.prototype.presentationName = function() {
-    return this.getTypedRuleContext(PresentationNameContext,0);
+AlterRuleContext.prototype.exhibitName = function() {
+    return this.getTypedRuleContext(ExhibitNameContext,0);
 };
 
 AlterRuleContext.prototype.actions = function() {
@@ -923,7 +923,7 @@ MappingParser.prototype.alterRule = function() {
         this.state = 127;
         this.match(MappingParser.T__2);
         this.state = 128;
-        this.presentationName();
+        this.exhibitName();
         this.state = 129;
         this.actions();
     } catch (re) {
@@ -1216,8 +1216,8 @@ function LineCodeContext(parser, parent, invokingState) {
 LineCodeContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 LineCodeContext.prototype.constructor = LineCodeContext;
 
-LineCodeContext.prototype.setTags = function() {
-    return this.getTypedRuleContext(SetTagsContext,0);
+LineCodeContext.prototype.setLabels = function() {
+    return this.getTypedRuleContext(SetLabelsContext,0);
 };
 
 LineCodeContext.prototype.replace = function() {
@@ -1270,7 +1270,7 @@ MappingParser.prototype.lineCode = function() {
         case 1:
             this.enterOuterAlt(localctx, 1);
             this.state = 149;
-            this.setTags();
+            this.setLabels();
             break;
 
         case 2:
@@ -1320,7 +1320,7 @@ MappingParser.prototype.lineCode = function() {
 };
 
 
-function SetTagsContext(parser, parent, invokingState) {
+function SetLabelsContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -1329,32 +1329,32 @@ function SetTagsContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_setTags;
+    this.ruleIndex = MappingParser.RULE_setLabels;
     return this;
 }
 
-SetTagsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-SetTagsContext.prototype.constructor = SetTagsContext;
+SetLabelsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+SetLabelsContext.prototype.constructor = SetLabelsContext;
 
-SetTagsContext.prototype.tags = function() {
-    return this.getTypedRuleContext(TagsContext,0);
+SetLabelsContext.prototype.labels = function() {
+    return this.getTypedRuleContext(LabelsContext,0);
 };
 
-SetTagsContext.prototype.enterRule = function(listener) {
+SetLabelsContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterSetTags(this);
+        listener.enterSetLabels(this);
 	}
 };
 
-SetTagsContext.prototype.exitRule = function(listener) {
+SetLabelsContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitSetTags(this);
+        listener.exitSetLabels(this);
 	}
 };
 
-SetTagsContext.prototype.accept = function(visitor) {
+SetLabelsContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitSetTags(this);
+        return visitor.visitSetLabels(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -1363,12 +1363,12 @@ SetTagsContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.SetTagsContext = SetTagsContext;
+MappingParser.SetLabelsContext = SetLabelsContext;
 
-MappingParser.prototype.setTags = function() {
+MappingParser.prototype.setLabels = function() {
 
-    var localctx = new SetTagsContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 18, MappingParser.RULE_setTags);
+    var localctx = new SetLabelsContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 18, MappingParser.RULE_setLabels);
     try {
         this.state = 159;
         this._errHandler.sync(this);
@@ -1379,7 +1379,7 @@ MappingParser.prototype.setTags = function() {
             this.state = 156;
             this.match(MappingParser.T__6);
             this.state = 157;
-            this.tags();
+            this.labels();
             break;
 
         case 2:
@@ -1404,7 +1404,7 @@ MappingParser.prototype.setTags = function() {
 };
 
 
-function TagsContext(parser, parent, invokingState) {
+function LabelsContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -1413,39 +1413,39 @@ function TagsContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_tags;
+    this.ruleIndex = MappingParser.RULE_labels;
     return this;
 }
 
-TagsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-TagsContext.prototype.constructor = TagsContext;
+LabelsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+LabelsContext.prototype.constructor = LabelsContext;
 
-TagsContext.prototype.tag = function(i) {
+LabelsContext.prototype.label = function(i) {
     if(i===undefined) {
         i = null;
     }
     if(i===null) {
-        return this.getTypedRuleContexts(TagContext);
+        return this.getTypedRuleContexts(LabelContext);
     } else {
-        return this.getTypedRuleContext(TagContext,i);
+        return this.getTypedRuleContext(LabelContext,i);
     }
 };
 
-TagsContext.prototype.enterRule = function(listener) {
+LabelsContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterTags(this);
+        listener.enterLabels(this);
 	}
 };
 
-TagsContext.prototype.exitRule = function(listener) {
+LabelsContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitTags(this);
+        listener.exitLabels(this);
 	}
 };
 
-TagsContext.prototype.accept = function(visitor) {
+LabelsContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitTags(this);
+        return visitor.visitLabels(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -1454,12 +1454,12 @@ TagsContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.TagsContext = TagsContext;
+MappingParser.LabelsContext = LabelsContext;
 
-MappingParser.prototype.tags = function() {
+MappingParser.prototype.labels = function() {
 
-    var localctx = new TagsContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 20, MappingParser.RULE_tags);
+    var localctx = new LabelsContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 20, MappingParser.RULE_labels);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 166;
@@ -1468,7 +1468,7 @@ MappingParser.prototype.tags = function() {
         while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
             if(_alt===1) {
                 this.state = 161;
-                this.tag();
+                this.label();
                 this.state = 162;
                 this.match(MappingParser.T__10); 
             }
@@ -1478,7 +1478,7 @@ MappingParser.prototype.tags = function() {
         }
 
         this.state = 169;
-        this.tag();
+        this.label();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1494,7 +1494,7 @@ MappingParser.prototype.tags = function() {
 };
 
 
-function TagContext(parser, parent, invokingState) {
+function LabelContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -1503,32 +1503,32 @@ function TagContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_tag;
+    this.ruleIndex = MappingParser.RULE_label;
     return this;
 }
 
-TagContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-TagContext.prototype.constructor = TagContext;
+LabelContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+LabelContext.prototype.constructor = LabelContext;
 
-TagContext.prototype.ID = function() {
+LabelContext.prototype.ID = function() {
     return this.getToken(MappingParser.ID, 0);
 };
 
-TagContext.prototype.enterRule = function(listener) {
+LabelContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterTag(this);
+        listener.enterLabel(this);
 	}
 };
 
-TagContext.prototype.exitRule = function(listener) {
+LabelContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitTag(this);
+        listener.exitLabel(this);
 	}
 };
 
-TagContext.prototype.accept = function(visitor) {
+LabelContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitTag(this);
+        return visitor.visitLabel(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -1537,12 +1537,12 @@ TagContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.TagContext = TagContext;
+MappingParser.LabelContext = LabelContext;
 
-MappingParser.prototype.tag = function() {
+MappingParser.prototype.label = function() {
 
-    var localctx = new TagContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 22, MappingParser.RULE_tag);
+    var localctx = new LabelContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 22, MappingParser.RULE_label);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 171;
@@ -1668,8 +1668,8 @@ function TargetContext(parser, parent, invokingState) {
 TargetContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 TargetContext.prototype.constructor = TargetContext;
 
-TargetContext.prototype.releaseOrMockName = function() {
-    return this.getTypedRuleContext(ReleaseOrMockNameContext,0);
+TargetContext.prototype.resourceOrObjectName = function() {
+    return this.getTypedRuleContext(ResourceOrObjectNameContext,0);
 };
 
 TargetContext.prototype.enterRule = function(listener) {
@@ -1704,7 +1704,7 @@ MappingParser.prototype.target = function() {
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 180;
-        this.releaseOrMockName();
+        this.resourceOrObjectName();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1736,8 +1736,8 @@ function SourceContext(parser, parent, invokingState) {
 SourceContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 SourceContext.prototype.constructor = SourceContext;
 
-SourceContext.prototype.releaseOrMockName = function() {
-    return this.getTypedRuleContext(ReleaseOrMockNameContext,0);
+SourceContext.prototype.resourceOrObjectName = function() {
+    return this.getTypedRuleContext(ResourceOrObjectNameContext,0);
 };
 
 SourceContext.prototype.enterRule = function(listener) {
@@ -1772,7 +1772,7 @@ MappingParser.prototype.source = function() {
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 182;
-        this.releaseOrMockName();
+        this.resourceOrObjectName();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -1986,8 +1986,8 @@ function ScopeNodeContext(parser, parent, invokingState) {
 ScopeNodeContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 ScopeNodeContext.prototype.constructor = ScopeNodeContext;
 
-ScopeNodeContext.prototype.releaseOrMockName = function() {
-    return this.getTypedRuleContext(ReleaseOrMockNameContext,0);
+ScopeNodeContext.prototype.resourceOrObjectName = function() {
+    return this.getTypedRuleContext(ResourceOrObjectNameContext,0);
 };
 
 ScopeNodeContext.prototype.enterRule = function(listener) {
@@ -2022,7 +2022,7 @@ MappingParser.prototype.scopeNode = function() {
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 201;
-        this.releaseOrMockName();
+        this.resourceOrObjectName();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2168,7 +2168,7 @@ MappingParser.prototype.hide = function() {
 };
 
 
-function ReleaseOrMockNameContext(parser, parent, invokingState) {
+function ResourceOrObjectNameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2177,36 +2177,36 @@ function ReleaseOrMockNameContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_releaseOrMockName;
+    this.ruleIndex = MappingParser.RULE_resourceOrObjectName;
     return this;
 }
 
-ReleaseOrMockNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ReleaseOrMockNameContext.prototype.constructor = ReleaseOrMockNameContext;
+ResourceOrObjectNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+ResourceOrObjectNameContext.prototype.constructor = ResourceOrObjectNameContext;
 
-ReleaseOrMockNameContext.prototype.releaseName = function() {
-    return this.getTypedRuleContext(ReleaseNameContext,0);
+ResourceOrObjectNameContext.prototype.reourceName = function() {
+    return this.getTypedRuleContext(ReourceNameContext,0);
 };
 
-ReleaseOrMockNameContext.prototype.mockName = function() {
-    return this.getTypedRuleContext(MockNameContext,0);
+ResourceOrObjectNameContext.prototype.objectName = function() {
+    return this.getTypedRuleContext(ObjectNameContext,0);
 };
 
-ReleaseOrMockNameContext.prototype.enterRule = function(listener) {
+ResourceOrObjectNameContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterReleaseOrMockName(this);
+        listener.enterResourceOrObjectName(this);
 	}
 };
 
-ReleaseOrMockNameContext.prototype.exitRule = function(listener) {
+ResourceOrObjectNameContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitReleaseOrMockName(this);
+        listener.exitResourceOrObjectName(this);
 	}
 };
 
-ReleaseOrMockNameContext.prototype.accept = function(visitor) {
+ResourceOrObjectNameContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitReleaseOrMockName(this);
+        return visitor.visitResourceOrObjectName(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2215,12 +2215,12 @@ ReleaseOrMockNameContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.ReleaseOrMockNameContext = ReleaseOrMockNameContext;
+MappingParser.ResourceOrObjectNameContext = ResourceOrObjectNameContext;
 
-MappingParser.prototype.releaseOrMockName = function() {
+MappingParser.prototype.resourceOrObjectName = function() {
 
-    var localctx = new ReleaseOrMockNameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 40, MappingParser.RULE_releaseOrMockName);
+    var localctx = new ResourceOrObjectNameContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 40, MappingParser.RULE_resourceOrObjectName);
     try {
         this.state = 209;
         this._errHandler.sync(this);
@@ -2228,12 +2228,12 @@ MappingParser.prototype.releaseOrMockName = function() {
         case MappingParser.T__14:
             this.enterOuterAlt(localctx, 1);
             this.state = 207;
-            this.releaseName();
+            this.reourceName();
             break;
         case MappingParser.T__15:
             this.enterOuterAlt(localctx, 2);
             this.state = 208;
-            this.mockName();
+            this.objectName();
             break;
         default:
             throw new antlr4.error.NoViableAltException(this);
@@ -2253,7 +2253,7 @@ MappingParser.prototype.releaseOrMockName = function() {
 };
 
 
-function PresentationNameContext(parser, parent, invokingState) {
+function ExhibitNameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2262,32 +2262,32 @@ function PresentationNameContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_presentationName;
+    this.ruleIndex = MappingParser.RULE_exhibitName;
     return this;
 }
 
-PresentationNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-PresentationNameContext.prototype.constructor = PresentationNameContext;
+ExhibitNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+ExhibitNameContext.prototype.constructor = ExhibitNameContext;
 
-PresentationNameContext.prototype.presentation_name = function() {
-    return this.getTypedRuleContext(Presentation_nameContext,0);
+ExhibitNameContext.prototype.exhibit_name = function() {
+    return this.getTypedRuleContext(Exhibit_nameContext,0);
 };
 
-PresentationNameContext.prototype.enterRule = function(listener) {
+ExhibitNameContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterPresentationName(this);
+        listener.enterExhibitName(this);
 	}
 };
 
-PresentationNameContext.prototype.exitRule = function(listener) {
+ExhibitNameContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitPresentationName(this);
+        listener.exitExhibitName(this);
 	}
 };
 
-PresentationNameContext.prototype.accept = function(visitor) {
+ExhibitNameContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitPresentationName(this);
+        return visitor.visitExhibitName(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2296,16 +2296,16 @@ PresentationNameContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.PresentationNameContext = PresentationNameContext;
+MappingParser.ExhibitNameContext = ExhibitNameContext;
 
-MappingParser.prototype.presentationName = function() {
+MappingParser.prototype.exhibitName = function() {
 
-    var localctx = new PresentationNameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 42, MappingParser.RULE_presentationName);
+    var localctx = new ExhibitNameContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 42, MappingParser.RULE_exhibitName);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 211;
-        this.presentation_name();
+        this.exhibit_name();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2337,8 +2337,8 @@ function HostageContext(parser, parent, invokingState) {
 HostageContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 HostageContext.prototype.constructor = HostageContext;
 
-HostageContext.prototype.presentation_name = function() {
-    return this.getTypedRuleContext(Presentation_nameContext,0);
+HostageContext.prototype.exhibit_name = function() {
+    return this.getTypedRuleContext(Exhibit_nameContext,0);
 };
 
 HostageContext.prototype.enterRule = function(listener) {
@@ -2373,7 +2373,7 @@ MappingParser.prototype.hostage = function() {
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 213;
-        this.presentation_name();
+        this.exhibit_name();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2389,7 +2389,7 @@ MappingParser.prototype.hostage = function() {
 };
 
 
-function ReleaseNameContext(parser, parent, invokingState) {
+function ReourceNameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2398,32 +2398,32 @@ function ReleaseNameContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_releaseName;
+    this.ruleIndex = MappingParser.RULE_reourceName;
     return this;
 }
 
-ReleaseNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ReleaseNameContext.prototype.constructor = ReleaseNameContext;
+ReourceNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+ReourceNameContext.prototype.constructor = ReourceNameContext;
 
-ReleaseNameContext.prototype.release_id = function() {
-    return this.getTypedRuleContext(Release_idContext,0);
+ReourceNameContext.prototype.resource_id = function() {
+    return this.getTypedRuleContext(Resource_idContext,0);
 };
 
-ReleaseNameContext.prototype.enterRule = function(listener) {
+ReourceNameContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterReleaseName(this);
+        listener.enterReourceName(this);
 	}
 };
 
-ReleaseNameContext.prototype.exitRule = function(listener) {
+ReourceNameContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitReleaseName(this);
+        listener.exitReourceName(this);
 	}
 };
 
-ReleaseNameContext.prototype.accept = function(visitor) {
+ReourceNameContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitReleaseName(this);
+        return visitor.visitReourceName(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2432,18 +2432,18 @@ ReleaseNameContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.ReleaseNameContext = ReleaseNameContext;
+MappingParser.ReourceNameContext = ReourceNameContext;
 
-MappingParser.prototype.releaseName = function() {
+MappingParser.prototype.reourceName = function() {
 
-    var localctx = new ReleaseNameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 46, MappingParser.RULE_releaseName);
+    var localctx = new ReourceNameContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 46, MappingParser.RULE_reourceName);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 215;
         this.match(MappingParser.T__14);
         this.state = 216;
-        this.release_id();
+        this.resource_id();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2459,7 +2459,7 @@ MappingParser.prototype.releaseName = function() {
 };
 
 
-function MockNameContext(parser, parent, invokingState) {
+function ObjectNameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2468,32 +2468,32 @@ function MockNameContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_mockName;
+    this.ruleIndex = MappingParser.RULE_objectName;
     return this;
 }
 
-MockNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-MockNameContext.prototype.constructor = MockNameContext;
+ObjectNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+ObjectNameContext.prototype.constructor = ObjectNameContext;
 
-MockNameContext.prototype.mock_id = function() {
-    return this.getTypedRuleContext(Mock_idContext,0);
+ObjectNameContext.prototype.object_id = function() {
+    return this.getTypedRuleContext(Object_idContext,0);
 };
 
-MockNameContext.prototype.enterRule = function(listener) {
+ObjectNameContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterMockName(this);
+        listener.enterObjectName(this);
 	}
 };
 
-MockNameContext.prototype.exitRule = function(listener) {
+ObjectNameContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitMockName(this);
+        listener.exitObjectName(this);
 	}
 };
 
-MockNameContext.prototype.accept = function(visitor) {
+ObjectNameContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitMockName(this);
+        return visitor.visitObjectName(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2502,18 +2502,18 @@ MockNameContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.MockNameContext = MockNameContext;
+MappingParser.ObjectNameContext = ObjectNameContext;
 
-MappingParser.prototype.mockName = function() {
+MappingParser.prototype.objectName = function() {
 
-    var localctx = new MockNameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 48, MappingParser.RULE_mockName);
+    var localctx = new ObjectNameContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 48, MappingParser.RULE_objectName);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 218;
         this.match(MappingParser.T__15);
         this.state = 219;
-        this.mock_id();
+        this.object_id();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2529,7 +2529,7 @@ MappingParser.prototype.mockName = function() {
 };
 
 
-function Release_idContext(parser, parent, invokingState) {
+function Resource_idContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2538,40 +2538,40 @@ function Release_idContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_release_id;
+    this.ruleIndex = MappingParser.RULE_resource_id;
     return this;
 }
 
-Release_idContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-Release_idContext.prototype.constructor = Release_idContext;
+Resource_idContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+Resource_idContext.prototype.constructor = Resource_idContext;
 
-Release_idContext.prototype.user_name = function() {
+Resource_idContext.prototype.user_name = function() {
     return this.getTypedRuleContext(User_nameContext,0);
 };
 
-Release_idContext.prototype.release_name = function() {
-    return this.getTypedRuleContext(Release_nameContext,0);
+Resource_idContext.prototype.resource_name = function() {
+    return this.getTypedRuleContext(Resource_nameContext,0);
 };
 
-Release_idContext.prototype.valid_semver = function() {
+Resource_idContext.prototype.valid_semver = function() {
     return this.getTypedRuleContext(Valid_semverContext,0);
 };
 
-Release_idContext.prototype.enterRule = function(listener) {
+Resource_idContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterRelease_id(this);
+        listener.enterResource_id(this);
 	}
 };
 
-Release_idContext.prototype.exitRule = function(listener) {
+Resource_idContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitRelease_id(this);
+        listener.exitResource_id(this);
 	}
 };
 
-Release_idContext.prototype.accept = function(visitor) {
+Resource_idContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitRelease_id(this);
+        return visitor.visitResource_id(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2580,12 +2580,12 @@ Release_idContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.Release_idContext = Release_idContext;
+MappingParser.Resource_idContext = Resource_idContext;
 
-MappingParser.prototype.release_id = function() {
+MappingParser.prototype.resource_id = function() {
 
-    var localctx = new Release_idContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 50, MappingParser.RULE_release_id);
+    var localctx = new Resource_idContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 50, MappingParser.RULE_resource_id);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 221;
@@ -2593,7 +2593,7 @@ MappingParser.prototype.release_id = function() {
         this.state = 222;
         this.match(MappingParser.T__16);
         this.state = 223;
-        this.release_name();
+        this.resource_name();
         this.state = 226;
         this._errHandler.sync(this);
         var la_ = this._interp.adaptivePredict(this._input,12,this._ctx);
@@ -2619,7 +2619,7 @@ MappingParser.prototype.release_id = function() {
 };
 
 
-function Mock_idContext(parser, parent, invokingState) {
+function Object_idContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2628,36 +2628,39 @@ function Mock_idContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_mock_id;
+    this.ruleIndex = MappingParser.RULE_object_id;
     return this;
 }
 
-Mock_idContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-Mock_idContext.prototype.constructor = Mock_idContext;
+Object_idContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+Object_idContext.prototype.constructor = Object_idContext;
 
-Mock_idContext.prototype.bucket_name = function() {
-    return this.getTypedRuleContext(Bucket_nameContext,0);
+Object_idContext.prototype.bucket_name = function(i) {
+    if(i===undefined) {
+        i = null;
+    }
+    if(i===null) {
+        return this.getTypedRuleContexts(Bucket_nameContext);
+    } else {
+        return this.getTypedRuleContext(Bucket_nameContext,i);
+    }
 };
 
-Mock_idContext.prototype.mock_name = function() {
-    return this.getTypedRuleContext(Mock_nameContext,0);
-};
-
-Mock_idContext.prototype.enterRule = function(listener) {
+Object_idContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterMock_id(this);
+        listener.enterObject_id(this);
 	}
 };
 
-Mock_idContext.prototype.exitRule = function(listener) {
+Object_idContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitMock_id(this);
+        listener.exitObject_id(this);
 	}
 };
 
-Mock_idContext.prototype.accept = function(visitor) {
+Object_idContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitMock_id(this);
+        return visitor.visitObject_id(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2666,12 +2669,12 @@ Mock_idContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.Mock_idContext = Mock_idContext;
+MappingParser.Object_idContext = Object_idContext;
 
-MappingParser.prototype.mock_id = function() {
+MappingParser.prototype.object_id = function() {
 
-    var localctx = new Mock_idContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 52, MappingParser.RULE_mock_id);
+    var localctx = new Object_idContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 52, MappingParser.RULE_object_id);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 228;
@@ -2679,7 +2682,7 @@ MappingParser.prototype.mock_id = function() {
         this.state = 229;
         this.match(MappingParser.T__16);
         this.state = 230;
-        this.mock_name();
+        this.bucket_name();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
@@ -2695,7 +2698,7 @@ MappingParser.prototype.mock_id = function() {
 };
 
 
-function Presentation_nameContext(parser, parent, invokingState) {
+function Exhibit_nameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2704,32 +2707,32 @@ function Presentation_nameContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_presentation_name;
+    this.ruleIndex = MappingParser.RULE_exhibit_name;
     return this;
 }
 
-Presentation_nameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-Presentation_nameContext.prototype.constructor = Presentation_nameContext;
+Exhibit_nameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+Exhibit_nameContext.prototype.constructor = Exhibit_nameContext;
 
-Presentation_nameContext.prototype.ID = function() {
+Exhibit_nameContext.prototype.ID = function() {
     return this.getToken(MappingParser.ID, 0);
 };
 
-Presentation_nameContext.prototype.enterRule = function(listener) {
+Exhibit_nameContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterPresentation_name(this);
+        listener.enterExhibit_name(this);
 	}
 };
 
-Presentation_nameContext.prototype.exitRule = function(listener) {
+Exhibit_nameContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitPresentation_name(this);
+        listener.exitExhibit_name(this);
 	}
 };
 
-Presentation_nameContext.prototype.accept = function(visitor) {
+Exhibit_nameContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitPresentation_name(this);
+        return visitor.visitExhibit_name(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2738,12 +2741,12 @@ Presentation_nameContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.Presentation_nameContext = Presentation_nameContext;
+MappingParser.Exhibit_nameContext = Exhibit_nameContext;
 
-MappingParser.prototype.presentation_name = function() {
+MappingParser.prototype.exhibit_name = function() {
 
-    var localctx = new Presentation_nameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 54, MappingParser.RULE_presentation_name);
+    var localctx = new Exhibit_nameContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 54, MappingParser.RULE_exhibit_name);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 232;
@@ -2763,7 +2766,7 @@ MappingParser.prototype.presentation_name = function() {
 };
 
 
-function Release_nameContext(parser, parent, invokingState) {
+function Resource_nameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2772,32 +2775,32 @@ function Release_nameContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_release_name;
+    this.ruleIndex = MappingParser.RULE_resource_name;
     return this;
 }
 
-Release_nameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-Release_nameContext.prototype.constructor = Release_nameContext;
+Resource_nameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+Resource_nameContext.prototype.constructor = Resource_nameContext;
 
-Release_nameContext.prototype.ID = function() {
+Resource_nameContext.prototype.ID = function() {
     return this.getToken(MappingParser.ID, 0);
 };
 
-Release_nameContext.prototype.enterRule = function(listener) {
+Resource_nameContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterRelease_name(this);
+        listener.enterResource_name(this);
 	}
 };
 
-Release_nameContext.prototype.exitRule = function(listener) {
+Resource_nameContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitRelease_name(this);
+        listener.exitResource_name(this);
 	}
 };
 
-Release_nameContext.prototype.accept = function(visitor) {
+Resource_nameContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitRelease_name(this);
+        return visitor.visitResource_name(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2806,12 +2809,12 @@ Release_nameContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.Release_nameContext = Release_nameContext;
+MappingParser.Resource_nameContext = Resource_nameContext;
 
-MappingParser.prototype.release_name = function() {
+MappingParser.prototype.resource_name = function() {
 
-    var localctx = new Release_nameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 56, MappingParser.RULE_release_name);
+    var localctx = new Resource_nameContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 56, MappingParser.RULE_resource_name);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 234;
@@ -2831,7 +2834,7 @@ MappingParser.prototype.release_name = function() {
 };
 
 
-function Mock_nameContext(parser, parent, invokingState) {
+function Object_nameContext(parser, parent, invokingState) {
 	if(parent===undefined) {
 	    parent = null;
 	}
@@ -2840,32 +2843,32 @@ function Mock_nameContext(parser, parent, invokingState) {
 	}
 	antlr4.ParserRuleContext.call(this, parent, invokingState);
     this.parser = parser;
-    this.ruleIndex = MappingParser.RULE_mock_name;
+    this.ruleIndex = MappingParser.RULE_object_name;
     return this;
 }
 
-Mock_nameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-Mock_nameContext.prototype.constructor = Mock_nameContext;
+Object_nameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
+Object_nameContext.prototype.constructor = Object_nameContext;
 
-Mock_nameContext.prototype.ID = function() {
+Object_nameContext.prototype.ID = function() {
     return this.getToken(MappingParser.ID, 0);
 };
 
-Mock_nameContext.prototype.enterRule = function(listener) {
+Object_nameContext.prototype.enterRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.enterMock_name(this);
+        listener.enterObject_name(this);
 	}
 };
 
-Mock_nameContext.prototype.exitRule = function(listener) {
+Object_nameContext.prototype.exitRule = function(listener) {
     if(listener instanceof MappingListener ) {
-        listener.exitMock_name(this);
+        listener.exitObject_name(this);
 	}
 };
 
-Mock_nameContext.prototype.accept = function(visitor) {
+Object_nameContext.prototype.accept = function(visitor) {
     if ( visitor instanceof MappingVisitor ) {
-        return visitor.visitMock_name(this);
+        return visitor.visitObject_name(this);
     } else {
         return visitor.visitChildren(this);
     }
@@ -2874,12 +2877,12 @@ Mock_nameContext.prototype.accept = function(visitor) {
 
 
 
-MappingParser.Mock_nameContext = Mock_nameContext;
+MappingParser.Object_nameContext = Object_nameContext;
 
-MappingParser.prototype.mock_name = function() {
+MappingParser.prototype.object_name = function() {
 
-    var localctx = new Mock_nameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 58, MappingParser.RULE_mock_name);
+    var localctx = new Object_nameContext(this, this._ctx, this.state);
+    this.enterRule(localctx, 58, MappingParser.RULE_object_name);
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 236;

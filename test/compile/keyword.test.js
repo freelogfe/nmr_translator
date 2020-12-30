@@ -84,7 +84,7 @@ describe('测试关键子错误', () => {
         const text = `
            alter p3
              do
-               set_tags a1
+               set_labels a1
                replac $u1/r1 with #b1/m1
                show
                hide
@@ -98,7 +98,7 @@ describe('测试关键子错误', () => {
         const text = `
            alter p3
              do
-               set_tags a1
+               set_labels a1
                replace $u1/r1 with #b1/m1
                sho
                hide
@@ -112,7 +112,7 @@ describe('测试关键子错误', () => {
         const text = `
            alter p3
              do
-               set_tags a1
+               set_labels a1
                replace $u1/r1 with #b1/m1
                show
                hid
