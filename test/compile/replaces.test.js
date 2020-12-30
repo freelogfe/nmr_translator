@@ -17,14 +17,14 @@ describe('测试替换规则', () => {
         expect(rules[0].replaces[0].replaced).toEqual({
             "name": "uu9/rr9",
             "versionRange": "1.1.1",
-            "type": "release"
+            "type": "resource"
         });
     });
 
     test('正确获取替换源信息', () => {
         expect(rules[0].replaces[0].replacer).toEqual({
             "name": "bb/mm",
-            "type": "mock"
+            "type": "object"
         });
     });
 
@@ -34,19 +34,19 @@ describe('测试替换规则', () => {
                 {
                     "name": "u6/m6",
                     "versionRange": "*",
-                    "type": "release"
+                    "type": "resource"
                 },
                 {
                     "name": "u7/m7",
                     "versionRange": "*",
-                    "type": "release"
+                    "type": "resource"
                 }
             ],
             [
                 {
                     "name": "u8/m8",
                     "versionRange": "*",
-                    "type": "release"
+                    "type": "resource"
                 }
             ]
         ]);

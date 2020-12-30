@@ -31,7 +31,7 @@ describe('新建 presentable', () => {
         expect(rules[0].candidate).toEqual({
             "name": "u2/r1",
             "versionRange": "1.1.1",
-            "type": "release"
+            "type": "resource"
         });
     });
 });

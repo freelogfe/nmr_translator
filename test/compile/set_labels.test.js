@@ -27,7 +27,11 @@ describe('设置标签测试', () => {
     });
 
     test('candidate 对象正确匹配', () => {
-        expect(rules[0].candidate).toEqual({"name": "u2/r1", "versionRange": "1.1.1", "type": "release"});
+        expect(rules[0].candidate).toEqual({
+            "name": "u2/r1",
+            "versionRange": "1.1.1",
+            "type": "resource"
+        });
     });
 
     test('当没有 set_labels 时，结果应为 null', () => {
