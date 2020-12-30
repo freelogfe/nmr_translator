@@ -1,6 +1,18 @@
 
-alter DDDDDDDDDD
+alter exhibitName1
   do
-    replace $12345123451234/AAAAAAAAAA with $12345123451234/CCC@0.1.0 under $12345123451234/DDDDDDDDDD > $12345123451234/BBBBBBBBBB
-    replace $12345123451234/AAA with $12345123451234/CCC@0.1.0 under $12345123451234/BBB > $12345123451234/AAA
+    set_labels label1,label2,label3
+
+    set_title ThisIsTitle
+
+    set_cover http://staitc.freelog.com/cover.png
+
+    add_attr key1 <base> defaultValue1
+    add_attr key2 <base> defaultValue2 description2
+    add_attr key3 <input> defaultValue3
+    add_attr key4 <input> defaultValue4 description4
+    add_attr key5 <select opt1,opt2,opt3>
+    add_attr key6 <select opt1,opt2,opt3> description6
+
+    delete_attr key7
   end

@@ -15,6 +15,13 @@ fragment SYMBOL
   : '_' | '(' | ')' | '（' | '）' | '-' | '[' | ']' | '{' | '}'
   ;
 
+fragment STRING
+  : ALPHABET
+  | DIGIT
+  | SYMBOL
+  | CHINESE_WORD
+  ;
+
 // 组装后的标准通用字符集
 fragment CHAR
   : ALPHABET

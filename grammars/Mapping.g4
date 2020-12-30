@@ -43,7 +43,11 @@ lineCode
   | replace
   | show
   | hide
-  | ('set_labels' | 'replace' | 'show' | 'hide')
+  | setTitle
+  | setCover
+  | addAttr
+  | deleteAttr
+  | ('set_labels' | 'replace' | 'show' | 'hide' | 'set_title' | 'set_cover' | 'add_attr' | 'delete_attr')
   ;
 
 setLabels
@@ -63,6 +67,40 @@ scopeNode: resourceOrObjectName;
 
 show: 'show';
 hide: 'hide';
+
+setTitle
+  : 'set_title' title
+  ;
+title: ID;
+
+setCover
+  : 'set_cover' title
+  ;
+cover: ID;
+
+addAttr
+  : 'add_attr' key defultValue description
+  | 'add_attr' key defultValue description addAttrSelect
+  | 'add_attr' key defultValue description addAttrInput
+  ;
+addAttrSelect
+  : 'select' labels
+  ;
+addAttrSelectOptions
+  : (addAttrSelectOption ',')* addAttrSelectOption
+  ;
+addAttrSelectOption: ID;
+addAttrInput
+  : 'input'
+  ;
+
+deleteAttr
+  : 'delete_attr' key
+  ;
+
+key: ID;
+defultValue: ID;
+description: ID;
 
 resourceOrObjectName: resourceName | objectName;
 exhibitName: exhibit_name;
