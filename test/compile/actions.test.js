@@ -17,8 +17,8 @@ describe('当没有任何操作时', () => {
         expect(errorObjects).toBeNull();
     });
 
-    test('tags 为 null', () => {
-        expect(rules[0].tags).toBeNull();
+    test('labels 为 null', () => {
+        expect(rules[0].labels).toBeNull();
     });
 
     test('replaces 为空数组', () => {
