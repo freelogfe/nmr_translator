@@ -29,10 +29,6 @@ actions
   : (codeBlock | lineCode)
   ;
 
-//setRule
-//  : 'set' 'do' 'show_page_build' hostage 'end'
-//  ;
-
 codeBlock
   : 'do' 'end'
   | 'do' linesCode 'end'
@@ -74,7 +70,7 @@ setTitle
 title: ID;
 
 setCover
-  : 'set_cover' title
+  : 'set_cover' cover
   ;
 cover: ID;
 

@@ -5,7 +5,7 @@ alter exhibitName1
 
     set_title ThisIsTitle
 
-    set_cover http://staitc.freelog.com/cover.png
+    set_cover coverPng
 
     add_attr key1 <base> defaultValue1
     add_attr key2 <base> defaultValue2 description2
