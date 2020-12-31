@@ -29,6 +29,15 @@ MappingListener.prototype.exitMappingRule = function(ctx) {
 };
 
 
+// Enter a parse tree produced by MappingParser#hostage.
+MappingListener.prototype.enterHostage = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#hostage.
+MappingListener.prototype.exitHostage = function(ctx) {
+};
+
+
 // Enter a parse tree produced by MappingParser#addRule.
 MappingListener.prototype.enterAddRule = function(ctx) {
 };
@@ -53,6 +62,15 @@ MappingListener.prototype.enterAlterRule = function(ctx) {
 
 // Exit a parse tree produced by MappingParser#alterRule.
 MappingListener.prototype.exitAlterRule = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#exhibitName.
+MappingListener.prototype.enterExhibitName = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#exhibitName.
+MappingListener.prototype.exitExhibitName = function(ctx) {
 };
 
 
@@ -170,6 +188,33 @@ MappingListener.prototype.enterScopeNode = function(ctx) {
 
 // Exit a parse tree produced by MappingParser#scopeNode.
 MappingListener.prototype.exitScopeNode = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#resourceOrObjectName.
+MappingListener.prototype.enterResourceOrObjectName = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#resourceOrObjectName.
+MappingListener.prototype.exitResourceOrObjectName = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#resourceName.
+MappingListener.prototype.enterResourceName = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#resourceName.
+MappingListener.prototype.exitResourceName = function(ctx) {
+};
+
+
+// Enter a parse tree produced by MappingParser#objectName.
+MappingListener.prototype.enterObjectName = function(ctx) {
+};
+
+// Exit a parse tree produced by MappingParser#objectName.
+MappingListener.prototype.exitObjectName = function(ctx) {
 };
 
 
@@ -299,12 +344,12 @@ MappingListener.prototype.exitKey = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#defultValue.
-MappingListener.prototype.enterDefultValue = function(ctx) {
+// Enter a parse tree produced by MappingParser#defaultValue.
+MappingListener.prototype.enterDefaultValue = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#defultValue.
-MappingListener.prototype.exitDefultValue = function(ctx) {
+// Exit a parse tree produced by MappingParser#defaultValue.
+MappingListener.prototype.exitDefaultValue = function(ctx) {
 };
 
 
@@ -314,51 +359,6 @@ MappingListener.prototype.enterDescription = function(ctx) {
 
 // Exit a parse tree produced by MappingParser#description.
 MappingListener.prototype.exitDescription = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#resourceOrObjectName.
-MappingListener.prototype.enterResourceOrObjectName = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#resourceOrObjectName.
-MappingListener.prototype.exitResourceOrObjectName = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#exhibitName.
-MappingListener.prototype.enterExhibitName = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#exhibitName.
-MappingListener.prototype.exitExhibitName = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#hostage.
-MappingListener.prototype.enterHostage = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#hostage.
-MappingListener.prototype.exitHostage = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#resourceName.
-MappingListener.prototype.enterResourceName = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#resourceName.
-MappingListener.prototype.exitResourceName = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#objectName.
-MappingListener.prototype.enterObjectName = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#objectName.
-MappingListener.prototype.exitObjectName = function(ctx) {
 };
 
 
