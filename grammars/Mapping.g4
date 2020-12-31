@@ -12,7 +12,7 @@ mappingRule
   | 'activate_theme' hostage
   | ~('add' | 'alter' | 'activate_theme')
   ;
-
+hostage: exhibit_name;
 
 // 添加规则
 addRule
@@ -24,6 +24,8 @@ candidate: resourceOrObjectName;
 alterRule
   : 'alter' exhibitName actions
   ;
+
+exhibitName: exhibit_name;
 
 actions
   : (codeBlock | lineCode)
@@ -61,6 +63,10 @@ under: 'under' scope (',' scope)*;
 scope: scopeNode ('>' scopeNode)*;
 scopeNode: resourceOrObjectName;
 
+resourceOrObjectName: resourceName | objectName;
+resourceName: '$' resource_id;
+objectName: '#' object_id;
+
 show: 'show';
 hide: 'hide';
 
@@ -81,7 +87,7 @@ addAttr
   ;
 
 addAttrBase
-  : 'add_attr' key '<base>' defultValue description?
+  : 'add_attr' key '<base>' defaultValue description?
   ;
 
 addAttrSelect
@@ -93,7 +99,7 @@ addAttrSelectOptions
 addAttrSelectOption: ID;
 
 addAttrInput
-  : 'add_attr' key '<input>' defultValue description?
+  : 'add_attr' key '<input>' defaultValue description?
   ;
 
 deleteAttr
@@ -101,11 +107,5 @@ deleteAttr
   ;
 
 key: ID;
-defultValue: ID;
+defaultValue: ID;
 description: ID;
-
-resourceOrObjectName: resourceName | objectName;
-exhibitName: exhibit_name;
-hostage: exhibit_name;
-resourceName: '$' resource_id;
-objectName: '#' object_id;
