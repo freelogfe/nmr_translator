@@ -143,7 +143,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u00ca\u0003\u0002\u0002\u0002\u00cc\u00cd\u0003\u0002\u0002\u0002\u00cd",
     "\u00cf\u0003\u0002\u0002\u0002\u00ce\u00cc\u0003\u0002\u0002\u0002\u00cf",
     "\u00d0\u0005\u001c\u000f\u0002\u00d0\u001b\u0003\u0002\u0002\u0002\u00d1",
-    "\u00d2\u0007_\u0002\u0002\u00d2\u001d\u0003\u0002\u0002\u0002\u00d3",
+    "\u00d2\u0007b\u0002\u0002\u00d2\u001d\u0003\u0002\u0002\u0002\u00d3",
     "\u00d4\u0007\n\u0002\u0002\u00d4\u00d5\u0005 \u0011\u0002\u00d5\u00d6",
     "\u0007\u0012\u0002\u0002\u00d6\u00d8\u0005\"\u0012\u0002\u00d7\u00d9",
     "\u0005$\u0013\u0002\u00d8\u00d7\u0003\u0002\u0002\u0002\u00d8\u00d9",
@@ -168,10 +168,10 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\u0002\u00fb\u00fc\u0007\u000b\u0002\u0002\u00fc1\u0003\u0002",
     "\u0002\u0002\u00fd\u00fe\u0007\f\u0002\u0002\u00fe3\u0003\u0002\u0002",
     "\u0002\u00ff\u0100\u0007\r\u0002\u0002\u0100\u0101\u00056\u001c\u0002",
-    "\u01015\u0003\u0002\u0002\u0002\u0102\u0103\u0007_\u0002\u0002\u0103",
+    "\u01015\u0003\u0002\u0002\u0002\u0102\u0103\u0007b\u0002\u0002\u0103",
     "7\u0003\u0002\u0002\u0002\u0104\u0105\u0007\u000e\u0002\u0002\u0105",
     "\u0106\u0005:\u001e\u0002\u01069\u0003\u0002\u0002\u0002\u0107\u0108",
-    "\u0007_\u0002\u0002\u0108;\u0003\u0002\u0002\u0002\u0109\u010d\u0005",
+    "\u0007b\u0002\u0002\u0108;\u0003\u0002\u0002\u0002\u0109\u010d\u0005",
     "> \u0002\u010a\u010d\u0005@!\u0002\u010b\u010d\u0005F$\u0002\u010c\u0109",
     "\u0003\u0002\u0002\u0002\u010c\u010a\u0003\u0002\u0002\u0002\u010c\u010b",
     "\u0003\u0002\u0002\u0002\u010d=\u0003\u0002\u0002\u0002\u010e\u010f",
@@ -188,25 +188,25 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0002\u0002\u0122\u0120\u0003\u0002\u0002\u0002\u0122\u0123\u0003\u0002",
     "\u0002\u0002\u0123\u0125\u0003\u0002\u0002\u0002\u0124\u0122\u0003\u0002",
     "\u0002\u0002\u0125\u0126\u0005D#\u0002\u0126C\u0003\u0002\u0002\u0002",
-    "\u0127\u0128\u0007_\u0002\u0002\u0128E\u0003\u0002\u0002\u0002\u0129",
+    "\u0127\u0128\u0007b\u0002\u0002\u0128E\u0003\u0002\u0002\u0002\u0129",
     "\u012a\u0007\u000f\u0002\u0002\u012a\u012b\u0005J&\u0002\u012b\u012c",
     "\u0007\u0019\u0002\u0002\u012c\u012e\u0005L\'\u0002\u012d\u012f\u0005",
     "N(\u0002\u012e\u012d\u0003\u0002\u0002\u0002\u012e\u012f\u0003\u0002",
     "\u0002\u0002\u012fG\u0003\u0002\u0002\u0002\u0130\u0131\u0007\u0010",
     "\u0002\u0002\u0131\u0132\u0005J&\u0002\u0132I\u0003\u0002\u0002\u0002",
-    "\u0133\u0134\u0007_\u0002\u0002\u0134K\u0003\u0002\u0002\u0002\u0135",
-    "\u0136\u0007_\u0002\u0002\u0136M\u0003\u0002\u0002\u0002\u0137\u0138",
-    "\u0007_\u0002\u0002\u0138O\u0003\u0002\u0002\u0002\u0139\u013a\u0005",
+    "\u0133\u0134\u0007b\u0002\u0002\u0134K\u0003\u0002\u0002\u0002\u0135",
+    "\u0136\u0007b\u0002\u0002\u0136M\u0003\u0002\u0002\u0002\u0137\u0138",
+    "\u0007b\u0002\u0002\u0138O\u0003\u0002\u0002\u0002\u0139\u013a\u0005",
     "\\/\u0002\u013a\u013b\u0007\u001a\u0002\u0002\u013b\u013e\u0005V,\u0002",
     "\u013c\u013d\u0007\u001b\u0002\u0002\u013d\u013f\u0005^0\u0002\u013e",
     "\u013f\u0003\u0002\u0002\u0002\u013e\u013c\u0003\u0002\u0002\u0002\u013f",
     "Q\u0003\u0002\u0002\u0002\u0140\u0141\u0005Z.\u0002\u0141\u0142\u0007",
     "\u001a\u0002\u0002\u0142\u0143\u0005Z.\u0002\u0143S\u0003\u0002\u0002",
-    "\u0002\u0144\u0145\u0007_\u0002\u0002\u0145U\u0003\u0002\u0002\u0002",
-    "\u0146\u0147\u0007_\u0002\u0002\u0147W\u0003\u0002\u0002\u0002\u0148",
-    "\u0149\u0007_\u0002\u0002\u0149Y\u0003\u0002\u0002\u0002\u014a\u014b",
-    "\u0007_\u0002\u0002\u014b[\u0003\u0002\u0002\u0002\u014c\u014d\u0007",
-    "_\u0002\u0002\u014d]\u0003\u0002\u0002\u0002\u014e\u0150\u0005`1\u0002",
+    "\u0002\u0144\u0145\u0007b\u0002\u0002\u0145U\u0003\u0002\u0002\u0002",
+    "\u0146\u0147\u0007b\u0002\u0002\u0147W\u0003\u0002\u0002\u0002\u0148",
+    "\u0149\u0007b\u0002\u0002\u0149Y\u0003\u0002\u0002\u0002\u014a\u014b",
+    "\u0007b\u0002\u0002\u014b[\u0003\u0002\u0002\u0002\u014c\u014d\u0007",
+    "b\u0002\u0002\u014d]\u0003\u0002\u0002\u0002\u014e\u0150\u0005`1\u0002",
     "\u014f\u014e\u0003\u0002\u0002\u0002\u014f\u0150\u0003\u0002\u0002\u0002",
     "\u0150\u0151\u0003\u0002\u0002\u0002\u0151\u016a\u0005b2\u0002\u0152",
     "\u0154\u0005`1\u0002\u0153\u0152\u0003\u0002\u0002\u0002\u0153\u0154",
@@ -311,8 +311,8 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, null,
                       null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
                       null, null, null, null, null, null, null, null, null, 
-                      null, null, null, "ID", "LINE_COMMENT", "BLOCK_COMMENT", 
-                      "WS" ];
+                      null, null, null, "LINE_COMMENT", "BLOCK_COMMENT", 
+                      "WS", "ID" ];
 
 var ruleNames =  [ "mappingRules", "mappingRule", "hostage", "addRule", 
                    "candidate", "alterRule", "exhibitName", "actions", "codeBlock", 
@@ -442,10 +442,10 @@ MappingParser.T__88 = 89;
 MappingParser.T__89 = 90;
 MappingParser.T__90 = 91;
 MappingParser.T__91 = 92;
-MappingParser.ID = 93;
-MappingParser.LINE_COMMENT = 94;
-MappingParser.BLOCK_COMMENT = 95;
-MappingParser.WS = 96;
+MappingParser.LINE_COMMENT = 93;
+MappingParser.BLOCK_COMMENT = 94;
+MappingParser.WS = 95;
+MappingParser.ID = 96;
 
 MappingParser.RULE_mappingRules = 0;
 MappingParser.RULE_mappingRule = 1;
@@ -578,7 +578,7 @@ MappingParser.prototype.mappingRules = function() {
         this.state = 137;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
-        while(((((_la - 1)) & ~0x1f) == 0 && ((1 << (_la - 1)) & ((1 << (MappingParser.T__0 - 1)) | (1 << (MappingParser.T__1 - 1)) | (1 << (MappingParser.T__2 - 1)) | (1 << (MappingParser.T__3 - 1)) | (1 << (MappingParser.T__4 - 1)) | (1 << (MappingParser.T__5 - 1)) | (1 << (MappingParser.T__6 - 1)) | (1 << (MappingParser.T__7 - 1)) | (1 << (MappingParser.T__8 - 1)) | (1 << (MappingParser.T__9 - 1)) | (1 << (MappingParser.T__10 - 1)) | (1 << (MappingParser.T__11 - 1)) | (1 << (MappingParser.T__12 - 1)) | (1 << (MappingParser.T__13 - 1)) | (1 << (MappingParser.T__14 - 1)) | (1 << (MappingParser.T__15 - 1)) | (1 << (MappingParser.T__16 - 1)) | (1 << (MappingParser.T__17 - 1)) | (1 << (MappingParser.T__18 - 1)) | (1 << (MappingParser.T__19 - 1)) | (1 << (MappingParser.T__20 - 1)) | (1 << (MappingParser.T__21 - 1)) | (1 << (MappingParser.T__22 - 1)) | (1 << (MappingParser.T__23 - 1)) | (1 << (MappingParser.T__24 - 1)) | (1 << (MappingParser.T__25 - 1)) | (1 << (MappingParser.T__26 - 1)) | (1 << (MappingParser.T__27 - 1)) | (1 << (MappingParser.T__28 - 1)) | (1 << (MappingParser.T__29 - 1)) | (1 << (MappingParser.T__30 - 1)) | (1 << (MappingParser.T__31 - 1)))) !== 0) || ((((_la - 33)) & ~0x1f) == 0 && ((1 << (_la - 33)) & ((1 << (MappingParser.T__32 - 33)) | (1 << (MappingParser.T__33 - 33)) | (1 << (MappingParser.T__34 - 33)) | (1 << (MappingParser.T__35 - 33)) | (1 << (MappingParser.T__36 - 33)) | (1 << (MappingParser.T__37 - 33)) | (1 << (MappingParser.T__38 - 33)) | (1 << (MappingParser.T__39 - 33)) | (1 << (MappingParser.T__40 - 33)) | (1 << (MappingParser.T__41 - 33)) | (1 << (MappingParser.T__42 - 33)) | (1 << (MappingParser.T__43 - 33)) | (1 << (MappingParser.T__44 - 33)) | (1 << (MappingParser.T__45 - 33)) | (1 << (MappingParser.T__46 - 33)) | (1 << (MappingParser.T__47 - 33)) | (1 << (MappingParser.T__48 - 33)) | (1 << (MappingParser.T__49 - 33)) | (1 << (MappingParser.T__50 - 33)) | (1 << (MappingParser.T__51 - 33)) | (1 << (MappingParser.T__52 - 33)) | (1 << (MappingParser.T__53 - 33)) | (1 << (MappingParser.T__54 - 33)) | (1 << (MappingParser.T__55 - 33)) | (1 << (MappingParser.T__56 - 33)) | (1 << (MappingParser.T__57 - 33)) | (1 << (MappingParser.T__58 - 33)) | (1 << (MappingParser.T__59 - 33)) | (1 << (MappingParser.T__60 - 33)) | (1 << (MappingParser.T__61 - 33)) | (1 << (MappingParser.T__62 - 33)) | (1 << (MappingParser.T__63 - 33)))) !== 0) || ((((_la - 65)) & ~0x1f) == 0 && ((1 << (_la - 65)) & ((1 << (MappingParser.T__64 - 65)) | (1 << (MappingParser.T__65 - 65)) | (1 << (MappingParser.T__66 - 65)) | (1 << (MappingParser.T__67 - 65)) | (1 << (MappingParser.T__68 - 65)) | (1 << (MappingParser.T__69 - 65)) | (1 << (MappingParser.T__70 - 65)) | (1 << (MappingParser.T__71 - 65)) | (1 << (MappingParser.T__72 - 65)) | (1 << (MappingParser.T__73 - 65)) | (1 << (MappingParser.T__74 - 65)) | (1 << (MappingParser.T__75 - 65)) | (1 << (MappingParser.T__76 - 65)) | (1 << (MappingParser.T__77 - 65)) | (1 << (MappingParser.T__78 - 65)) | (1 << (MappingParser.T__79 - 65)) | (1 << (MappingParser.T__80 - 65)) | (1 << (MappingParser.T__81 - 65)) | (1 << (MappingParser.T__82 - 65)) | (1 << (MappingParser.T__83 - 65)) | (1 << (MappingParser.T__84 - 65)) | (1 << (MappingParser.T__85 - 65)) | (1 << (MappingParser.T__86 - 65)) | (1 << (MappingParser.T__87 - 65)) | (1 << (MappingParser.T__88 - 65)) | (1 << (MappingParser.T__89 - 65)) | (1 << (MappingParser.T__90 - 65)) | (1 << (MappingParser.T__91 - 65)) | (1 << (MappingParser.ID - 65)) | (1 << (MappingParser.LINE_COMMENT - 65)) | (1 << (MappingParser.BLOCK_COMMENT - 65)) | (1 << (MappingParser.WS - 65)))) !== 0)) {
+        while(((((_la - 1)) & ~0x1f) == 0 && ((1 << (_la - 1)) & ((1 << (MappingParser.T__0 - 1)) | (1 << (MappingParser.T__1 - 1)) | (1 << (MappingParser.T__2 - 1)) | (1 << (MappingParser.T__3 - 1)) | (1 << (MappingParser.T__4 - 1)) | (1 << (MappingParser.T__5 - 1)) | (1 << (MappingParser.T__6 - 1)) | (1 << (MappingParser.T__7 - 1)) | (1 << (MappingParser.T__8 - 1)) | (1 << (MappingParser.T__9 - 1)) | (1 << (MappingParser.T__10 - 1)) | (1 << (MappingParser.T__11 - 1)) | (1 << (MappingParser.T__12 - 1)) | (1 << (MappingParser.T__13 - 1)) | (1 << (MappingParser.T__14 - 1)) | (1 << (MappingParser.T__15 - 1)) | (1 << (MappingParser.T__16 - 1)) | (1 << (MappingParser.T__17 - 1)) | (1 << (MappingParser.T__18 - 1)) | (1 << (MappingParser.T__19 - 1)) | (1 << (MappingParser.T__20 - 1)) | (1 << (MappingParser.T__21 - 1)) | (1 << (MappingParser.T__22 - 1)) | (1 << (MappingParser.T__23 - 1)) | (1 << (MappingParser.T__24 - 1)) | (1 << (MappingParser.T__25 - 1)) | (1 << (MappingParser.T__26 - 1)) | (1 << (MappingParser.T__27 - 1)) | (1 << (MappingParser.T__28 - 1)) | (1 << (MappingParser.T__29 - 1)) | (1 << (MappingParser.T__30 - 1)) | (1 << (MappingParser.T__31 - 1)))) !== 0) || ((((_la - 33)) & ~0x1f) == 0 && ((1 << (_la - 33)) & ((1 << (MappingParser.T__32 - 33)) | (1 << (MappingParser.T__33 - 33)) | (1 << (MappingParser.T__34 - 33)) | (1 << (MappingParser.T__35 - 33)) | (1 << (MappingParser.T__36 - 33)) | (1 << (MappingParser.T__37 - 33)) | (1 << (MappingParser.T__38 - 33)) | (1 << (MappingParser.T__39 - 33)) | (1 << (MappingParser.T__40 - 33)) | (1 << (MappingParser.T__41 - 33)) | (1 << (MappingParser.T__42 - 33)) | (1 << (MappingParser.T__43 - 33)) | (1 << (MappingParser.T__44 - 33)) | (1 << (MappingParser.T__45 - 33)) | (1 << (MappingParser.T__46 - 33)) | (1 << (MappingParser.T__47 - 33)) | (1 << (MappingParser.T__48 - 33)) | (1 << (MappingParser.T__49 - 33)) | (1 << (MappingParser.T__50 - 33)) | (1 << (MappingParser.T__51 - 33)) | (1 << (MappingParser.T__52 - 33)) | (1 << (MappingParser.T__53 - 33)) | (1 << (MappingParser.T__54 - 33)) | (1 << (MappingParser.T__55 - 33)) | (1 << (MappingParser.T__56 - 33)) | (1 << (MappingParser.T__57 - 33)) | (1 << (MappingParser.T__58 - 33)) | (1 << (MappingParser.T__59 - 33)) | (1 << (MappingParser.T__60 - 33)) | (1 << (MappingParser.T__61 - 33)) | (1 << (MappingParser.T__62 - 33)) | (1 << (MappingParser.T__63 - 33)))) !== 0) || ((((_la - 65)) & ~0x1f) == 0 && ((1 << (_la - 65)) & ((1 << (MappingParser.T__64 - 65)) | (1 << (MappingParser.T__65 - 65)) | (1 << (MappingParser.T__66 - 65)) | (1 << (MappingParser.T__67 - 65)) | (1 << (MappingParser.T__68 - 65)) | (1 << (MappingParser.T__69 - 65)) | (1 << (MappingParser.T__70 - 65)) | (1 << (MappingParser.T__71 - 65)) | (1 << (MappingParser.T__72 - 65)) | (1 << (MappingParser.T__73 - 65)) | (1 << (MappingParser.T__74 - 65)) | (1 << (MappingParser.T__75 - 65)) | (1 << (MappingParser.T__76 - 65)) | (1 << (MappingParser.T__77 - 65)) | (1 << (MappingParser.T__78 - 65)) | (1 << (MappingParser.T__79 - 65)) | (1 << (MappingParser.T__80 - 65)) | (1 << (MappingParser.T__81 - 65)) | (1 << (MappingParser.T__82 - 65)) | (1 << (MappingParser.T__83 - 65)) | (1 << (MappingParser.T__84 - 65)) | (1 << (MappingParser.T__85 - 65)) | (1 << (MappingParser.T__86 - 65)) | (1 << (MappingParser.T__87 - 65)) | (1 << (MappingParser.T__88 - 65)) | (1 << (MappingParser.T__89 - 65)) | (1 << (MappingParser.T__90 - 65)) | (1 << (MappingParser.T__91 - 65)) | (1 << (MappingParser.LINE_COMMENT - 65)) | (1 << (MappingParser.BLOCK_COMMENT - 65)) | (1 << (MappingParser.WS - 65)) | (1 << (MappingParser.ID - 65)))) !== 0)) {
             this.state = 134;
             this.mappingRule();
             this.state = 139;
@@ -768,10 +768,10 @@ MappingParser.prototype.mappingRule = function() {
         case MappingParser.T__89:
         case MappingParser.T__90:
         case MappingParser.T__91:
-        case MappingParser.ID:
         case MappingParser.LINE_COMMENT:
         case MappingParser.BLOCK_COMMENT:
         case MappingParser.WS:
+        case MappingParser.ID:
             this.enterOuterAlt(localctx, 4);
             this.state = 144;
             _la = this._input.LA(1);
