@@ -48,12 +48,12 @@ interface IRule {
     cover: string;
     title: string;
     attrs: {
-        customType: 'base' | 'input' | 'select';
-        defaultValue: string;
-        key: string;
         operation: 'add' | 'delete'; 
+        key: string;
+        defaultValue: string;
         description?: string;
-        options: string[];
+        customType: 'base' | 'input' | 'select';
+        options?: string[];
     }[];
 }
 
