@@ -163,7 +163,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\f\u0002\u0002\u00f0)\u0003\u0002\u0002\u0002\u00f1\u00f2\u0007\r\u0002",
     "\u0002\u00f2\u00f3\u0005,\u0017\u0002\u00f3+\u0003\u0002\u0002\u0002",
     "\u00f4\u00f5\u0007_\u0002\u0002\u00f5-\u0003\u0002\u0002\u0002\u00f6",
-    "\u00f7\u0007\u000e\u0002\u0002\u00f7\u00f8\u0005,\u0017\u0002\u00f8",
+    "\u00f7\u0007\u000e\u0002\u0002\u00f7\u00f8\u00050\u0019\u0002\u00f8",
     "/\u0003\u0002\u0002\u0002\u00f9\u00fa\u0007_\u0002\u0002\u00fa1\u0003",
     "\u0002\u0002\u0002\u00fb\u00ff\u00054\u001b\u0002\u00fc\u00ff\u0005",
     "6\u001c\u0002\u00fd\u00ff\u0005<\u001f\u0002\u00fe\u00fb\u0003\u0002",
@@ -2455,8 +2455,8 @@ function SetCoverContext(parser, parent, invokingState) {
 SetCoverContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 SetCoverContext.prototype.constructor = SetCoverContext;
 
-SetCoverContext.prototype.title = function() {
-    return this.getTypedRuleContext(TitleContext,0);
+SetCoverContext.prototype.cover = function() {
+    return this.getTypedRuleContext(CoverContext,0);
 };
 
 SetCoverContext.prototype.enterRule = function(listener) {
@@ -2493,7 +2493,7 @@ MappingParser.prototype.setCover = function() {
         this.state = 244;
         this.match(MappingParser.T__11);
         this.state = 245;
-        this.title();
+        this.cover();
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
