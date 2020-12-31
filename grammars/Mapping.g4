@@ -73,12 +73,12 @@ hide: 'hide';
 setTitle
   : 'set_title' title
   ;
-title: ID;
+title: standard_string;
 
 setCover
   : 'set_cover' cover
   ;
-cover: ID;
+cover: standard_string;
 
 addAttr
   : addAttrBase
@@ -107,5 +107,5 @@ deleteAttr
   ;
 
 key: ID;
-defaultValue: ID;
-description: ID;
+defaultValue: standard_string;
+description: standard_string;
