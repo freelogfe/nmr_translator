@@ -1,17 +1,17 @@
 
 alter exhibitName1
   do
-    set_labels label1,label2,label3
+    set_labels 34535,label2,label3
 
     set_title ThisIsTitle
 
     set_cover coverPng
 
-    add_attr key1 <base> defaultValue1
-    add_attr key2 <base> defaultValue2 description2
+    add_attr key1 <base> 123123
+    add_attr key2 <base> defaultValue2 1243
     add_attr key3 <input> defaultValue3
     add_attr key4 <input> defaultValue4 description4
-    add_attr key5 <select opt1,opt2,opt3>
+    add_attr key5 <select 2323,opt2,opt3>
     add_attr key6 <select opt1,opt2,opt3> description6
 
     delete_attr key7

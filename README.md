@@ -28,7 +28,7 @@ const {errors, rules, errorObjects} = compile(rulesText);
 interface ICandidate {
     name: string;
     versionRange?: string;
-    type: 'release' | 'mock';
+    type: 'resource' | 'object';
 }
 
 interface IReplace {
@@ -40,11 +40,21 @@ interface IReplace {
 interface IRule {
     text: string;
     operation: 'add' | 'alter';
-    presentableName: string;
+    exhibitName: string;
     candidate?: ICandidate;
-    tags: Array<string | number> | null;
+    labels: string[] | null;
     replace: IReplace[];
     online: boolean | null;
+    cover: string;
+    title: string;
+    attrs: {
+        customType: 'base' | 'input' | 'select';
+        defaultValue: string;
+        key: string;
+        operation: 'add' | 'delete'; 
+        description?: string;
+        options: string[];
+    }[];
 }
 
 interface IErrorObject {
