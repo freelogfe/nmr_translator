@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const {compile} = require('../lib');
 
-const filePath = path.join(__dirname, './sample_mapping.fnm');
+const filePath = path.join(__dirname, './sample_mapping3.fnm');
 const mappingText = fs.readFileSync(filePath, 'utf-8');
 // console.log(mappingText);
 

@@ -8,7 +8,11 @@
   "scripts": {
     "publish": "npm publish --access=public",
     "build": "cd grammars && java -Xmx500M -cp ../build/antlr-4.7.2-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor Mapping.g4 -o ../gen",
+    "build8": "cd grammars && java -Xmx500M -cp ../build/antlr-4.7.2-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor Mapping.g4 -o ../gen",
     "build2": "java -Xmx500M -cp build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor grammars/Semver.g4 -o gen",
+    "build3": "java -Xmx500M -cp build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -visitor grammars/Mapping.g4 -o gen",
+    "build:java": "javac -cp build/antlr-4.7.1-complete.jar ./gen/*.java",
+    "build:java1": "cd gen && java -cp ../build/antlr-4.7.1-complete.jar org.antlr.v4.runtime.misc.TestRig Mapping mappingRules -trace",
     "dev": "nodemon inspect dev/index.test.js",
     "dev2": "nodemon inspect dev/semver.test.js",
     "test": "jest"

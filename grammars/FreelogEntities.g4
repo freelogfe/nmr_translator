@@ -10,7 +10,8 @@ BLOCK_COMMENT : '/*' .*? '*/' -> skip;
 WS : [ \t\n\r]+ -> skip;
 
 resource_id
-  : user_name '/' resource_name ('@' valid_semver)??
+  : user_name '/' resource_name
+  | user_name '/' resource_name '@' valid_semver
   ;
 
 object_id
@@ -59,5 +60,5 @@ fragment CHINESE_WORD
   ;
 // 符号设定
 fragment SYMBOL
-  : '_' | '(' | ')' | '（' | '）' | '-' | '[' | ']' | '{' | '}'
+  : '_' | '(' | ')' | '（' | '）' | '-' | '[' | ']' | '{' | '}' | '.'
   ;
