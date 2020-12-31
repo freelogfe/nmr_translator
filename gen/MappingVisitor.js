@@ -132,6 +132,90 @@ MappingVisitor.prototype.visitHide = function(ctx) {
 };
 
 
+// Visit a parse tree produced by MappingParser#setTitle.
+MappingVisitor.prototype.visitSetTitle = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#title.
+MappingVisitor.prototype.visitTitle = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#setCover.
+MappingVisitor.prototype.visitSetCover = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#cover.
+MappingVisitor.prototype.visitCover = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#addAttr.
+MappingVisitor.prototype.visitAddAttr = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#addAttrBase.
+MappingVisitor.prototype.visitAddAttrBase = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#addAttrSelect.
+MappingVisitor.prototype.visitAddAttrSelect = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#addAttrSelectOptions.
+MappingVisitor.prototype.visitAddAttrSelectOptions = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#addAttrSelectOption.
+MappingVisitor.prototype.visitAddAttrSelectOption = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#addAttrInput.
+MappingVisitor.prototype.visitAddAttrInput = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#deleteAttr.
+MappingVisitor.prototype.visitDeleteAttr = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#key.
+MappingVisitor.prototype.visitKey = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#defultValue.
+MappingVisitor.prototype.visitDefultValue = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by MappingParser#description.
+MappingVisitor.prototype.visitDescription = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by MappingParser#resourceOrObjectName.
 MappingVisitor.prototype.visitResourceOrObjectName = function(ctx) {
   return this.visitChildren(ctx);
@@ -150,8 +234,8 @@ MappingVisitor.prototype.visitHostage = function(ctx) {
 };
 
 
-// Visit a parse tree produced by MappingParser#reourceName.
-MappingVisitor.prototype.visitReourceName = function(ctx) {
+// Visit a parse tree produced by MappingParser#resourceName.
+MappingVisitor.prototype.visitResourceName = function(ctx) {
   return this.visitChildren(ctx);
 };
 
