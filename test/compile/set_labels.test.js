@@ -34,14 +34,14 @@ describe('设置标签测试', () => {
         });
     });
 
-    test('当没有 set_labels 时，结果应为 null', () => {
+    test('当没有 set_labels 时，结果应为 undefined', () => {
         const text = `
         add $u2/r1@1.1.1 as p3
           do
           end
         `;
         const {rules} = compile(text);
-        expect(rules[0].labels).toBeNull();
+        expect(rules[0].labels).toBeUndefined();
     });
 
     test('当 set_labels 没有内容时，结果应为空数组', () => {

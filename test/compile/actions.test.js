@@ -17,16 +17,17 @@ describe('当没有任何操作时', () => {
         expect(errorObjects).toBeNull();
     });
 
-    test('labels 为 null', () => {
-        expect(rules[0].labels).toBeNull();
+    test('labels 为 undefined', () => {
+        expect(rules[0].labels).toBeUndefined();
     });
 
-    test('replaces 为空数组', () => {
-        expect(rules[0].replaces).toEqual([]);
+    test('replaces 为 undefined', () => {
+        // expect(rules[0].replaces).toEqual([]);
+        expect(rules[0].replaces).toBeUndefined();
     });
 
-    test('online 为空 null', () => {
-        expect(rules[0].online).toBeNull();
+    test('online 为空 undefined', () => {
+        expect(rules[0].online).toBeUndefined();
     });
 });
 
