@@ -79,19 +79,25 @@ setCover
 cover: ID;
 
 addAttr
-  : 'add_attr' key defultValue description
-  | 'add_attr' key defultValue description addAttrSelect
-  | 'add_attr' key defultValue description addAttrInput
+  : addAttrBase
+  | addAttrSelect
+  | addAttrInput
   ;
+
+addAttrBase
+  : 'add_attr' key '<base>' defultValue description?
+  ;
+
 addAttrSelect
-  : 'select' labels
+  : 'add_attr' key '<select' addAttrSelectOptions '>' description?
   ;
 addAttrSelectOptions
   : (addAttrSelectOption ',')* addAttrSelectOption
   ;
 addAttrSelectOption: ID;
+
 addAttrInput
-  : 'input'
+  : 'add_attr' key '<input>' defultValue description?
   ;
 
 deleteAttr
