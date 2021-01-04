@@ -17,7 +17,6 @@ prefix
 
 version_core
     : major '.' minor '.' patch
-    | major '.' minor '.' patch
     ;
 
 major
