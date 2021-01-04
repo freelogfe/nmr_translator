@@ -50,7 +50,7 @@ fragment CHAR
   ;
 
 // 数字字符
-fragment DIGIT : [0-9] ;
+fragment DIGIT : [0-9];
 // 英文大小写字母
 fragment ALPHABET : [a-zA-Z];
 // 中文字符
@@ -59,5 +59,5 @@ fragment CHINESE_WORD
   ;
 // 符号设定
 fragment SYMBOL
-  : '_' | '(' | ')' | '（' | '）' | '-' | '[' | ']' | '{' | '}'
+  : '_' | '(' | ')' | '（' | '）' | '-' | '[' | ']' | '{' | '}' | '.'
   ;
