@@ -20,7 +20,7 @@ describe('字符集测试', () => {
 
     });
 
-    describe('mock 不能包含 ":" 字符', () => {
+    describe('对象不能包含 ":" 字符', () => {
         const text = `
         add #:b1/m1 as p2
           do
@@ -38,7 +38,7 @@ describe('字符集测试', () => {
 
     });
 
-    describe('presentable 不能包含 ":" 字符', () => {
+    describe('展品不能包含 ":" 字符', () => {
         const text = `
         add #b1/m1 as :p2
           do
@@ -54,7 +54,7 @@ describe('字符集测试', () => {
         });
     });
 
-    describe('presentable 不能包含 "@" 字符', () => {
+    describe('展品不能包含 "@" 字符', () => {
         const text = `
         add #b1/m10 as p@2
           do
@@ -70,9 +70,12 @@ describe('字符集测试', () => {
         });
     });
 
-    describe('presentable mock release 可以是纯数字', () => {
+    describe('展品、对象、资源可以是纯数字', () => {
         const text = `
         add $1111/2222@1.1.1 as 3333
+          do
+          end
+        add #1111/2222 as 4444 
           do
           end
         `;
@@ -82,6 +85,25 @@ describe('字符集测试', () => {
         });
 
         test('不会报错2', () => {
+            expect(errorObjects).toBeNull();
+        });
+    });
+
+    describe(`所有名字都可以使用"."`, () => {
+        const text = `
+        add $u.1/r.1.@1.1.1 as p1.
+          do
+          end
+        `;
+
+        const {errors, rules, errorObjects} = compile(text);
+        console.log(rules, 'rules');
+        test('没有操作，不会报错1', () => {
+            // console.log(errors, 'EEEEEEEEEE');
+            expect(errors).toBeNull();
+        });
+
+        test('没有操作，不会报错2', () => {
             expect(errorObjects).toBeNull();
         });
     });
