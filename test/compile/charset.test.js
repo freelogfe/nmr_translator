@@ -112,23 +112,24 @@ describe('字符集测试', () => {
         });
     });
 
-    describe(`资源名称中可以使用“@”来添加版本`, () => {
-        const text = `
-        add $u1/r1@1.1.1 as p1
-          do
-          end
-        `;
-
-        const {errors, rules, errorObjects} = compile(text);
-        // console.log(rules, 'rules');
-        test('没有操作，不会报错1', () => {
-            // console.log(errors, 'EEEEEEEEEE');
-            expect(errors).toBeNull();
-        });
-
-        test('没有操作，不会报错2', () => {
-            expect(errorObjects).toBeNull();
-        });
-
-    });
+    // TODO:
+    // describe(`资源名称中可以使用“@”来添加版本`, () => {
+    //     const text = `
+    //     add $u1/r.1 as p1
+    //       do
+    //       end
+    //     `;
+    //
+    //     const {errors, rules, errorObjects} = compile(text);
+    //     console.log(rules, 'rules111');
+    //     test('没有操作，不会报错1', () => {
+    //         // console.log(errors, 'EEEEEEEEEE');
+    //         expect(errors).toBeNull();
+    //     });
+    //
+    //     test('没有操作，不会报错2', () => {
+    //         expect(errorObjects).toBeNull();
+    //     });
+    //
+    // });
 });
