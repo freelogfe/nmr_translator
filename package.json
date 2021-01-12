@@ -5,6 +5,7 @@
   "dependencies": {
     "antlr4": "4.7.1"
   },
+  "repository": "https://github.com/freelogfe/nmr_translator",
   "scripts": {
     "publish": "npm publish --access=public",
     "build": "cd grammars && java -Xmx500M -cp ../build/antlr-4.7.2-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor Mapping.g4 -o ../gen",
