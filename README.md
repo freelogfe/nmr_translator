@@ -37,7 +37,7 @@ interface IReplace {
     scopes: ICandidate[][];
 }
 
-interface IRule {
+interface IRuleExhibit {
     text: string;
     operation: 'add' | 'alter';
     exhibitName: string;
@@ -57,6 +57,12 @@ interface IRule {
     }[];
 }
 
+interface IRuleTheme {
+  text: string;
+  operation: 'activate_theme',
+  themeName: string;
+}
+
 interface IErrorObject {
     line?: number;
     col?: number;
@@ -66,7 +72,7 @@ interface IErrorObject {
 
 interface IResult {
     errors: string[] | null;
-    rules?: IRule[];
+    rules?: Array<IRuleExhibit | IRuleTheme>;
     errorObjects: IErrorObject[] | null;
 }
 
