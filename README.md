@@ -42,12 +42,12 @@ interface IRuleExhibit {
     operation: 'add' | 'alter';
     exhibitName: string;
     candidate?: ICandidate;
-    labels: string[] | null;
-    replace: IReplace[];
-    online: boolean | null;
-    cover: string;
-    title: string;
-    attrs: {
+    labels?: string[];
+    replace?: IReplace[];
+    online?: boolean;
+    cover?: string;
+    title?: string;
+    attrs?: {
         operation: 'add' | 'delete'; 
         key: string;
         defaultValue: string;
