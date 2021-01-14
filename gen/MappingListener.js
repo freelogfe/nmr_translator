@@ -281,51 +281,6 @@ MappingListener.prototype.exitAddAttr = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#addAttrBase.
-MappingListener.prototype.enterAddAttrBase = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#addAttrBase.
-MappingListener.prototype.exitAddAttrBase = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#addAttrSelect.
-MappingListener.prototype.enterAddAttrSelect = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#addAttrSelect.
-MappingListener.prototype.exitAddAttrSelect = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#addAttrSelectOptions.
-MappingListener.prototype.enterAddAttrSelectOptions = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#addAttrSelectOptions.
-MappingListener.prototype.exitAddAttrSelectOptions = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#addAttrSelectOption.
-MappingListener.prototype.enterAddAttrSelectOption = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#addAttrSelectOption.
-MappingListener.prototype.exitAddAttrSelectOption = function(ctx) {
-};
-
-
-// Enter a parse tree produced by MappingParser#addAttrInput.
-MappingListener.prototype.enterAddAttrInput = function(ctx) {
-};
-
-// Exit a parse tree produced by MappingParser#addAttrInput.
-MappingListener.prototype.exitAddAttrInput = function(ctx) {
-};
-
-
 // Enter a parse tree produced by MappingParser#deleteAttr.
 MappingListener.prototype.enterDeleteAttr = function(ctx) {
 };
@@ -344,12 +299,12 @@ MappingListener.prototype.exitKey = function(ctx) {
 };
 
 
-// Enter a parse tree produced by MappingParser#defaultValue.
-MappingListener.prototype.enterDefaultValue = function(ctx) {
+// Enter a parse tree produced by MappingParser#value.
+MappingListener.prototype.enterValue = function(ctx) {
 };
 
-// Exit a parse tree produced by MappingParser#defaultValue.
-MappingListener.prototype.exitDefaultValue = function(ctx) {
+// Exit a parse tree produced by MappingParser#value.
+MappingListener.prototype.exitValue = function(ctx) {
 };
 
 

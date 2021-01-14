@@ -192,36 +192,6 @@ MappingVisitor.prototype.visitAddAttr = function(ctx) {
 };
 
 
-// Visit a parse tree produced by MappingParser#addAttrBase.
-MappingVisitor.prototype.visitAddAttrBase = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by MappingParser#addAttrSelect.
-MappingVisitor.prototype.visitAddAttrSelect = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by MappingParser#addAttrSelectOptions.
-MappingVisitor.prototype.visitAddAttrSelectOptions = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by MappingParser#addAttrSelectOption.
-MappingVisitor.prototype.visitAddAttrSelectOption = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by MappingParser#addAttrInput.
-MappingVisitor.prototype.visitAddAttrInput = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
 // Visit a parse tree produced by MappingParser#deleteAttr.
 MappingVisitor.prototype.visitDeleteAttr = function(ctx) {
   return this.visitChildren(ctx);
@@ -234,8 +204,8 @@ MappingVisitor.prototype.visitKey = function(ctx) {
 };
 
 
-// Visit a parse tree produced by MappingParser#defaultValue.
-MappingVisitor.prototype.visitDefaultValue = function(ctx) {
+// Visit a parse tree produced by MappingParser#value.
+MappingVisitor.prototype.visitValue = function(ctx) {
   return this.visitChildren(ctx);
 };
 
