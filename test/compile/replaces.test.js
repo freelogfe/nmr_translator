@@ -57,4 +57,10 @@ describe('测试替换规则', () => {
         const {rules} = compile(text);
         expect(rules[0].replaces[0].scopes).toEqual([]);
     });
+
+    test('当不设替换时，replace 为 undefined', () => {
+        const text = 'alter p2 do end';
+        const {rules} = compile(text);
+        expect(rules[0].replaces).toBeUndefined();
+    });
 });

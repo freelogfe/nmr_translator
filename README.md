@@ -37,22 +37,28 @@ interface IReplace {
     scopes: ICandidate[][];
 }
 
-interface IRule {
+interface IRuleExhibit {
     text: string;
     operation: 'add' | 'alter';
     exhibitName: string;
     candidate?: ICandidate;
-    labels: string[] | null;
-    replace: IReplace[];
-    online: boolean | null;
-    cover: string;
-    title: string;
-    attrs: {
+    labels?: string[];
+    replace?: IReplace[];
+    online?: boolean;
+    cover?: string;
+    title?: string;
+    attrs?: {
         operation: 'add' | 'delete'; 
         key: string;
         value?: string;
         description?: string;
     }[];
+}
+
+interface IRuleTheme {
+  text: string;
+  operation: 'activate_theme',
+  themeName: string;
 }
 
 interface IErrorObject {
@@ -64,7 +70,7 @@ interface IErrorObject {
 
 interface IResult {
     errors: string[] | null;
-    rules?: IRule[];
+    rules?: Array<IRuleExhibit | IRuleTheme>;
     errorObjects: IErrorObject[] | null;
 }
 
