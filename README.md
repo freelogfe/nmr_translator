@@ -50,10 +50,8 @@ interface IRule {
     attrs: {
         operation: 'add' | 'delete'; 
         key: string;
-        defaultValue: string;
+        value?: string;
         description?: string;
-        customType: 'base' | 'input' | 'select';
-        options?: string[];
     }[];
 }
 
