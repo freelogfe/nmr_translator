@@ -81,25 +81,7 @@ setCover
 cover: ID;
 
 addAttr
-  : addAttrBase
-  | addAttrSelect
-  | addAttrInput
-  ;
-
-addAttrBase
-  : 'add_attr' key '<base>' defaultValue description?
-  ;
-
-addAttrSelect
-  : 'add_attr' key '<select' addAttrSelectOptions '>' description?
-  ;
-addAttrSelectOptions
-  : (addAttrSelectOption ',')* addAttrSelectOption
-  ;
-addAttrSelectOption: ID;
-
-addAttrInput
-  : 'add_attr' key '<input>' defaultValue description?
+  : 'add_attr' key value description?
   ;
 
 deleteAttr
@@ -107,5 +89,5 @@ deleteAttr
   ;
 
 key: ID;
-defaultValue: ID;
+value: ID;
 description: ID;
