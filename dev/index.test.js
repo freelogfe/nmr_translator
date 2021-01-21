@@ -14,7 +14,7 @@ if (errorObjects) {
     console.log(errorObjects, 'errorObjects');
 }
 // fs.writeFileSync(path.join(__dirname, 'rules.json'), JSON.stringify(rules));
-console.log(rules, 'result');
+console.log(JSON.stringify(rules), 'result');
 
 debugger;
 
