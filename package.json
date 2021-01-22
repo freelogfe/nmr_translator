@@ -3,16 +3,11 @@
   "version": "4.2.13",
   "main": "lib/index.js",
   "dependencies": {
-    "antlr4": "4.7.1"
+    "antlr4": "4.8.0"
   },
   "repository": "https://github.com/freelogfe/nmr_translator",
   "scripts": {
-    "publish": "npm publish --access=public",
-    "build": "cd grammars && java -Xmx500M -cp ../build/antlr-4.7.2-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor Mapping.g4 -o ../gen",
-    "build2": "java -Xmx500M -cp build/antlr-4.7.1-complete.jar org.antlr.v4.Tool -Dlanguage=JavaScript -visitor grammars/Semver.g4 -o gen",
-    "dev": "nodemon inspect dev/index.test.js",
-    "dev2": "nodemon inspect dev/semver.test.js",
-    "test": "jest"
+    "publish": "npm publish --access=public"
   },
   "devDependencies": {
     "jest": "^26.6.3",

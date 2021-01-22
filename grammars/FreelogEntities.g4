@@ -14,7 +14,7 @@ resource_id
   ;
 
 object_id
-  : bucket_name '/' bucket_name
+  : bucket_name '/' object_name
   ;
 
 exhibit_name
