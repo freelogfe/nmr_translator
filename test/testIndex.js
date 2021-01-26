@@ -1,8 +1,8 @@
 const fs = require("fs");
 const nmr_translator = require("../index");
 
-// compile();
-decompile();
+compile();
+// decompile();
 
 function compile() {
     let result = nmr_translator.compile(fs.readFileSync("./resources/zhaojn.sc", "utf-8"));

@@ -1,15 +1,11 @@
-add $u2/r10.0@1.1.1 as p3
-  do
-    set_label t1,t2,t3
-    replace $uu9/rr9@1.1.1 with #bb0/mm0 under $u6/m6>$u7/m7, $u8/m8
-    show
-  end
-alter p4
-  do
-    hide
-    set_title abc
-    set_cover 000
-    add_attr 1 2 3
-    delete_attr 4
-  end
-activate_theme 123
+activate_theme import_test_resource
+add  $yuliang/风景图 as import_test_resource
+do
+   set_labels tag1,tag2,tag3
+end
+add   #yuliang-a/yuliang-4131  as object_1
+do
+   set_labels reset
+   replace #yuliang/readme2 with #yuliang/readme3
+   hide
+end

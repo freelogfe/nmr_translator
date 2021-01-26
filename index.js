@@ -12,6 +12,7 @@ const MappingRuleDecompiler = require("./MappingRuleDecompiler").MappingRuleDeco
 
 exports.compile = function (content) {
     let chars = new antlr4.InputStream(content);
+
     let lexer = new MappingRuleToken(chars);
     let stream = new antlr4.CommonTokenStream(lexer);
     let parser = new MappingRule(stream);

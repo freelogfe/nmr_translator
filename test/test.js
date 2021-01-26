@@ -16,8 +16,8 @@ decompile();
 
 function main() {
     let input = fs.readFileSync("./resources/zhaojn.sc", "utf-8");
-
     let chars = new antlr4.InputStream(input);
+
     let lexer = new MappingRuleToken(chars);
     let stream = new antlr4.CommonTokenStream(lexer);
     let parser = new MappingRule(stream);

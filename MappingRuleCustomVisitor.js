@@ -13,7 +13,7 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
 
     visitRule_add(ctx) {
         this.rule = {
-            text: ctx.getText(),
+            text: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
             operation: "add",
             exhibitName: ctx.ID().getText(),
             candidate: this.wrapCandidate(ctx.candidate())
@@ -26,7 +26,7 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
 
     visitRule_alter(ctx) {
         this.rule = {
-            text: ctx.getText(),
+            text: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
             operation: "alter",
             exhibitName: ctx.ID().getText()
         }
@@ -38,7 +38,7 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
 
     visitRule_activate_theme(ctx) {
         this.rule = {
-            text: ctx.getText(),
+            text: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
             operation: "activate_theme",
             themeName: ctx.ID().getText()
         }
