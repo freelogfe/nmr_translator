@@ -102,13 +102,14 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
     }
 
     visitSet_title(ctx) {
-        this.rule.title = ctx.ID().getText();
+        this.rule.title = ctx.title.text;
 
         return super.visitSet_title(ctx);
     }
 
     visitSet_cover(ctx) {
-        this.rule.cover = ctx.ID().getText();
+        let cover = ctx.cover.text;
+        this.rule.cover = cover.slice(1, cover.length - 1);
 
         return super.visitSet_cover(ctx);
     }
@@ -139,7 +140,7 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
 
         let attr = {
             operation: "delete",
-            key: ctx.ID().getText(),
+            key: ctx.key.text,
         }
 
         this.rule.attrs.push(attr);

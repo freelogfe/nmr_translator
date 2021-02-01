@@ -114,7 +114,7 @@ class MappingRuleDecompiler {
     }
 
     decompileAction4Cover(cover) {
-        return `set_cover ${cover}`;
+        return `set_cover "${cover}"`;
     }
 
     decompileAction4Attr(attr) {

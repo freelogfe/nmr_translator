@@ -30,7 +30,14 @@ exports.compile = function (content) {
     return {
         rules: visitor.mappingRules,
         errors: [...errorListener.errors, ...visitor.errors],
-        errorObjects: errorListener.errorObjects
+        errorObjects: [...errorListener.errorObjects, ...visitor.errors.map(error => {
+            return {
+                line: -1,
+                charPositionInLine: -1,
+                offendingSymbol: "",
+                msg: error
+            };
+        })]
     };
 }
 
