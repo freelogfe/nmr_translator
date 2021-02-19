@@ -27,7 +27,7 @@ const {errors, rules, errorObjects} = compile(rulesText);
 ```typescript
 interface ICandidate {
     name: string;
-    versionRange?: string;
+    versionRange: string;
     type: 'resource' | 'object';
 }
 
