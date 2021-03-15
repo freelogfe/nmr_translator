@@ -1,37 +1,21 @@
 [
     {
-        "text": "add$u2/r10.0@1.1.1asp3doset_labelt1,t2,t3replace$uu9/rr9@1.1.1with#bb0/mm0under$u6/m6>$u7/m7,$u8/m8showend",
-        "operation": "add",
-        "exhibitName": "p3",
-        "candidate": {
-            "name": "u2/r10.0",
-            "versionRange": "1.1.1",
-            "type": "resource"
-        }
-    },
-    {
-        "text": "alterp4dohideset_titleabcset_cover000add_attr123delete_attr4end",
+        "text": "alter AAAAA\r\n do\r\n  replace $12345676789/D with $12345676789/haveDep2@0.0.4\r\n end",
         "operation": "alter",
-        "exhibitName": "p4",
-        "online": false,
-        "title": "abc",
-        "cover": "000",
-        "attrs": [
+        "exhibitName": "AAAAA",
+        "replaces": [
             {
-                "operation": "add",
-                "key": "1",
-                "value": "2",
-                "description": "3"
-            },
-            {
-                "operation": "delete",
-                "key": "4"
+                "replaced": {
+                    "name": "12345676789/D",
+                    "versionRange": "*",
+                    "type": "resource"
+                },
+                "replacer": {
+                    "name": "12345676789/haveDep2",
+                    "versionRange": "0.0.4",
+                    "type": "resource"
+                }
             }
         ]
-    },
-    {
-        "text": "activate_theme123",
-        "operation": "activate_theme",
-        "themeName": "123"
     }
 ]

@@ -8,20 +8,31 @@ const MappingRuleToken = require(`${gen_dir}/MappingRuleToken`).MappingRuleToken
 const MappingRule = require(`${gen_dir}/MappingRule`).MappingRule;
 const MappingRuleCustomVisitor = require("./MappingRuleCustomVisitor").MappingRuleCustomVisitor;
 const MappingRuleErrorListener = require("./MappingRuleErrorListener").MappingRuleErrorListener;
+const MappingRuleErrorLexerListener = require("./MappingRuleErrorLexerListener").MappingRuleErrorLexerListener;
 const MappingRuleDecompiler = require("./MappingRuleDecompiler").MappingRuleDecompiler;
 
 exports.compile = function (content) {
     let chars = new antlr4.InputStream(content);
 
     let lexer = new MappingRuleToken(chars);
+    lexer.removeErrorListeners();
+    let lexerErrorListener = new MappingRuleErrorLexerListener();
+    lexer.addErrorListener(lexerErrorListener);
     let stream = new antlr4.CommonTokenStream(lexer);
     let parser = new MappingRule(stream);
+    parser.removeErrorListeners();
     let errorListener = new MappingRuleErrorListener();
     parser.addErrorListener(errorListener);
     // 关闭恢复机制
     // parser._errHandler = new antlr4.error.BailErrorStrategy();
 
     let tree = parser.mapping_rule_section();
+    if (lexerErrorListener.errors.length !== 0) {
+        return {
+            errors: lexerErrorListener.errors,
+            errorObjects: lexerErrorListener.errorObjects
+        };
+    }
 
     let visitor = new MappingRuleCustomVisitor();
     visitor.visit(tree);

@@ -41,7 +41,7 @@ class MappingRuleDecompiler {
 
     decompileCandidate(candidate) {
         if (candidate.type === "resource") {
-            return "$" + candidate.name + ((candidate.versionRange === "*" || candidate.versionRange === "latest") ? "" : candidate.versionRange);
+            return "$" + candidate.name + ((candidate.versionRange === "*" || candidate.versionRange === "latest") ? "" : ("@" + candidate.versionRange));
         } else if (candidate.type === "object") {
             return "#" + candidate.name;
         }
