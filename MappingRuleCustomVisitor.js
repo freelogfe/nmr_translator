@@ -102,14 +102,23 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
     }
 
     visitSet_title(ctx) {
-        this.rule.title = ctx.title.text;
+        if (ctx.title == null) {
+            this.rule.title = null;
+        } else {
+            let title = ctx.title.text;
+            this.rule.title = title.slice(1, title.length - 1);
+        }
 
         return super.visitSet_title(ctx);
     }
 
     visitSet_cover(ctx) {
-        let cover = ctx.cover.text;
-        this.rule.cover = cover.slice(1, cover.length - 1);
+        if (ctx.cover == null) {
+            this.rule.cover = null;
+        } else {
+            let cover = ctx.cover.text;
+            this.rule.cover = cover.slice(1, cover.length - 1);
+        }
 
         return super.visitSet_cover(ctx);
     }
@@ -149,10 +158,16 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
     }
 
     wrapCandidate(ctx, releaseDefaultVersion = "latest") {
-        let candidate;
+        if (ctx == null) {
+            return null;
+        }
 
+        let candidate;
         if (ctx.resource_name() != null) {
             let rctx = ctx.resource_name();
+            if (rctx == null) {
+                return null;
+            }
             candidate = {
                 name: `${rctx.userName.text}${rctx.SLASH().getText()}${rctx.resourceName.text}`,
                 versionRange: rctx.SEMVER() != null ? rctx.SEMVER().getText() : releaseDefaultVersion,
@@ -160,6 +175,9 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
             };
         } else {
             let octx = ctx.object_name();
+            if (octx == null) {
+                return null;
+            }
             candidate = {
                 name: `${octx.bucketName.text}${octx.SLASH().getText()}${octx.objectName.text}`,
                 type: "object"
@@ -181,6 +199,9 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
         let ruleNameR = [];
         let ruleNameO = [];
         this.mappingRules.filter(mappingRule => mappingRule.operation === "add").forEach(mappingRule => {
+            if (mappingRule.candidate == null) {
+                return;
+            }
             if (mappingRule.candidate.type === "resource") {
                 ruleNameR.push(mappingRule.candidate.name);
             } else if (mappingRule.candidate.type === "object") {

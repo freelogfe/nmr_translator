@@ -84,7 +84,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0082\u0003\u0002\u0002\u0002\u0082\u0019\u0003\u0002\u0002\u0002\u0083",
     "\u0084\u0007\u000b\u0002\u0002\u0084\u001b\u0003\u0002\u0002\u0002\u0085",
     "\u0086\u0007\f\u0002\u0002\u0086\u001d\u0003\u0002\u0002\u0002\u0087",
-    "\u0088\u0007\r\u0002\u0002\u0088\u0089\u0007\u0019\u0002\u0002\u0089",
+    "\u0088\u0007\r\u0002\u0002\u0088\u0089\u0007\u001a\u0002\u0002\u0089",
     "\u001f\u0003\u0002\u0002\u0002\u008a\u008b\u0007\u000e\u0002\u0002\u008b",
     "\u008c\u0007\u001a\u0002\u0002\u008c!\u0003\u0002\u0002\u0002\u008d",
     "\u008e\u0007\u000f\u0002\u0002\u008e\u008f\u0007\u0019\u0002\u0002\u008f",
@@ -1582,8 +1582,8 @@ Set_titleContext.prototype.SET_TITLE = function() {
     return this.getToken(MappingRule.SET_TITLE, 0);
 };
 
-Set_titleContext.prototype.ID = function() {
-    return this.getToken(MappingRule.ID, 0);
+Set_titleContext.prototype.STRING = function() {
+    return this.getToken(MappingRule.STRING, 0);
 };
 
 Set_titleContext.prototype.enterRule = function(listener) {
@@ -1620,7 +1620,7 @@ MappingRule.prototype.set_title = function() {
         this.state = 133;
         this.match(MappingRule.SET_TITLE);
         this.state = 134;
-        localctx.title = this.match(MappingRule.ID);
+        localctx.title = this.match(MappingRule.STRING);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
