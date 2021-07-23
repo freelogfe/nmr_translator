@@ -18,6 +18,10 @@ class MappingRuleDecompiler {
                 default:
                     throw new Error("错误的规则：" + mappingRule);
             }
+            if (mappingRule.comments) {
+                let commentsStr = mappingRule.comments.join("");
+                ruleStr = commentsStr + ruleStr;
+            }
             result += `${ruleStr}\n`;
         });
 
@@ -110,7 +114,7 @@ class MappingRuleDecompiler {
     }
 
     decompileAction4Title(title) {
-        return `set_title ${title}`;
+        return `set_title "${title}"`;
     }
 
     decompileAction4Cover(cover) {

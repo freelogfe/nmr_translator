@@ -11,6 +11,17 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
         return super.visitMapping_rule_section(ctx);
     }
 
+    visitMapping_rule_part(ctx) {
+        let result = super.visitMapping_rule_part(ctx);
+
+        let ctxCss = ctx.comment_section();
+        if (ctxCss.length !== 0) {
+            this.rule["comments"] = ctxCss.map(ctxCs => ctxCs.getText());
+        }
+
+        return result;
+    }
+
     visitRule_add(ctx) {
         this.rule = {
             text: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
@@ -165,7 +176,7 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
         let candidate;
         if (ctx.resource_name() != null) {
             let rctx = ctx.resource_name();
-            if (rctx == null) {
+            if (rctx == null || rctx.resourceName == null) {
                 return null;
             }
             candidate = {
@@ -175,7 +186,7 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
             };
         } else {
             let octx = ctx.object_name();
-            if (octx == null) {
+            if (octx == null || octx.objectName == null) {
                 return null;
             }
             candidate = {

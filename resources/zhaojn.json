@@ -1,21 +1,84 @@
 [
     {
-        "text": "alter AAAAA\r\n do\r\n  replace $12345676789/D with $12345676789/haveDep2@0.0.4\r\n end",
-        "operation": "alter",
-        "exhibitName": "AAAAA",
+        "text": "add $u2/r10.0@1.1.1 as p3\r\n  do\r\n    set_labels t1,t2,t3\r\n    replace $uu9/rr9@1.1.1 with #bb0/mm0 under $u6/m6>$u7/m7, $u8/m8\r\n    show\r\n  end",
+        "operation": "add",
+        "exhibitName": "p3",
+        "candidate": {
+            "name": "u2/r10.0",
+            "versionRange": "1.1.1",
+            "type": "resource"
+        },
+        "labels": [
+            "t1",
+            "t2",
+            "t3"
+        ],
         "replaces": [
             {
                 "replaced": {
-                    "name": "12345676789/D",
-                    "versionRange": "*",
+                    "name": "uu9/rr9",
+                    "versionRange": "1.1.1",
                     "type": "resource"
                 },
                 "replacer": {
-                    "name": "12345676789/haveDep2",
-                    "versionRange": "0.0.4",
-                    "type": "resource"
-                }
+                    "name": "bb0/mm0",
+                    "type": "object"
+                },
+                "scopes": [
+                    [
+                        {
+                            "name": "u6/m6",
+                            "versionRange": "*",
+                            "type": "resource"
+                        },
+                        {
+                            "name": "u7/m7",
+                            "versionRange": "*",
+                            "type": "resource"
+                        }
+                    ],
+                    [
+                        {
+                            "name": "u8/m8",
+                            "versionRange": "*",
+                            "type": "resource"
+                        }
+                    ]
+                ]
             }
+        ],
+        "online": true,
+        "comments": [
+            "// 昨夜西风凋碧树\r\n",
+            "// 一条大河波浪宽\r\n"
         ]
+    },
+    {
+        "text": "alter p4\r\n  do\r\n    hide\r\n    set_title \"set_titles\"\r\n    set_cover \"set_covers\"\r\n    add_attr 1 2 3\r\n    delete_attr 4\r\n  end",
+        "operation": "alter",
+        "exhibitName": "p4",
+        "online": false,
+        "title": "set_titles",
+        "cover": "set_covers",
+        "attrs": [
+            {
+                "operation": "add",
+                "key": "1",
+                "value": "2",
+                "description": "3"
+            },
+            {
+                "operation": "delete",
+                "key": "4"
+            }
+        ],
+        "comments": [
+            "/*\r\n * 无物结同心\r\n * 烟花不堪剪\r\n */\r\n"
+        ]
+    },
+    {
+        "text": "activate_theme 123",
+        "operation": "activate_theme",
+        "themeName": "123"
     }
 ]
