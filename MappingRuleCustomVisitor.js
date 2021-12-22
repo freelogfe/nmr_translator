@@ -7,25 +7,16 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
 
     visitMapping_rule_section(ctx) {
         this.mappingRules = [];
+        this.errors = [];
 
         return super.visitMapping_rule_section(ctx);
-    }
-
-    visitMapping_rule_part(ctx) {
-        let result = super.visitMapping_rule_part(ctx);
-
-        let ctxCss = ctx.comment_section();
-        if (ctxCss.length !== 0) {
-            this.rule["comments"] = ctxCss.map(ctxCs => ctxCs.getText());
-        }
-
-        return result;
     }
 
     visitRule_add(ctx) {
         this.rule = {
             text: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
             operation: "add",
+            actions: [],
             exhibitName: ctx.ID().getText(),
             candidate: this.wrapCandidate(ctx.candidate())
         };
@@ -39,6 +30,7 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
         this.rule = {
             text: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
             operation: "alter",
+            actions: [],
             exhibitName: ctx.ID().getText()
         }
 
@@ -51,7 +43,8 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
         this.rule = {
             text: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
             operation: "activate_theme",
-            themeName: ctx.ID().getText()
+            actions: [],
+            exhibitName: ctx.ID().getText()
         }
 
         this.mappingRules.push(this.rule);
@@ -59,28 +52,52 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
         return super.visitRule_activate_theme(ctx);
     }
 
+    visitRule_comment_section(ctx) {
+        this.rule = {
+            text: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
+            operation: "comment"
+        }
+
+        this.mappingRules.push(this.rule);
+
+        return super.visitRule_comment_section(ctx);
+    }
+
     visitSet_labels(ctx) {
+        let action;
+        let exist = false;
+        for (let tmp of this.rule.actions) {
+            if (tmp["operation"] === "set_labels") {
+                action = tmp;
+                exist = true;
+                break;
+            }
+        }
+
         let labels = [];
         ctx.ID().forEach(label => {
             labels.push(label.getText());
         })
 
-        if (labels.length !== 0) {
-            this.rule.labels = labels;
+        if (!exist) {
+            action = {};
+            action["operation"] = "set_labels";
+            action["content"] = labels;
+            this.rule.actions.push(action);
         } else {
-            delete this.rule.labels;
+            action["content"] = labels;
         }
 
         return super.visitSet_labels(ctx);
     }
 
     visitReplace(ctx) {
-        if (this.rule.replaces == null) {
-            this.rule.replaces = [];
-        }
-        let replace = {
-            replaced: this.wrapCandidate(ctx.target, "*"),
-            replacer: this.wrapCandidate(ctx.source)
+        let action = {
+            operation: "replace",
+            content: {
+                replaced: this.wrapCandidate(ctx.target, "*"),
+                replacer: this.wrapCandidate(ctx.source)
+            }
         }
 
         let scopes = [];
@@ -92,80 +109,164 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
             scopes.push(chain);
         })
         if (scopes.length !== 0) {
-            replace.scopes = scopes;
+            action.content.scopes = scopes;
         }
 
-        this.rule.replaces.push(replace);
+        this.rule.actions.push(action);
 
         return super.visitReplace(ctx);
     }
 
     visitShow(ctx) {
-        this.rule.online = true;
+        let action;
+        let exist = false;
+        for (let tmp of this.rule.actions) {
+            if (tmp["operation"] === "online") {
+                action = tmp;
+                exist = true;
+                break;
+            }
+        }
+
+        if (!exist) {
+            action = {};
+            action["operation"] = "online";
+            action["content"] = true;
+            this.rule.actions.push(action);
+        } else {
+            action["content"] = true;
+        }
 
         return super.visitShow(ctx);
     }
 
     visitHide(ctx) {
-        this.rule.online = false;
+        let action;
+        let exist = false;
+        for (let tmp of this.rule.actions) {
+            if (tmp["operation"] === "online") {
+                action = tmp;
+                exist = true;
+                break;
+            }
+        }
+
+        if (!exist) {
+            action = {};
+            action["operation"] = "online";
+            action["content"] = false;
+            this.rule.actions.push(action);
+        } else {
+            action["content"] = false;
+        }
 
         return super.visitHide(ctx);
     }
 
     visitSet_title(ctx) {
+        let action;
+        let exist = false;
+        for (let tmp of this.rule.actions) {
+            if (tmp["operation"] === "set_title") {
+                action = tmp;
+                exist = true;
+                break;
+            }
+        }
+
+        let title;
         if (ctx.title == null) {
-            this.rule.title = null;
+            title = null;
         } else {
-            let title = ctx.title.text;
-            this.rule.title = title.slice(1, title.length - 1);
+            title = ctx.title.text.slice(1, ctx.title.text.length - 1);
+        }
+
+        if (!exist) {
+            action = {};
+            action["operation"] = "set_title";
+            action["content"] = title;
+            this.rule.actions.push(action);
+        } else {
+            action["content"] = title;
         }
 
         return super.visitSet_title(ctx);
     }
 
     visitSet_cover(ctx) {
+        let action;
+        let exist = false;
+        for (let tmp of this.rule.actions) {
+            if (tmp["operation"] === "set_cover") {
+                action = tmp;
+                exist = true;
+                break;
+            }
+        }
+
+        let cover;
         if (ctx.cover == null) {
-            this.rule.cover = null;
+            cover = null;
         } else {
-            let cover = ctx.cover.text;
-            this.rule.cover = cover.slice(1, cover.length - 1);
+            cover = ctx.cover.text.slice(1, ctx.cover.text.length - 1);
+        }
+
+        if (!exist) {
+            action = {};
+            action["operation"] = "set_cover";
+            action["content"] = cover;
+            this.rule.actions.push(action);
+        } else {
+            action["content"] = cover;
         }
 
         return super.visitSet_cover(ctx);
     }
 
     visitAdd_attr(ctx) {
-        if (this.rule.attrs == null) {
-            this.rule.attrs = [];
+        let action = {
+            operation: "add_attr",
+            content: {
+                key: ctx.key.text,
+                value: ctx.value.text,
+                description: ctx.description ? ctx.description.text : null
+            }
+        };
+
+        for (let tmp of this.rule.actions) {
+            if (tmp["operation"] === "add_attr" && tmp["content"]["key"] === action["content"]["key"]) {
+                this.errors.push(`添加属性中，不能重复添加 attr: ${action["content"]["key"]}  ${action["content"]["value"]}`);
+                break;
+            }
         }
 
-        let attr = {
-            operation: "add",
-            key: ctx.key.text,
-            value: ctx.value.text
-        }
-        if (ctx.description != null) {
-            attr.description = ctx.description.text;
-        }
-
-        this.rule.attrs.push(attr);
+        this.rule.actions.push(action);
 
         return super.visitAdd_attr(ctx);
     }
 
     visitDelete_attr(ctx) {
-        if (this.rule.attrs == null) {
-            this.rule.attrs = [];
+        let action = {
+            operation: "delete_attr",
+            content: {
+                key: ctx.key.text
+            }
         }
 
-        let attr = {
-            operation: "delete",
-            key: ctx.key.text,
-        }
-
-        this.rule.attrs.push(attr);
+        this.rule.actions.push(action);
 
         return super.visitDelete_attr(ctx);
+    }
+
+    visitLine_code_comment_section(ctx) {
+        let action = {
+            operation: "comment",
+            content: ctx.start.getInputStream().strdata.slice(ctx.start.start, ctx.stop.stop + 1),
+        };
+
+        this.rule.actions.push(action);
+
+        return super.visitLine_code_comment_section(ctx);
     }
 
     wrapCandidate(ctx, releaseDefaultVersion = "latest") {
@@ -199,8 +300,6 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
     }
 
     verify() {
-        this.errors = [];
-
         this.verifyRuleAdd();
         this.verifyExhibitName4Rule();
         this.verifyRuleActivateTheme();

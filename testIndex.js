@@ -1,16 +1,18 @@
 const fs = require("fs");
-const nmr_translator = require("../index");
+const nmr_translator = require("./index");
 
-// compile();
-decompile();
+compile();
+
+// decompile();
 
 function compile() {
     let result = nmr_translator.compile(fs.readFileSync("./resources/zhaojn.sc", "utf-8"));
-
-    console.log(JSON.stringify(result, null, 4));
+    fs.writeFile("./resources/zhaojn.json", JSON.stringify(result, null, 4), (err) => {
+        if (err) throw err;
+    });
 }
 
-function decompile(){
+function decompile() {
     let result = JSON.parse(fs.readFileSync("./resources/zhaojn.json"));
     let content = nmr_translator.decompile(result);
 
