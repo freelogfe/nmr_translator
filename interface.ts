@@ -72,6 +72,22 @@ export interface ContentDeleteAttr {
     key: string;
 }
 
+// 添加依赖 operation: "add_rely"
+export interface ContentAddRely{
+    // 被添加的依赖
+    resources: string[];
+    // 添加到的依赖
+    target?: string;
+}
+
+// 删除依赖 operation: "delete_rely"
+export interface ContentDeleteRely{
+    // 被添加的依赖
+    resources: string[];
+    // 添加到的依赖
+    target?: string;
+}
+
 // 注释 operation: "comment"
 export interface ContentComment extends String {
 }

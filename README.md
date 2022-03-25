@@ -8,8 +8,16 @@
 add $u2/r10.0@1.1.1 as p3
   do
     // 千金之子，坐不垂堂
-    set_labels t1,t2,t3
-    replace $uu9/rr9@1.1.1 with #bb0/mm0 under $u6/m6>$u7/m7, $u8/m8
+    set_labels t1 | t2 | t3
+    replace $uu9/rr9@1.1.1 with #bb0/mm0 under $u6/m6>$u7/m7 | $u8/m8
+    // 添加依赖
+    add_rely $uu9/rr9@1.1.1
+    // 添加依赖到某个依赖下
+    add_rely $uu9/rr9@1.1.1 | $uu9/rr9@1.1.1 to #bb0/mm0>#bb0/mm0
+    // 移除依赖
+    delete_rely $uu9/rr9@1.1.1
+    // 移除某个依赖的依赖
+    delete_rely $uu9/rr9@1.1.1 from #bb0/mm0
     show
   end
 /*
@@ -25,7 +33,6 @@ alter p4
     delete_attr 4
   end
 activate_theme 123
-
 ```
 
 输出文件：
@@ -42,7 +49,7 @@ activate_theme 123
             "operation": "comment"
         },
         {
-            "text": "add $u2/r10.0@1.1.1 as p3\r\n  do\r\n    // 千金之子，坐不垂堂\r\n    set_labels t1,t2,t3\r\n    replace $uu9/rr9@1.1.1 with #bb0/mm0 under $u6/m6>$u7/m7, $u8/m8\r\n    show\r\n  end",
+            "text": "add $u2/r10.0@1.1.1 as p3\r\n  do\r\n    // 千金之子，坐不垂堂\r\n    set_labels t1 | t2 | t3\r\n    replace $uu9/rr9@1.1.1 with #bb0/mm0 under $u6/m6>$u7/m7 | $u8/m8\r\n    // 添加依赖\r\n    add_rely $uu9/rr9@1.1.1\r\n    // 添加依赖到某个依赖下\r\n    add_rely $uu9/rr9@1.1.1 | $uu9/rr9@1.1.1 to #bb0/mm0>#bb0/mm0\r\n    // 移除依赖\r\n    delete_rely $uu9/rr9@1.1.1\r\n    // 移除某个依赖的依赖\r\n    delete_rely $uu9/rr9@1.1.1 from #bb0/mm0\r\n    show\r\n  end",
             "operation": "add",
             "actions": [
                 {
@@ -90,6 +97,58 @@ activate_theme 123
                                 }
                             ]
                         ]
+                    }
+                },
+                {
+                    "operation": "comment",
+                    "content": "// 添加依赖\r\n"
+                },
+                {
+                    "operation": "add_rely",
+                    "content": {
+                        "resources": [
+                            "$uu9/rr9@1.1.1"
+                        ],
+                        "target": null
+                    }
+                },
+                {
+                    "operation": "comment",
+                    "content": "// 添加依赖到某个依赖下\r\n"
+                },
+                {
+                    "operation": "add_rely",
+                    "content": {
+                        "resources": [
+                            "$uu9/rr9@1.1.1"
+                        ],
+                        "target": "#bb0/mm0>#bb0/mm0"
+                    }
+                },
+                {
+                    "operation": "comment",
+                    "content": "// 移除依赖\r\n"
+                },
+                {
+                    "operation": "delete_rely",
+                    "content": {
+                        "resources": [
+                            "$uu9/rr9@1.1.1"
+                        ],
+                        "target": null
+                    }
+                },
+                {
+                    "operation": "comment",
+                    "content": "// 移除某个依赖的依赖\r\n"
+                },
+                {
+                    "operation": "delete_rely",
+                    "content": {
+                        "resources": [
+                            "$uu9/rr9@1.1.1"
+                        ],
+                        "target": "#bb0/mm0"
                     }
                 },
                 {
@@ -145,11 +204,20 @@ activate_theme 123
             "text": "activate_theme 123",
             "operation": "activate_theme",
             "actions": [],
-            "themeName": "123"
+            "exhibitName": "123"
         }
     ],
-    "errors": [],
-    "errorObjects": []
+    "errors": [
+        "添加依赖中，不能重复添加 rely: $uu9/rr9@1.1.1 target: #bb0/mm0>#bb0/mm0"
+    ],
+    "errorObjects": [
+        {
+            "line": -1,
+            "charPositionInLine": -1,
+            "offendingSymbol": "",
+            "msg": "添加依赖中，不能重复添加 rely: $uu9/rr9@1.1.1 target: #bb0/mm0>#bb0/mm0"
+        }
+    ]
 }
 ```
 
@@ -164,12 +232,10 @@ export interface Rule {
     operation: string;
     // 命令行动作
     actions?: Action[];
-    // 展品名，当 operation = add | alter 时，存在该属性
+    // 展品名，当 operation = add | alter | activate_theme 时，存在该属性
     exhibitName?: string;
     // 标的物，当 operation = add 时，存在该属性
     candidate?: Candidate;
-    // 主题名，当 operation = activate_theme 时，存在该属性
-    themeName?: string;
 }
 
 // 标的物
@@ -187,11 +253,11 @@ export interface Action {
     // 操作
     operation: string;
     // 内容，见下面 ContentXx
-    content: ContentSetLabels | ContentReplace | ContentOnline | ContentSetTitle | ContentSetCover | ContentAddAttr | ContentDeleteAttr | ContentComment;
+    content: ContentSetLabel[] | ContentReplace | ContentOnline | ContentSetTitle | ContentSetCover | ContentAddAttr | ContentDeleteAttr | ContentComment;
 }
 
 // 设置标签 operation: "set_labels"
-export interface ContentSetLabels extends String {
+export interface ContentSetLabel extends String {
 }
 
 // 替换 operation: "replace"
@@ -230,6 +296,22 @@ export interface ContentAddAttr {
 export interface ContentDeleteAttr {
     // 键
     key: string;
+}
+
+// 添加依赖 operation: "add_rely"
+export interface ContentAddRely{
+    // 被添加的依赖
+    resources: string[];
+    // 添加到的依赖
+    target?: string;
+}
+
+// 删除依赖 operation: "delete_rely"
+export interface ContentDeleteRely{
+    // 被添加的依赖
+    resources: string[];
+    // 添加到的依赖
+    target?: string;
 }
 
 // 注释 operation: "comment"

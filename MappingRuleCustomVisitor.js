@@ -5,6 +5,13 @@ const http = require("http");
 
 class MappingRuleCustomVisitor extends MappingRuleVisitor {
 
+    constructor() {
+        super();
+
+        this.relyAddMap = new Map();
+        this.relyDelMap = new Map();
+    }
+
     visitMapping_rule_section(ctx) {
         this.mappingRules = [];
         this.errors = [];
@@ -256,6 +263,70 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
         this.rule.actions.push(action);
 
         return super.visitDelete_attr(ctx);
+    }
+
+    visitAdd_rely(ctx) {
+        let content = {resources: []};
+
+        if (ctx.rely_target() != null) {
+            content["target"] = ctx.rely_target().getText();
+        } else {
+            content["target"] = null;
+        }
+        let resourceArray = this.relyAddMap.get(content["target"]);
+        if (resourceArray == null) {
+            resourceArray = [];
+        }
+
+        ctx.candidate().forEach(cCtx => {
+            let resource = cCtx.getText();
+            if (resourceArray.indexOf(resource) !== -1) {
+                this.errors.push(`添加依赖中，不能重复添加 rely: ${resource} ${content["target"] != null ? "target: " + content["target"] : ""}`);
+            } else {
+                content["resources"].push(resource);
+                resourceArray.push(resource);
+            }
+        });
+        this.relyAddMap.set(content["target"], resourceArray);
+
+        this.rule.actions.push({
+            operation: "add_rely",
+            content: content
+        });
+
+        return super.visitAdd_rely(ctx);
+    }
+
+    visitDelete_rely(ctx) {
+        let content = {resources: []};
+
+        if (ctx.rely_target() != null) {
+            content["target"] = ctx.rely_target().getText();
+        } else {
+            content["target"] = null;
+        }
+        let resourceArray = this.relyDelMap.get(content["target"]);
+        if (resourceArray == null) {
+            resourceArray = [];
+        }
+
+        ctx.candidate().forEach(cCtx => {
+            let resource = cCtx.getText();
+            if (resourceArray.indexOf(resource) !== -1) {
+                this.errors.push(`删除依赖中，不能重复删除 rely: ${resource} ${content["target"] != null ? "target: " + content["target"] : ""}`);
+            } else {
+                content["resources"].push(resource);
+                resourceArray.push(resource);
+            }
+        });
+        this.relyDelMap.set(content["target"], resourceArray);
+
+        this.rule.actions.push({
+            operation: "delete_rely",
+            content: content
+        });
+
+        return super.visitDelete_rely(ctx);
     }
 
     visitLine_code_comment_section(ctx) {
