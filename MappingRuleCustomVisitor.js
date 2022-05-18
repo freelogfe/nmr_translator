@@ -411,10 +411,10 @@ class MappingRuleCustomVisitor extends MappingRuleVisitor {
         });
 
         if (repeatNameR.size !== 0) {
-            this.errors.push(`添加规则中，不能重复添加 resource: ${Array.from(repeatNameR).join(", ")}`)
+            this.errors.push(`测试对象重复： ${Array.from(repeatNameR).join(", ")}`)
         }
         if (repeatNameO.size !== 0) {
-            this.errors.push(`添加规则中，不能重复添加 object: ${Array.from(repeatNameO).join(", ")}`)
+            this.errors.push(`测试对象重复： ${Array.from(repeatNameO).join(", ")}`)
         }
     }
 
